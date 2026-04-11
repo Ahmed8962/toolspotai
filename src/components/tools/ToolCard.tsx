@@ -2,7 +2,14 @@ import Link from "next/link";
 import type { Tool } from "@/data/tools";
 import CategoryBadge from "@/components/shared/CategoryBadge";
 
-export default function ToolCard({ tool }: { tool: Tool }) {
+export default function ToolCard({
+  tool,
+  compact = false,
+}: {
+  tool: Tool;
+  /** Omit description so the same tool is not duplicated on pages that also list it in a full grid (e.g. home). */
+  compact?: boolean;
+}) {
   return (
     <Link
       href={`/tools/${tool.slug}`}
@@ -18,14 +25,16 @@ export default function ToolCard({ tool }: { tool: Tool }) {
         </span>
         <div className="min-w-0 flex-1">
           <CategoryBadge category={tool.category} />
-          <h3 className="mt-2 font-semibold text-text-primary transition-colors group-hover:text-brand-700">
+          <p className="mt-2 text-base font-semibold text-text-primary transition-colors group-hover:text-brand-700">
             {tool.title}
-          </h3>
-          <p className="mt-1.5 line-clamp-2 text-sm leading-relaxed text-text-muted">
-            {tool.description}
           </p>
+          {!compact && (
+            <p className="mt-1.5 line-clamp-2 text-sm leading-relaxed text-text-muted">
+              {tool.description}
+            </p>
+          )}
           <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-brand-600 transition-all group-hover:gap-2">
-            Use tool
+            Open {tool.shortTitle}
             <svg
               className="h-3.5 w-3.5 transition-transform duration-200 group-hover:translate-x-0.5"
               fill="none"

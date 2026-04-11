@@ -57,7 +57,7 @@ export default function Footer() {
                   href={CATEGORY_HUBS[cat.id as keyof typeof CATEGORY_HUBS].path}
                   className="mt-1 inline-block text-xs font-medium text-brand-300 hover:text-white"
                 >
-                  Topic hub →
+                  {`${cat.label.replace(/ Tools$/, "")} hub →`}
                 </Link>
                 <ul className="mt-2.5 space-y-1.5 text-sm">
                   {cat.tools.map((t) => (

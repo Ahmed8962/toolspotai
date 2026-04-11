@@ -95,12 +95,12 @@ export default function Navbar() {
               onMouseEnter={openMega}
               onMouseLeave={closeMega}
             >
-              <div className="relative mx-auto max-w-6xl px-6 py-6">
-                {/* Close button */}
+              <div className="relative mx-auto max-w-6xl py-6 pl-6 pr-14">
+                {/* Close button — inset from edge so it clears the rightmost column’s count badge */}
                 <button
                   type="button"
                   onClick={() => setMegaOpen(false)}
-                  className="absolute right-6 top-5 flex h-8 w-8 items-center justify-center rounded-lg text-text-muted transition hover:bg-slate-100 hover:text-text-primary"
+                  className="absolute right-3 top-5 z-10 flex h-8 w-8 items-center justify-center rounded-lg text-text-muted transition hover:bg-slate-100 hover:text-text-primary"
                   aria-label="Close menu"
                 >
                   <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

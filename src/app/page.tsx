@@ -147,7 +147,7 @@ export default function Home() {
         </div>
         <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {popular.slice(0, 12).map((t) => (
-            <ToolCard key={t.slug} tool={t} />
+            <ToolCard key={t.slug} tool={t} compact />
           ))}
         </div>
         {popular.length > 12 && (
@@ -212,7 +212,7 @@ export default function Home() {
                     href={CATEGORY_HUBS[c.id as keyof typeof CATEGORY_HUBS].path}
                     className="mt-3 inline-flex text-sm font-semibold text-brand-700 hover:underline"
                   >
-                    Topic hub & full list →
+                    {`${c.label.replace(/ Tools$/, "")} hub`} →
                   </Link>
                   <div className="mt-4 flex flex-wrap gap-1.5">
                     {catTools.slice(0, 3).map((t) => (

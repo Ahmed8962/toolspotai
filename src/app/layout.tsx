@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s | ToolSpotAI",
   },
   description:
-    "Free online calculators and tools for finance, health, math, developer utilities, and daily use. No signup required. Instant results. Trusted by users in US, UK & Europe.",
+    "Free calculators and tools for finance, health, math, and daily tasks. No signup—instant, private results.",
   keywords: [
     "free online calculator",
     "online tools",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ToolSpotAI — Free Online Calculators & Tools",
     description:
-      "Free online calculators and tools for finance, health, math, and daily use. No signup required. Instant results.",
+      "Free calculators for finance, health, math, and daily tasks. No signup—instant, private results.",
     type: "website",
     url: SITE_URL,
     siteName: "ToolSpotAI",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ToolSpotAI — Free Online Calculators & Tools",
     description:
-      "Free online calculators and tools. No signup required. Instant results.",
+      "Free calculators and tools. No signup—instant, private results.",
     creator: "@toolspotai",
   },
   robots: {

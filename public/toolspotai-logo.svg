@@ -7,8 +7,8 @@
   <!-- Icon -->
   <rect x="0" y="0" width="80" height="80" rx="16" fill="#2563EB"/>
   <polygon points="44,10 32,38 40,38 35,70 56,40 47,40" fill="white"/>
-  <!-- Wordmark: single text block so AI sits right after ToolSpot -->
-  <text x="96" y="58" font-family="Outfit, sans-serif" font-size="52" letter-spacing="-1">
-    <tspan font-weight="400" fill="#0F172A">ToolSpot</tspan><tspan font-weight="700" fill="#2563EB">AI</tspan>
+  <!-- Wordmark: dx after ToolSpot keeps t/A separated when SVG is used as <img> (fonts inside SVG do not load there; Outfit only applies when SVG is opened as a document). -->
+  <text x="96" y="58" font-family="Outfit, system-ui, sans-serif" font-size="52">
+    <tspan font-weight="400" fill="#0F172A" letter-spacing="-0.5">ToolSpot</tspan><tspan font-weight="700" fill="#2563EB" dx="4">AI</tspan>
   </text>
 </svg>
