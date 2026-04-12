@@ -1,3 +1,5 @@
+import { listBulletinConfiguredIsoCodes } from "@/data/fuel-price-overrides";
+import { applyFuelBulletins } from "@/lib/apply-fuel-bulletins";
 import type { FuelPricesApiPayload, OpenVanFuelApiResponse } from "@/lib/fuel-prices-types";
 import { NextRequest, NextResponse } from "next/server";
 import { unstable_cache } from "next/cache";
@@ -51,10 +53,16 @@ export async function GET(req: NextRequest) {
       }))
       .sort((a, b) => a.name.localeCompare(b.name));
 
-    const rows: Record<string, (typeof openVan.data)[string]> = {};
+    const rowsRaw: Record<string, (typeof openVan.data)[string]> = {};
     for (const [code, row] of entries) {
-      rows[code] = row;
+      rowsRaw[code] = row;
     }
+
+    const rows = applyFuelBulletins(rowsRaw);
+
+    const bulletinCuratedCountries = listBulletinConfiguredIsoCodes().filter(
+      (code) => Boolean(rowsRaw[code]),
+    );
 
     let suggested =
       detected && rows[detected] ? detected : rows["US"] ? "US" : countries[0]?.code ?? "US";
@@ -70,6 +78,7 @@ export async function GET(req: NextRequest) {
       countries,
       rows,
       openVanUpdated: entries[0]?.[1]?.fetched_at,
+      bulletinCuratedCountries,
     };
 
     return NextResponse.json(payload, {

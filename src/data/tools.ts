@@ -1755,7 +1755,7 @@ Minimum-only comparison: would take 60+ months and cost thousands more in intere
     category: 'daily',
     icon: '🛢️',
     description:
-      'See typical retail gasoline, diesel, LPG, and premium prices by country (auto-detected when possible), plus a six-month Brent and WTI crude benchmark chart for context.',
+      'Retail gasoline, diesel, LPG, and premium by country (auto-detected when possible). Aggregate averages worldwide; curated bulletin pins where we maintain official-board numbers—plus a six-month Brent/WTI chart.',
     seoTitle: 'Fuel Price Check — Country Pump Prices & Oil Trend | ToolSpotAI',
     seoDescription:
       'Free fuel price check: country-based retail averages for gasoline, diesel, and LPG when available, with optional connection-based region guess and a six-month Brent/WTI chart.',
@@ -1792,18 +1792,23 @@ Minimum-only comparison: would take 60+ months and cost thousands more in intere
         answer:
           'When the source reports them, we show gasoline (unleaded), diesel, LPG (autogas), premium, and E85. Not every country publishes every product every week.',
       },
+      {
+        question: 'Do you fix prices for every country?',
+        answer:
+          'We show OpenVan’s weekly national-style averages for all countries in the feed. Where we maintain a curated “bulletin” entry for a country (see the blue notice on that country), we replace the listed fuels with values and a date taken from an official regulator or major national retailer page we cite. Any ISO country code can get a bulletin—add or edit entries in the site’s fuel bulletin data file when you have a trustworthy source. Everyone else should treat the cards as indicative and confirm with local boards or the pump.',
+      },
     ],
     content: {
       whatIs:
         'A fuel price check answers two everyday questions: what are typical pump prices where I am (or where I am planning to drive), and how have global oil markets been trending lately?\n\nThis page combines recent retail averages by country with a separate chart of Brent and WTI crude oil — so you can connect what you pay at the pump with the bigger picture, without confusing the two.',
       howItWorks:
-        'Retail data is requested from OpenVan.camp’s public JSON feed (weekly refresh, multiple official sources). Your country is guessed from edge headers when available; otherwise we default to a common market and let you change country in the dropdown. The crude chart is built from public daily CSV series (Brent and WTI) and shows roughly the last six months of trading-day closes.',
+        'Retail data starts from OpenVan.camp’s public JSON feed (weekly refresh). For some countries we replace headline gasoline and diesel with manually synced national bulletin values when the feed is known to diverge (Pakistan uses PSO/Shell board figures). Your country is guessed from edge headers when possible; otherwise pick from the list. The crude chart uses public Brent and WTI daily CSVs for roughly the last six months.',
       formula:
         'Retail: reported national or typical average in local currency per litre or US gallon (source-dependent). Benchmark chart: daily settlement or spot-style close in USD per barrel for Brent and WTI.',
       formulaExplanation:
         'There is no single equation that converts Brent into your litre price — taxes and margins differ by country. That is why we label crude separately and keep retail in the currency and unit each dataset uses.',
       example:
-        'If your connection resolves to PK, the tool may open on Pakistan. You might see gasoline and diesel in PKR per litre plus weekly change hints from the feed. The Brent/WTI chart below still reflects global crude, not PKR pump history.',
+        'For Pakistan, gasoline and diesel on the cards follow the national PSO/Shell board for the bulletin effective date; the Brent/WTI chart still reflects global crude in US dollars per barrel, not PKR pump history.',
       tips: [
         'Compare this page with the Fuel / Gas Cost Calculator when planning a trip budget.',
         'If prices look wrong for your city, remember they are averages — check a local station app for live pumps.',

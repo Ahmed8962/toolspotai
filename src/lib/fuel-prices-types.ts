@@ -24,6 +24,13 @@ export type OpenVanFuelRow = {
   sources?: string;
   sources_count?: number;
   is_excluded?: boolean;
+  /** Present when we replaced some pump figures with a national bulletin sync */
+  bulletinSync?: {
+    effectiveFrom: string;
+    citation: string;
+    sourceUrl: string;
+    keys: Array<keyof OpenVanFuelRow["prices"]>;
+  };
 };
 
 export type OpenVanFuelApiResponse = {
@@ -38,6 +45,8 @@ export type FuelPricesApiPayload = {
   countries: { code: string; name: string; region: string }[];
   rows: Record<string, OpenVanFuelRow>;
   openVanUpdated?: string;
+  /** ISO2 codes in this build that merged a manual bulletin (subset of all countries). */
+  bulletinCuratedCountries: string[];
 };
 
 export type WholesalePoint = { date: string; brent: number | null; wti: number | null };

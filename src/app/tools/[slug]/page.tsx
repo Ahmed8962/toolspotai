@@ -6,9 +6,17 @@ import {
   generateOrganizationSchema,
   generateToolMetadata,
   generateWebAppSchema,
+  getCategoryHubPath,
   getCategoryLabel,
 } from "@/lib/seo";
 import { SITE_URL } from "@/lib/site";
+import {
+  buildToolMetaDescription,
+  buildToolPageOnPageSeo,
+  getPrimaryKeywordPhrase,
+  getSeoSecondaryList,
+  toolCanonicalUrl,
+} from "@/lib/tool-page-seo";
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { notFound } from "next/navigation";
@@ -176,13 +184,24 @@ export default async function ToolPage({
   const related = getRelatedTools(tool.slug, tool.relatedSlugs);
 
   const faqLd = generateFAQSchema(tool.faqs);
+  const toolUrl = toolCanonicalUrl(tool.slug);
   const breadcrumbLd = generateBreadcrumbSchema([
     { name: "Home", url: SITE_URL },
-    { name: getCategoryLabel(tool.category) },
-    { name: tool.title },
+    {
+      name: getCategoryLabel(tool.category),
+      url: `${SITE_URL}${getCategoryHubPath(tool.category)}`,
+    },
+    { name: tool.title, url: toolUrl },
   ]);
-  const webAppLd = generateWebAppSchema(tool);
+  const primary = getPrimaryKeywordPhrase(tool);
+  const richDescription = buildToolMetaDescription(
+    tool,
+    primary,
+    getSeoSecondaryList(tool).slice(0, 8),
+  );
+  const webAppLd = generateWebAppSchema({ ...tool, seoDescription: richDescription });
   const orgLd = generateOrganizationSchema();
+  const pageSeo = buildToolPageOnPageSeo(tool);
 
   return (
     <>
@@ -203,7 +222,15 @@ export default async function ToolPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(orgLd) }}
       />
       <div className="bg-surface-page">
-        <ToolLayout tool={tool} related={related}>
+        <ToolLayout
+          tool={tool}
+          related={related}
+          pageSeo={{
+            h1Text: pageSeo.h1Text,
+            intro: pageSeo.introHtml,
+            howToUseSteps: pageSeo.howToUseSteps,
+          }}
+        >
           <ToolComponent />
         </ToolLayout>
       </div>

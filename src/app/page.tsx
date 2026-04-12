@@ -1,7 +1,27 @@
 import ToolCard from "@/components/tools/ToolCard";
 import { CATEGORY_HUBS } from "@/data/category-hubs";
 import { categories, getPopularTools, getToolsByCategory, tools } from "@/data/tools";
+import {
+  generateFAQSchema,
+  generateOrganizationSchema,
+  generateWebSiteSchema,
+} from "@/lib/seo";
+import { SITE_URL } from "@/lib/site";
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: { absolute: "ToolSpotAI — Free Online Calculators & Tools" },
+  description: `Browse ${tools.length}+ free online calculators and tools—tax, mortgage, BMI, word counter, JSON, and more. Runs in your browser with no signup.`,
+  alternates: { canonical: SITE_URL },
+  openGraph: {
+    url: SITE_URL,
+    title: "ToolSpotAI — Free Online Calculators & Tools",
+    description:
+      "Free calculators and tools for finance, health, developers, and writers. No signup—instant results.",
+    type: "website",
+  },
+};
 
 const homeFaqs = [
   {
@@ -49,8 +69,26 @@ const CAT_COLORS: Record<string, { gradient: string; iconBg: string; border: str
 
 export default function Home() {
   const popular = getPopularTools();
+  const homeFaqLd = generateFAQSchema(
+    homeFaqs.map((f) => ({ question: f.q, answer: f.a })),
+  );
+  const webSiteLd = generateWebSiteSchema();
+  const orgLd = generateOrganizationSchema();
 
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqLd) }}
+      />
     <div className="bg-surface-page">
       {/* ═══════════════════ HERO ═══════════════════ */}
       <section className="hero-gradient relative overflow-hidden">
@@ -305,5 +343,6 @@ export default function Home() {
         </div>
       </section>
     </div>
+    </>
   );
 }

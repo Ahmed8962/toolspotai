@@ -224,7 +224,10 @@ export default function FuelPriceCheck() {
           throw new Error("bad_response");
         }
         if (cancelled) return;
-        setPayload(json);
+        setPayload({
+          ...json,
+          bulletinCuratedCountries: json.bulletinCuratedCountries ?? [],
+        });
         setCode(json.suggestedCountry);
       } catch {
         if (!cancelled) setErr("Could not load retail prices. Please try again in a few minutes.");
@@ -298,17 +301,74 @@ export default function FuelPriceCheck() {
             </select>
             {row?.fetched_at ? (
               <p className="mt-2 text-xs text-text-muted">
-                Retail snapshot fetched: {new Date(row.fetched_at).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}
+                Open data snapshot (feed):{" "}
+                {new Date(row.fetched_at).toLocaleString(undefined, {
+                  dateStyle: "medium",
+                  timeStyle: "short",
+                })}
               </p>
             ) : null}
+            {(payload.bulletinCuratedCountries ?? []).length > 0 ? (
+              <p className="mt-2 text-[11px] leading-relaxed text-text-muted">
+                Curated bulletin sync is active for:{" "}
+                <span className="font-medium text-text-primary">
+                  {(payload.bulletinCuratedCountries ?? []).join(", ")}
+                </span>
+                . Every other country in the list uses the aggregate feed until a bulletin is added for that code.
+              </p>
+            ) : (
+              <p className="mt-2 text-[11px] leading-relaxed text-text-muted">
+                No bulletin overrides in this build — all countries use the same aggregate feed; add ISO entries in the
+                bulletin data file to pin any country to an official board.
+              </p>
+            )}
           </div>
 
           {row ? (
             <>
+              {row.bulletinSync ? (
+                <div className="rounded-xl border border-sky-200 bg-sky-50/90 px-4 py-3 text-sm text-sky-950">
+                  <p className="font-medium text-sky-950">National bulletin prices</p>
+                  <p className="mt-1 leading-relaxed">
+                    {row.bulletinSync.citation} Effective{" "}
+                    <time dateTime={row.bulletinSync.effectiveFrom}>
+                      {new Date(row.bulletinSync.effectiveFrom + "T12:00:00").toLocaleDateString(
+                        undefined,
+                        { dateStyle: "long" },
+                      )}
+                    </time>
+                    .{" "}
+                    <a
+                      href={row.bulletinSync.sourceUrl}
+                      className="font-medium text-sky-800 underline-offset-2 hover:underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Official price list
+                    </a>
+                  </p>
+                  <p className="mt-2 text-xs text-sky-900/80">
+                    Other fuels (for example LPG) may still come from the aggregate feed and can differ from a single retailer board.
+                  </p>
+                </div>
+              ) : (
+                <div className="rounded-xl border border-amber-200/90 bg-amber-50/80 px-4 py-3 text-sm text-amber-950">
+                  <p className="font-medium text-amber-950">Aggregate feed (all countries without a blue bulletin)</p>
+                  <p className="mt-1 leading-relaxed text-amber-950/95">
+                    For <strong>{row.country_name}</strong> we show OpenVan’s weekly national-style average. It can differ from
+                    your regulator’s cap, a single brand’s board, or today’s station price. Use it as a quick comparison only;
+                    confirm with your energy ministry, national marketer, or the pump when it matters.
+                  </p>
+                </div>
+              )}
+
               <div>
                 <h2 className="text-base font-semibold text-text-primary">Pump prices</h2>
                 <p className="mt-1 text-sm text-text-muted">
                   National or typical retail averages where available — not your nearest station. Units follow each country (litres or US gallons).
+                  {row.bulletinSync
+                    ? " Fuels named in the blue bulletin match that source for this country."
+                    : " Numbers are not hand-verified for this country in this release unless a bulletin appears above."}
                 </p>
                 <div className="mt-4">
                   <PriceCards row={row} />

@@ -1,5 +1,6 @@
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
+import { DEFAULT_OG_IMAGE_PATH } from "@/lib/seo";
 import { SITE_URL } from "@/lib/site";
 import type { Metadata, Viewport } from "next";
 import { DM_Sans } from "next/font/google";
@@ -46,6 +47,15 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: "ToolSpotAI",
     locale: "en_US",
+    images: [
+      {
+        url: DEFAULT_OG_IMAGE_PATH,
+        width: 512,
+        height: 512,
+        alt: "ToolSpotAI logo",
+        type: "image/svg+xml",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -53,6 +63,7 @@ export const metadata: Metadata = {
     description:
       "Free calculators and tools. No signup—instant, private results.",
     creator: "@toolspotai",
+    images: [DEFAULT_OG_IMAGE_PATH],
   },
   robots: {
     index: true,

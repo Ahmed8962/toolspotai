@@ -1,0 +1,844 @@
+{
+  "percentage-calculator": {
+    "primary_keywords": [
+      "percentage calculator",
+      "how to calculate percentage",
+      "percent calculator online",
+      "percentage increase calculator"
+    ],
+    "secondary_keywords": [
+      "percentage difference calculator",
+      "percent of number calculator",
+      "percentage change calculator"
+    ]
+  },
+  "age-calculator": {
+    "primary_keywords": [
+      "age calculator",
+      "how old am i calculator",
+      "age in days calculator",
+      "date of birth age calculator"
+    ],
+    "secondary_keywords": [
+      "exact age calculator",
+      "age calculator years months days",
+      "my age calculator"
+    ]
+  },
+  "emi-calculator": {
+    "primary_keywords": [
+      "emi calculator",
+      "loan emi calculator",
+      "equated monthly installment calculator",
+      "monthly loan payment calculator"
+    ],
+    "secondary_keywords": [
+      "emi calculator online",
+      "emi formula calculator",
+      "bank emi calculator"
+    ]
+  },
+  "mortgage-calculator": {
+    "primary_keywords": [
+      "mortgage calculator",
+      "home loan calculator",
+      "monthly mortgage payment calculator",
+      "house payment calculator"
+    ],
+    "secondary_keywords": [
+      "mortgage payment estimator",
+      "30 year mortgage calculator",
+      "mortgage affordability calculator"
+    ]
+  },
+  "word-counter": {
+    "primary_keywords": [
+      "word counter",
+      "online word counter",
+      "word count checker",
+      "character counter online"
+    ],
+    "secondary_keywords": [
+      "word counter tool",
+      "sentence counter",
+      "word and character counter"
+    ]
+  },
+  "discount-calculator": {
+    "primary_keywords": [
+      "discount calculator",
+      "sale price calculator",
+      "percent off calculator",
+      "how much is the discount calculator"
+    ],
+    "secondary_keywords": [
+      "discount percentage calculator",
+      "coupon calculator",
+      "shopping discount calculator"
+    ]
+  },
+  "bmi-calculator": {
+    "primary_keywords": [
+      "bmi calculator",
+      "body mass index calculator",
+      "bmi calculator for adults",
+      "bmi calculator kg cm"
+    ],
+    "secondary_keywords": [
+      "bmi calculator with age",
+      "free bmi calculator",
+      "healthy bmi calculator"
+    ]
+  },
+  "json-formatter": {
+    "primary_keywords": [
+      "json formatter",
+      "json beautifier",
+      "json validator online",
+      "json formatter online"
+    ],
+    "secondary_keywords": [
+      "json pretty print",
+      "format json online",
+      "json parser online"
+    ]
+  },
+  "base64-encode-decode": {
+    "primary_keywords": [
+      "base64 encoder decoder",
+      "base64 encode online",
+      "base64 decode online",
+      "base64 converter"
+    ],
+    "secondary_keywords": [
+      "base64 to text converter",
+      "string to base64",
+      "base64 encode image"
+    ]
+  },
+  "compound-interest-calculator": {
+    "primary_keywords": [
+      "compound interest calculator",
+      "investment growth calculator",
+      "compound interest formula calculator"
+    ],
+    "secondary_keywords": [
+      "daily compound interest calculator",
+      "monthly compound interest calculator",
+      "savings compound calculator"
+    ]
+  },
+  "salary-calculator": {
+    "primary_keywords": [
+      "salary calculator",
+      "take home pay calculator",
+      "annual salary calculator",
+      "hourly to salary calculator"
+    ],
+    "secondary_keywords": [
+      "net salary calculator",
+      "gross to net salary",
+      "salary paycheck calculator"
+    ]
+  },
+  "credit-card-payoff-calculator": {
+    "primary_keywords": [
+      "credit card payoff calculator",
+      "credit card debt calculator",
+      "how long to pay off credit card"
+    ],
+    "secondary_keywords": [
+      "credit card repayment calculator",
+      "pay off credit card faster",
+      "credit card interest calculator"
+    ]
+  },
+  "unit-converter": {
+    "primary_keywords": [
+      "unit converter",
+      "measurement converter",
+      "metric to imperial converter",
+      "length converter"
+    ],
+    "secondary_keywords": [
+      "online unit converter",
+      "unit conversion calculator",
+      "weight unit converter"
+    ]
+  },
+  "password-generator": {
+    "primary_keywords": [
+      "password generator",
+      "strong password generator",
+      "random password generator",
+      "secure password generator"
+    ],
+    "secondary_keywords": [
+      "free password generator",
+      "complex password generator",
+      "password maker online"
+    ]
+  },
+  "profit-margin-calculator": {
+    "primary_keywords": [
+      "profit margin calculator",
+      "gross margin calculator",
+      "profit calculator",
+      "markup calculator"
+    ],
+    "secondary_keywords": [
+      "net profit margin calculator",
+      "product profit margin calculator",
+      "margin vs markup calculator"
+    ]
+  },
+  "date-calculator": {
+    "primary_keywords": [
+      "date calculator",
+      "days between dates calculator",
+      "date difference calculator",
+      "add days to date calculator"
+    ],
+    "secondary_keywords": [
+      "date duration calculator",
+      "business days calculator",
+      "days from today calculator"
+    ]
+  },
+  "roi-calculator": {
+    "primary_keywords": [
+      "roi calculator",
+      "return on investment calculator",
+      "investment roi calculator",
+      "marketing roi calculator"
+    ],
+    "secondary_keywords": [
+      "simple roi calculator",
+      "roi formula calculator",
+      "business roi calculator"
+    ]
+  },
+  "tip-calculator": {
+    "primary_keywords": [
+      "tip calculator",
+      "restaurant tip calculator",
+      "how much tip calculator",
+      "gratuity calculator"
+    ],
+    "secondary_keywords": [
+      "tip percentage calculator",
+      "split bill tip calculator",
+      "tip calculator with split"
+    ]
+  },
+  "gpa-calculator": {
+    "primary_keywords": [
+      "gpa calculator",
+      "college gpa calculator",
+      "cumulative gpa calculator",
+      "high school gpa calculator"
+    ],
+    "secondary_keywords": [
+      "gpa calculator online",
+      "semester gpa calculator",
+      "weighted gpa calculator"
+    ]
+  },
+  "hash-generator": {
+    "primary_keywords": [
+      "hash generator",
+      "md5 hash generator",
+      "sha256 generator online",
+      "sha1 hash generator"
+    ],
+    "secondary_keywords": [
+      "online hash calculator",
+      "string hash generator",
+      "crypto hash generator"
+    ]
+  },
+  "case-converter": {
+    "primary_keywords": [
+      "case converter",
+      "text case converter",
+      "uppercase lowercase converter",
+      "title case converter"
+    ],
+    "secondary_keywords": [
+      "change text case online",
+      "sentence case converter",
+      "camel case converter"
+    ]
+  },
+  "color-converter": {
+    "primary_keywords": [
+      "color converter",
+      "hex to rgb converter",
+      "rgb to hex converter",
+      "color code converter"
+    ],
+    "secondary_keywords": [
+      "hsl to hex converter",
+      "color picker converter",
+      "css color converter"
+    ]
+  },
+  "loan-calculator": {
+    "primary_keywords": [
+      "loan calculator",
+      "personal loan calculator",
+      "loan payment calculator",
+      "loan interest calculator"
+    ],
+    "secondary_keywords": [
+      "loan repayment calculator",
+      "simple loan calculator",
+      "loan amortization calculator"
+    ]
+  },
+  "qr-code-generator": {
+    "primary_keywords": [
+      "qr code generator",
+      "free qr code generator",
+      "qr code maker online",
+      "create qr code"
+    ],
+    "secondary_keywords": [
+      "qr code generator for url",
+      "custom qr code generator",
+      "qr code generator with logo"
+    ]
+  },
+  "regex-tester": {
+    "primary_keywords": [
+      "regex tester",
+      "regular expression tester",
+      "regex validator online",
+      "test regex online"
+    ],
+    "secondary_keywords": [
+      "regex checker",
+      "javascript regex tester",
+      "python regex tester"
+    ]
+  },
+  "invoice-generator": {
+    "primary_keywords": [
+      "invoice generator",
+      "free invoice generator",
+      "online invoice maker",
+      "invoice template generator"
+    ],
+    "secondary_keywords": [
+      "invoice creator online",
+      "simple invoice generator",
+      "pdf invoice generator"
+    ]
+  },
+  "income-tax-calculator": {
+    "primary_keywords": [
+      "income tax calculator",
+      "tax calculator 2025",
+      "federal income tax calculator",
+      "tax refund calculator"
+    ],
+    "secondary_keywords": [
+      "irs tax calculator",
+      "free tax calculator",
+      "salary tax calculator"
+    ]
+  },
+  "calorie-tdee-calculator": {
+    "primary_keywords": [
+      "tdee calculator",
+      "calorie calculator",
+      "daily calorie calculator",
+      "how many calories should i eat"
+    ],
+    "secondary_keywords": [
+      "maintenance calories calculator",
+      "calorie deficit calculator",
+      "bmr and tdee calculator"
+    ]
+  },
+  "retirement-calculator": {
+    "primary_keywords": [
+      "retirement calculator",
+      "retirement savings calculator",
+      "401k calculator",
+      "how much to retire"
+    ],
+    "secondary_keywords": [
+      "retirement planning calculator",
+      "retirement fund calculator",
+      "when can i retire calculator"
+    ]
+  },
+  "insurance-calculator": {
+    "primary_keywords": [
+      "insurance calculator",
+      "life insurance calculator",
+      "health insurance cost calculator",
+      "car insurance calculator"
+    ],
+    "secondary_keywords": [
+      "insurance premium calculator",
+      "term life insurance calculator",
+      "how much life insurance do i need"
+    ]
+  },
+  "vat-sales-tax-calculator": {
+    "primary_keywords": [
+      "vat calculator",
+      "sales tax calculator",
+      "tax calculator online",
+      "value added tax calculator"
+    ],
+    "secondary_keywords": [
+      "sales tax rate calculator",
+      "add vat calculator",
+      "sales tax by state calculator"
+    ]
+  },
+  "debt-to-income-calculator": {
+    "primary_keywords": [
+      "debt to income ratio calculator",
+      "dti calculator",
+      "debt to income calculator mortgage",
+      "dti ratio calculator"
+    ],
+    "secondary_keywords": [
+      "how to calculate debt to income ratio",
+      "max debt to income ratio",
+      "dti calculator for home loan"
+    ]
+  },
+  "currency-converter": {
+    "primary_keywords": [
+      "currency converter",
+      "usd to eur converter",
+      "exchange rate calculator",
+      "forex calculator"
+    ],
+    "secondary_keywords": [
+      "live currency converter",
+      "currency exchange calculator",
+      "dollar to pound converter"
+    ]
+  },
+  "pregnancy-calculator": {
+    "primary_keywords": [
+      "pregnancy calculator",
+      "due date calculator",
+      "pregnancy week calculator",
+      "pregnancy test calculator"
+    ],
+    "secondary_keywords": [
+      "pregnancy months calculator",
+      "pregnancy conception calculator",
+      "how many weeks pregnant am i"
+    ]
+  },
+  "timezone-converter": {
+    "primary_keywords": [
+      "timezone converter",
+      "time zone converter",
+      "convert time zones online",
+      "utc time converter"
+    ],
+    "secondary_keywords": [
+      "world time converter",
+      "meeting timezone converter",
+      "est to pst converter"
+    ]
+  },
+  "fuel-cost-calculator": {
+    "primary_keywords": [
+      "fuel cost calculator",
+      "gas cost calculator",
+      "trip fuel calculator",
+      "miles per gallon cost calculator"
+    ],
+    "secondary_keywords": [
+      "petrol cost calculator",
+      "road trip cost calculator",
+      "gas mileage calculator"
+    ]
+  },
+  "fuel-price-check": {
+    "primary_keywords": [
+      "fuel price checker",
+      "gasoline prices by country",
+      "diesel price today",
+      "petrol price compare"
+    ],
+    "secondary_keywords": [
+      "live fuel prices",
+      "international fuel prices",
+      "brent crude price chart"
+    ]
+  },
+  "scientific-calculator": {
+    "primary_keywords": [
+      "scientific calculator",
+      "online scientific calculator",
+      "free scientific calculator",
+      "advanced calculator online"
+    ],
+    "secondary_keywords": [
+      "scientific calculator with steps",
+      "graphing calculator online",
+      "algebra calculator"
+    ]
+  },
+  "typing-speed-test": {
+    "primary_keywords": [
+      "typing speed test",
+      "wpm test",
+      "typing test online",
+      "how fast do i type"
+    ],
+    "secondary_keywords": [
+      "free typing test",
+      "keyboard typing speed test",
+      "words per minute test"
+    ]
+  },
+  "plagiarism-checker": {
+    "primary_keywords": [
+      "plagiarism checker",
+      "free plagiarism checker",
+      "online plagiarism detector",
+      "check plagiarism online"
+    ],
+    "secondary_keywords": [
+      "plagiarism checker for students",
+      "plagiarism detector free",
+      "duplicate content checker"
+    ]
+  },
+  "screen-resolution-calculator": {
+    "primary_keywords": [
+      "screen resolution calculator",
+      "ppi calculator",
+      "pixels per inch calculator",
+      "dpi calculator screen"
+    ],
+    "secondary_keywords": [
+      "monitor resolution calculator",
+      "pixel density calculator",
+      "screen size calculator"
+    ]
+  },
+  "loan-comparison-calculator": {
+    "primary_keywords": [
+      "loan comparison calculator",
+      "compare loan rates calculator",
+      "best loan calculator",
+      "loan vs loan calculator"
+    ],
+    "secondary_keywords": [
+      "side by side loan comparison",
+      "loan offer comparison tool",
+      "mortgage comparison calculator"
+    ]
+  },
+  "period-calculator": {
+    "primary_keywords": [
+      "period calculator",
+      "menstrual cycle calculator",
+      "next period calculator",
+      "period tracker calculator"
+    ],
+    "secondary_keywords": [
+      "period due date calculator",
+      "menstruation calculator",
+      "how long is my cycle calculator"
+    ]
+  },
+  "ovulation-calculator": {
+    "primary_keywords": [
+      "ovulation calculator",
+      "fertility calculator",
+      "ovulation date calculator",
+      "when am i most fertile calculator"
+    ],
+    "secondary_keywords": [
+      "ovulation cycle calculator",
+      "ovulation window calculator",
+      "best time to conceive calculator"
+    ]
+  },
+  "bmr-calculator": {
+    "primary_keywords": [
+      "bmr calculator",
+      "basal metabolic rate calculator",
+      "metabolic rate calculator",
+      "calories burned at rest calculator"
+    ],
+    "secondary_keywords": [
+      "bmr formula calculator",
+      "bmr calculator male",
+      "bmr calculator female"
+    ]
+  },
+  "ideal-weight-calculator": {
+    "primary_keywords": [
+      "ideal weight calculator",
+      "healthy weight calculator",
+      "what should i weigh calculator",
+      "bmi ideal weight"
+    ],
+    "secondary_keywords": [
+      "ideal body weight calculator",
+      "weight calculator for height",
+      "target weight calculator"
+    ]
+  },
+  "auto-loan-calculator": {
+    "primary_keywords": [
+      "auto loan calculator",
+      "car loan calculator",
+      "car payment calculator",
+      "monthly car payment calculator"
+    ],
+    "secondary_keywords": [
+      "used car loan calculator",
+      "car financing calculator",
+      "vehicle loan calculator"
+    ]
+  },
+  "paycheck-calculator": {
+    "primary_keywords": [
+      "paycheck calculator",
+      "payroll calculator",
+      "take home pay calculator",
+      "net pay calculator"
+    ],
+    "secondary_keywords": [
+      "hourly paycheck calculator",
+      "bi-weekly paycheck calculator",
+      "paycheck tax calculator"
+    ]
+  },
+  "body-fat-calculator": {
+    "primary_keywords": [
+      "body fat calculator",
+      "body fat percentage calculator",
+      "body fat calculator online",
+      "how to calculate body fat"
+    ],
+    "secondary_keywords": [
+      "body fat percentage male",
+      "body fat percentage female",
+      "body composition calculator"
+    ]
+  },
+  "macro-calculator": {
+    "primary_keywords": [
+      "macro calculator",
+      "macronutrient calculator",
+      "protein fat carb calculator",
+      "keto macro calculator"
+    ],
+    "secondary_keywords": [
+      "daily macro calculator",
+      "macros for weight loss calculator",
+      "iifym calculator"
+    ]
+  },
+  "inflation-calculator": {
+    "primary_keywords": [
+      "inflation calculator",
+      "purchasing power calculator",
+      "us inflation calculator",
+      "cpi calculator"
+    ],
+    "secondary_keywords": [
+      "historical inflation calculator",
+      "inflation rate calculator",
+      "dollar value calculator"
+    ]
+  },
+  "baby-name-generator": {
+    "primary_keywords": [
+      "baby name generator",
+      "random baby name generator",
+      "baby name ideas",
+      "unique baby names generator"
+    ],
+    "secondary_keywords": [
+      "baby boy name generator",
+      "baby girl name generator",
+      "ai baby name generator"
+    ]
+  },
+  "sip-calculator": {
+    "primary_keywords": [
+      "sip calculator",
+      "systematic investment plan calculator",
+      "monthly sip calculator",
+      "mutual fund sip calculator"
+    ],
+    "secondary_keywords": [
+      "sip return calculator",
+      "best sip calculator",
+      "sip investment calculator"
+    ]
+  },
+  "image-compressor": {
+    "primary_keywords": [
+      "image compressor",
+      "compress image online",
+      "reduce image size online",
+      "image size reducer"
+    ],
+    "secondary_keywords": [
+      "free image compressor",
+      "jpg compressor online",
+      "png compressor online"
+    ]
+  },
+  "markdown-editor": {
+    "primary_keywords": [
+      "markdown editor",
+      "online markdown editor",
+      "markdown preview editor",
+      "markdown to html converter"
+    ],
+    "secondary_keywords": [
+      "free markdown editor",
+      "live markdown editor",
+      "github markdown editor"
+    ]
+  },
+  "blood-pressure-calculator": {
+    "primary_keywords": [
+      "blood pressure calculator",
+      "blood pressure chart",
+      "normal blood pressure calculator",
+      "blood pressure range calculator"
+    ],
+    "secondary_keywords": [
+      "blood pressure by age calculator",
+      "systolic diastolic calculator",
+      "hypertension calculator"
+    ]
+  },
+  "personal-injury-settlement-calculator": {
+    "primary_keywords": [
+      "personal injury settlement calculator",
+      "injury settlement calculator",
+      "personal injury claim calculator",
+      "how much is my injury worth"
+    ],
+    "secondary_keywords": [
+      "accident settlement calculator",
+      "injury compensation calculator",
+      "personal injury payout calculator"
+    ]
+  },
+  "divorce-asset-split-calculator": {
+    "primary_keywords": [
+      "divorce settlement calculator",
+      "divorce asset calculator",
+      "marital property division calculator",
+      "divorce money split calculator"
+    ],
+    "secondary_keywords": [
+      "equitable distribution calculator",
+      "divorce financial calculator",
+      "how to split assets in divorce"
+    ]
+  },
+  "car-accident-compensation-calculator": {
+    "primary_keywords": [
+      "car accident settlement calculator",
+      "car accident compensation calculator",
+      "auto accident claim calculator",
+      "how much to sue for car accident"
+    ],
+    "secondary_keywords": [
+      "car crash compensation calculator",
+      "car accident injury calculator",
+      "vehicle accident settlement amount"
+    ]
+  },
+  "ai-writing-style-checker": {
+    "primary_keywords": [
+      "ai writing checker",
+      "ai content detector",
+      "detect ai writing",
+      "chatgpt content detector"
+    ],
+    "secondary_keywords": [
+      "ai text detector free",
+      "ai generated text checker",
+      "is this ai written checker"
+    ]
+  },
+  "image-prompt-builder": {
+    "primary_keywords": [
+      "ai image prompt generator",
+      "midjourney prompt builder",
+      "stable diffusion prompt generator",
+      "dalle prompt generator"
+    ],
+    "secondary_keywords": [
+      "image ai prompt helper",
+      "ai art prompt creator",
+      "prompt generator for ai images"
+    ]
+  },
+  "social-media-ad-roi-calculator": {
+    "primary_keywords": [
+      "social media roi calculator",
+      "facebook ads roi calculator",
+      "ad campaign roi calculator",
+      "digital marketing roi calculator"
+    ],
+    "secondary_keywords": [
+      "instagram ads roi calculator",
+      "paid ads roi calculator",
+      "advertising roi formula"
+    ]
+  },
+  "crypto-tax-calculator": {
+    "primary_keywords": [
+      "crypto tax calculator",
+      "cryptocurrency tax calculator",
+      "bitcoin tax calculator",
+      "crypto capital gains calculator"
+    ],
+    "secondary_keywords": [
+      "free crypto tax calculator",
+      "nft tax calculator",
+      "crypto profit tax calculator"
+    ]
+  },
+  "student-loan-refinance-calculator": {
+    "primary_keywords": [
+      "student loan refinance calculator",
+      "student loan calculator",
+      "student loan payoff calculator",
+      "refinance student loan savings"
+    ],
+    "secondary_keywords": [
+      "federal student loan calculator",
+      "student debt calculator",
+      "student loan interest calculator"
+    ]
+  },
+  "business-valuation-calculator": {
+    "primary_keywords": [
+      "business valuation calculator",
+      "how to value a business calculator",
+      "business worth calculator"
+    ],
+    "secondary_keywords": [
+      "small business valuation calculator",
+      "company valuation calculator",
+      "startup valuation calculator"
+    ]
+  }
+}

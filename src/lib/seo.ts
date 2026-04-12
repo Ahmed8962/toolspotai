@@ -1,5 +1,23 @@
+import type { Tool } from "@/data/tool-model";
 import type { Metadata } from "next";
 import { AUTHOR_LINKEDIN_URL, SITE_URL } from "@/lib/site";
+
+/** Default share image (SVG); keep file under `public/` */
+export const DEFAULT_OG_IMAGE_PATH = "/toolspotai-logo.svg" as const;
+
+export function defaultOgImageObjects(alt: string) {
+  const url = new URL(DEFAULT_OG_IMAGE_PATH, SITE_URL).toString();
+  return [{ url, alt, type: "image/svg+xml" }];
+}
+import {
+  buildFiveMetaKeywords,
+  buildToolMetaDescription,
+  buildToolMetaTitle,
+  buildToolOgTitle,
+  getPrimaryKeywordPhrase,
+  getSeoSecondaryList,
+  toolCanonicalUrl,
+} from "@/lib/tool-page-seo";
 
 const APP_CATEGORY_MAP: Record<string, string> = {
   finance: "FinanceApplication",
@@ -8,7 +26,7 @@ const APP_CATEGORY_MAP: Record<string, string> = {
   developer: "DeveloperApplication",
   writing: "UtilitiesApplication",
   daily: "UtilitiesApplication",
-  legal: "LifestyleApplication",
+  legal: "BusinessApplication",
 };
 
 const CATEGORY_LABEL_MAP: Record<string, string> = {
@@ -21,34 +39,51 @@ const CATEGORY_LABEL_MAP: Record<string, string> = {
   legal: "Legal Tools",
 };
 
-export function generateToolMetadata(tool: {
-  seoTitle: string;
-  seoDescription: string;
-  ogDescription: string;
-  slug: string;
-  keywords: string[];
-}): Metadata {
-  const url = `${SITE_URL}/tools/${tool.slug}`;
+/** Hub listing URL path per tool category (for breadcrumbs & internal links) */
+const CATEGORY_HUB_PATH: Record<string, string> = {
+  finance: "/tools/finance-calculators",
+  health: "/tools/health-calculators",
+  education: "/tools/education-calculators",
+  developer: "/tools/developer-calculators",
+  writing: "/tools/writing-calculators",
+  daily: "/tools/daily-calculators",
+  legal: "/tools/legal-calculators",
+};
+
+export function getCategoryHubPath(category: string): string {
+  return CATEGORY_HUB_PATH[category] ?? "/tools";
+}
+
+export function generateToolMetadata(tool: Tool): Metadata {
+  const primary = getPrimaryKeywordPhrase(tool);
+  const secondary = getSeoSecondaryList(tool).slice(0, 8);
+  const metaTitle = buildToolMetaTitle(primary, tool.title);
+  const description = buildToolMetaDescription(tool, primary, secondary);
+  const five = buildFiveMetaKeywords(tool, primary, secondary);
+  const url = toolCanonicalUrl(tool.slug);
+  const ogTitle = buildToolOgTitle(primary);
   return {
-    title: { absolute: tool.seoTitle },
-    description: tool.seoDescription,
-    keywords: tool.keywords.join(", "),
+    title: { absolute: metaTitle },
+    description,
+    keywords: five,
     authors: [{ name: "ToolSpotAI", url: SITE_URL }],
     creator: "ToolSpotAI",
     publisher: "ToolSpotAI",
     openGraph: {
-      title: tool.seoTitle,
-      description: tool.ogDescription,
+      title: ogTitle,
+      description,
       url,
       siteName: "ToolSpotAI",
       locale: "en_US",
       type: "website",
+      images: defaultOgImageObjects(tool.title),
     },
     twitter: {
       card: "summary_large_image",
-      title: tool.seoTitle,
-      description: tool.ogDescription,
+      title: ogTitle,
+      description,
       creator: "@toolspotai",
+      images: [new URL(DEFAULT_OG_IMAGE_PATH, SITE_URL).toString()],
     },
     alternates: { canonical: url },
     robots: {
@@ -110,8 +145,9 @@ export function generateWebAppSchema(tool: {
     url: `${SITE_URL}/tools/${tool.slug}`,
     description: tool.seoDescription,
     applicationCategory: APP_CATEGORY_MAP[tool.category] ?? "UtilitiesApplication",
-    operatingSystem: "All",
+    operatingSystem: "Web",
     browserRequirements: "Requires JavaScript",
+    inLanguage: "en-US",
     offers: {
       "@type": "Offer",
       price: "0",
@@ -126,14 +162,39 @@ export function generateWebAppSchema(tool: {
 }
 
 export function generateOrganizationSchema() {
+  const logoUrl = new URL(DEFAULT_OG_IMAGE_PATH, SITE_URL).toString();
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "ToolSpotAI",
     url: SITE_URL,
+    logo: {
+      "@type": "ImageObject",
+      url: logoUrl,
+    },
     description:
       "Free online calculators and tools for finance, health, education, developer utilities, and daily use. No signup required.",
     sameAs: [AUTHOR_LINKEDIN_URL],
+  };
+}
+
+/** Sitewide WebSite node — use on the homepage with Organization for rich results context */
+export function generateWebSiteSchema() {
+  const logoUrl = new URL(DEFAULT_OG_IMAGE_PATH, SITE_URL).toString();
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "ToolSpotAI",
+    url: SITE_URL,
+    description:
+      "Free online calculators and tools for finance, health, education, developer utilities, and daily life. No signup required.",
+    inLanguage: "en-US",
+    publisher: {
+      "@type": "Organization",
+      name: "ToolSpotAI",
+      url: SITE_URL,
+      logo: { "@type": "ImageObject", url: logoUrl },
+    },
   };
 }
 
