@@ -249,7 +249,7 @@ That can help you revise drafts so they sound more like you—not because the sc
         "Students learning editing skills—not cheating policies",
       ],
     },
-    relatedSlugs: ["word-counter", "plagiarism-checker", "case-converter"],
+    relatedSlugs: ["word-counter", "plagiarism-checker", "case-converter", "hash-generator"],
     popular: true,
   },
   {

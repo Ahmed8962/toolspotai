@@ -83,6 +83,11 @@ const nextConfig: NextConfig = {
       { source: "/image-compressor", destination: "/tools/image-compressor", permanent: true },
       { source: "/markdown-editor", destination: "/tools/markdown-editor", permanent: true },
       { source: "/blood-pressure-calculator", destination: "/tools/blood-pressure-calculator", permanent: true },
+      {
+        source: "/tools/ai-content-humanizer",
+        destination: "/tools/writing-calculators",
+        permanent: true,
+      },
     ];
   },
 };

@@ -396,7 +396,7 @@ Meta description: 71 / 160 characters — OK ✓`,
         'Tracking content length for freelance writing projects billed per word'
       ]
     },
-    relatedSlugs: ['percentage-calculator', 'age-calculator', 'discount-calculator', 'json-formatter', 'base64-encode-decode'],
+    relatedSlugs: ['percentage-calculator', 'age-calculator', 'discount-calculator', 'json-formatter', 'base64-encode-decode', 'ai-writing-style-checker'],
     popular: true
   },
 
@@ -1744,8 +1744,81 @@ Minimum-only comparison: would take 60+ months and cost thousands more in intere
       tips: ['Keep tyres properly inflated to improve fuel efficiency by up to 3%.', 'Highway driving at steady speed is 15-20% more efficient than city driving.', 'Use cruise control on highways to maintain optimal fuel efficiency.', 'AC use increases fuel consumption by 5-10% — consider windows at low speeds.', 'Track your actual fuel consumption over time for more accurate trip estimates.'],
       useCases: ['Planning road trip budgets before traveling', 'Comparing fuel costs between vehicles when car shopping', 'Calculating daily commute costs for budgeting', 'Estimating delivery or business travel fuel expenses', 'Comparing driving costs vs flying or train for trips']
     },
-    relatedSlugs: ['unit-converter', 'currency-converter', 'discount-calculator'],
+    relatedSlugs: ['fuel-price-check', 'unit-converter', 'currency-converter', 'discount-calculator'],
     popular: true
+  },
+
+  {
+    slug: 'fuel-price-check',
+    title: 'Fuel Price Check',
+    shortTitle: 'Fuel prices',
+    category: 'daily',
+    icon: '🛢️',
+    description:
+      'See typical retail gasoline, diesel, LPG, and premium prices by country (auto-detected when possible), plus a six-month Brent and WTI crude benchmark chart for context.',
+    seoTitle: 'Fuel Price Check — Country Pump Prices & Oil Trend | ToolSpotAI',
+    seoDescription:
+      'Free fuel price check: country-based retail averages for gasoline, diesel, and LPG when available, with optional connection-based region guess and a six-month Brent/WTI chart.',
+    ogDescription:
+      'Retail fuel prices by country and a six-month crude oil benchmark chart — benchmarks are not pump prices.',
+    keywords: [
+      'fuel prices by country',
+      'gasoline price today',
+      'diesel price check',
+      'petrol price worldwide',
+      'LPG price',
+      'fuel price Pakistan',
+      'gas prices USA',
+      'Brent crude chart',
+    ],
+    faqs: [
+      {
+        question: 'How do you know which country I am in?',
+        answer:
+          'On supported hosts we read a standard country code header from the edge network (for example Vercel or Cloudflare). It is approximate: VPNs, mobile roaming, and office gateways can show a different country than where you are. You can always pick another country from the list.',
+      },
+      {
+        question: 'Are these prices at my local gas station?',
+        answer:
+          'No. Figures are national or typical retail averages compiled from official and industry sources by our data partner. Actual station prices vary by brand, city, taxes, and week.',
+      },
+      {
+        question: 'Why is the six-month chart labeled Brent and WTI?',
+        answer:
+          'Brent and WTI are global crude oil benchmarks priced in US dollars per barrel. They show how wholesale oil markets moved over the last several months. Pump prices also depend on taxes, refining, distribution, currency, and policy, so the chart is context — not a literal history of your selected country’s litre price.',
+      },
+      {
+        question: 'Which fuels are shown?',
+        answer:
+          'When the source reports them, we show gasoline (unleaded), diesel, LPG (autogas), premium, and E85. Not every country publishes every product every week.',
+      },
+    ],
+    content: {
+      whatIs:
+        'A fuel price check answers two everyday questions: what are typical pump prices where I am (or where I am planning to drive), and how have global oil markets been trending lately?\n\nThis page combines recent retail averages by country with a separate chart of Brent and WTI crude oil — so you can connect what you pay at the pump with the bigger picture, without confusing the two.',
+      howItWorks:
+        'Retail data is requested from OpenVan.camp’s public JSON feed (weekly refresh, multiple official sources). Your country is guessed from edge headers when available; otherwise we default to a common market and let you change country in the dropdown. The crude chart is built from public daily CSV series (Brent and WTI) and shows roughly the last six months of trading-day closes.',
+      formula:
+        'Retail: reported national or typical average in local currency per litre or US gallon (source-dependent). Benchmark chart: daily settlement or spot-style close in USD per barrel for Brent and WTI.',
+      formulaExplanation:
+        'There is no single equation that converts Brent into your litre price — taxes and margins differ by country. That is why we label crude separately and keep retail in the currency and unit each dataset uses.',
+      example:
+        'If your connection resolves to PK, the tool may open on Pakistan. You might see gasoline and diesel in PKR per litre plus weekly change hints from the feed. The Brent/WTI chart below still reflects global crude, not PKR pump history.',
+      tips: [
+        'Compare this page with the Fuel / Gas Cost Calculator when planning a trip budget.',
+        'If prices look wrong for your city, remember they are averages — check a local station app for live pumps.',
+        'Use the country picker after connecting through a VPN to see another market.',
+        'Watch both retail cards and crude trends when oil news is moving fast.',
+      ],
+      useCases: [
+        'Travelers checking typical fuel costs before renting a car abroad',
+        'Remote workers curious how headlines map to local pump averages',
+        'Students comparing energy economics across countries',
+        'Anyone separating crude-market news from local tax and retail effects',
+      ],
+    },
+    relatedSlugs: ['fuel-cost-calculator', 'currency-converter', 'unit-converter', 'inflation-calculator'],
+    popular: true,
   },
 
   {
@@ -1834,7 +1907,7 @@ Minimum-only comparison: would take 60+ months and cost thousands more in intere
       tips: ['Aim for a Flesch Reading Ease of 60+ for web content and blog posts.', 'Vary your vocabulary to improve diversity — use a thesaurus for repeated words.', 'Keep sentences under 20 words on average for readability.', 'Use Compare mode to check paraphrased content against the original.', 'For professional plagiarism detection, combine this tool with Turnitin or Copyscape.'],
       useCases: ['Editors comparing two drafts for overlap', 'Content writers analyzing readability for target audiences', 'Bloggers scanning a post for repeated phrasing', 'Students reviewing essays locally before submitting elsewhere', 'Teachers comparing two short submissions side by side']
     },
-    relatedSlugs: ['word-counter', 'case-converter', 'hash-generator'],
+    relatedSlugs: ['word-counter', 'case-converter', 'hash-generator', 'ai-writing-style-checker'],
     popular: true
   },
 

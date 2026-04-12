@@ -49,6 +49,7 @@ const CurrencyConverter = dynamic(() => import("@/components/calculators/Currenc
 const PregnancyCalculator = dynamic(() => import("@/components/calculators/PregnancyCalculator"));
 const TimezoneConverter = dynamic(() => import("@/components/tools/TimezoneConverter"));
 const FuelCostCalculator = dynamic(() => import("@/components/calculators/FuelCostCalculator"));
+const FuelPriceCheck = dynamic(() => import("@/components/tools/FuelPriceCheck"));
 const ScientificCalculator = dynamic(() => import("@/components/tools/ScientificCalculator"));
 const TypingSpeedTest = dynamic(() => import("@/components/tools/TypingSpeedTest"));
 const PlagiarismChecker = dynamic(() => import("@/components/tools/PlagiarismChecker"));
@@ -77,7 +78,6 @@ const SocialMediaAdRoiCalculator = dynamic(() => import("@/components/calculator
 const CryptoTaxCalculator = dynamic(() => import("@/components/calculators/CryptoTaxCalculator"));
 const StudentLoanRefinanceCalculator = dynamic(() => import("@/components/calculators/StudentLoanRefinanceCalculator"));
 const BusinessValuationCalculator = dynamic(() => import("@/components/calculators/BusinessValuationCalculator"));
-
 const TOOL_MAP: Record<string, React.ComponentType> = {
   "percentage-calculator": PercentageCalculator,
   "age-calculator": AgeCalculator,
@@ -115,6 +115,7 @@ const TOOL_MAP: Record<string, React.ComponentType> = {
   "pregnancy-calculator": PregnancyCalculator,
   "timezone-converter": TimezoneConverter,
   "fuel-cost-calculator": FuelCostCalculator,
+  "fuel-price-check": FuelPriceCheck,
   "scientific-calculator": ScientificCalculator,
   "typing-speed-test": TypingSpeedTest,
   "plagiarism-checker": PlagiarismChecker,
