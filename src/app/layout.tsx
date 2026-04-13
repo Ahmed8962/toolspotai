@@ -16,7 +16,8 @@ const dmSans = DM_Sans({
 });
 
 const googleVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
-const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+const gaMeasurementId =
+  process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-Z8LR7SMZNY";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
