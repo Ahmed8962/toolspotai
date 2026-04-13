@@ -4,6 +4,7 @@ import { DEFAULT_OG_IMAGE_PATH } from "@/lib/seo";
 import { SITE_URL } from "@/lib/site";
 import type { Metadata, Viewport } from "next";
 import { DM_Sans } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -15,6 +16,7 @@ const dmSans = DM_Sans({
 });
 
 const googleVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
+const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -104,6 +106,22 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://api.frankfurter.app" />
       </head>
       <body className="flex min-h-full flex-col font-sans antialiased">
+        {gaMeasurementId ? (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga4-init" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${gaMeasurementId}');
+              `}
+            </Script>
+          </>
+        ) : null}
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
