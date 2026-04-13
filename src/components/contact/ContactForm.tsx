@@ -1,6 +1,7 @@
 "use client";
 
 import { SITE_EMAIL } from "@/lib/site";
+import { trackEvent } from "@/lib/analytics";
 import { useState, type FormEvent } from "react";
 import { cn } from "@/lib/utils";
 
@@ -42,18 +43,21 @@ export default function ContactForm() {
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    trackEvent("contact_submit_attempt");
 
     const visitorName = name.trim();
     const visitorEmail = email.trim();
     const msg = message.trim();
 
     if (msg.length < 5) {
+      trackEvent("contact_submit_error", { reason: "short_message" });
       setErrorMessage("Please enter a longer message.");
       setStatus("error");
       return;
     }
 
     if (!visitorEmail || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(visitorEmail)) {
+      trackEvent("contact_submit_error", { reason: "invalid_email" });
       setErrorMessage("Please enter a valid email so we can reply.");
       setStatus("error");
       return;
@@ -81,6 +85,7 @@ export default function ContactForm() {
       };
 
       if (apiRes.ok && apiData.ok) {
+        trackEvent("contact_submit_success", { mode: "resend" });
         setLastMode("resend");
         setStatus("success");
         setMessage("");
@@ -92,6 +97,7 @@ export default function ContactForm() {
       if (apiRes.status === 503 && apiData.error === "no_provider") {
         // fall through to Web3Forms / mailto
       } else {
+        trackEvent("contact_submit_error", { reason: "api_rejected" });
         setStatus("error");
         setErrorMessage(
           apiData.message ||
@@ -100,6 +106,7 @@ export default function ContactForm() {
         return;
       }
     } catch {
+      trackEvent("contact_submit_error", { reason: "api_network" });
       setStatus("error");
       setErrorMessage("Network error. Try again or use the email link above.");
       return;
@@ -129,6 +136,7 @@ export default function ContactForm() {
         };
 
         if (res.ok && data.success !== false) {
+          trackEvent("contact_submit_success", { mode: "web3forms" });
           setLastMode("web3forms");
           setStatus("success");
           setMessage("");
@@ -138,12 +146,14 @@ export default function ContactForm() {
         }
 
         setStatus("error");
+        trackEvent("contact_submit_error", { reason: "web3forms_rejected" });
         setErrorMessage(
           data.message ||
             "Could not send. Try the email address at the top of the page.",
         );
         return;
       } catch {
+        trackEvent("contact_submit_error", { reason: "web3forms_network" });
         setStatus("error");
         setErrorMessage(`Network error. Email ${SITE_EMAIL} directly.`);
         return;
@@ -152,6 +162,7 @@ export default function ContactForm() {
 
     // 3) mailto fallback (no inbox delivery until they send from their app)
     setLastMode("mailto");
+    trackEvent("contact_submit_success", { mode: "mailto" });
     openMailto(visitorName, visitorEmail, msg);
     setStatus("success");
     setErrorMessage("");

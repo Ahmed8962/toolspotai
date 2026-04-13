@@ -1,3 +1,4 @@
+import GlobalAnalyticsEvents from "@/components/analytics/GlobalAnalyticsEvents";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import { DEFAULT_OG_IMAGE_PATH } from "@/lib/seo";
@@ -9,7 +10,7 @@ import "./globals.css";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "600", "700"],
   variable: "--font-dm-sans",
   display: "swap",
   preload: true,
@@ -123,6 +124,7 @@ export default function RootLayout({
             </Script>
           </>
         ) : null}
+        <GlobalAnalyticsEvents />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
