@@ -1,10 +1,20 @@
 import ToolLayout from "@/components/tools/ToolLayout";
 import { getRelatedTools, getToolBySlug, tools } from "@/data/tools";
 import {
+  contentfulToolCanonical,
+  getAllContentfulToolUrlSlugs,
+  getPageSeoForTool,
+  getToolPageByUrlSlug,
+  isContentfulConfiguredForTools,
+  mergeToolWithContentful,
+  resolveToolForPage,
+} from "@/lib/contentful-tool";
+import {
   generateBreadcrumbSchema,
   generateFAQSchema,
   generateOrganizationSchema,
   generateToolMetadata,
+  generateToolMetadataFromCms,
   generateWebAppSchema,
   getCategoryHubPath,
   getCategoryLabel,
@@ -154,8 +164,20 @@ const TOOL_MAP: Record<string, React.ComponentType> = {
   "business-valuation-calculator": BusinessValuationCalculator,
 };
 
-export function generateStaticParams() {
-  return tools.map((t) => ({ slug: t.slug }));
+export async function generateStaticParams() {
+  const fromCode = tools.map((t) => t.slug);
+  if (!isContentfulConfiguredForTools()) {
+    return fromCode.map((slug) => ({ slug }));
+  }
+  try {
+    const fromCf = await getAllContentfulToolUrlSlugs();
+    if (fromCf.length === 0) {
+      return fromCode.map((slug) => ({ slug }));
+    }
+    return [...new Set([...fromCode, ...fromCf])].map((slug) => ({ slug }));
+  } catch {
+    return fromCode.map((slug) => ({ slug }));
+  }
 }
 
 export async function generateMetadata({
@@ -164,6 +186,23 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
+  let cf: Awaited<ReturnType<typeof getToolPageByUrlSlug>> = null;
+  try {
+    if (isContentfulConfiguredForTools()) {
+      cf = await getToolPageByUrlSlug(slug);
+    }
+  } catch {
+    cf = null;
+  }
+  if (cf) {
+    const base = resolveToolForPage(slug, cf);
+    if (!base) return {};
+    const merged = mergeToolWithContentful(base, cf);
+    const { canonical } = contentfulToolCanonical(cf);
+    return generateToolMetadataFromCms(merged, canonical, {
+      noIndex: Boolean(cf.payload.seoNoIndex),
+    });
+  }
   const tool = getToolBySlug(slug);
   if (!tool) return {};
   return generateToolMetadata(tool);
@@ -175,16 +214,27 @@ export default async function ToolPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const tool = getToolBySlug(slug);
-  if (!tool) notFound();
+  let cf: Awaited<ReturnType<typeof getToolPageByUrlSlug>> = null;
+  try {
+    if (isContentfulConfiguredForTools()) {
+      cf = await getToolPageByUrlSlug(slug);
+    }
+  } catch {
+    cf = null;
+  }
+  const base = resolveToolForPage(slug, cf);
+  if (!base) notFound();
 
-  const ToolComponent = TOOL_MAP[slug];
+  const ToolComponent = TOOL_MAP[base.slug];
   if (!ToolComponent) notFound();
 
-  const related = getRelatedTools(tool.slug, tool.relatedSlugs);
+  const tool = cf ? mergeToolWithContentful(base, cf) : base;
+  const related = getRelatedTools(base.slug, base.relatedSlugs);
 
   const faqLd = generateFAQSchema(tool.faqs);
-  const toolUrl = toolCanonicalUrl(tool.slug);
+  const { canonical: toolUrl } = cf
+    ? contentfulToolCanonical(cf)
+    : { canonical: toolCanonicalUrl(tool.slug) };
   const breadcrumbLd = generateBreadcrumbSchema([
     { name: "Home", url: SITE_URL },
     {
@@ -194,14 +244,16 @@ export default async function ToolPage({
     { name: tool.title, url: toolUrl },
   ]);
   const primary = getPrimaryKeywordPhrase(tool);
-  const richDescription = buildToolMetaDescription(
-    tool,
-    primary,
-    getSeoSecondaryList(tool).slice(0, 8),
-  );
-  const webAppLd = generateWebAppSchema({ ...tool, seoDescription: richDescription });
+  const richDescription = cf
+    ? tool.seoDescription
+    : buildToolMetaDescription(
+        tool,
+        primary,
+        getSeoSecondaryList(tool).slice(0, 8),
+      );
+  const webAppLd = generateWebAppSchema({ ...tool, slug: tool.slug, seoDescription: richDescription });
   const orgLd = generateOrganizationSchema();
-  const pageSeo = buildToolPageOnPageSeo(tool);
+  const pageSeo = getPageSeoForTool(base, cf ?? undefined);
 
   return (
     <>
@@ -227,7 +279,7 @@ export default async function ToolPage({
           related={related}
           pageSeo={{
             h1Text: pageSeo.h1Text,
-            intro: pageSeo.introHtml,
+            intro: pageSeo.intro,
             howToUseSteps: pageSeo.howToUseSteps,
           }}
         >

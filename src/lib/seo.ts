@@ -100,6 +100,62 @@ export function generateToolMetadata(tool: Tool): Metadata {
   };
 }
 
+/**
+ * Use exact title/description/keywords from Contentful (or merged tool after migration).
+ * Pass canonical as full URL.
+ */
+export function generateToolMetadataFromCms(
+  tool: Tool,
+  canonicalUrl: string,
+  opts: { noIndex?: boolean; ogTitle?: string; twitterTitle?: string } = {},
+): Metadata {
+  const noIndex = Boolean(opts.noIndex);
+  const desc = tool.seoDescription;
+  const ogT = (opts.ogTitle ?? tool.seoTitle).trim();
+  return {
+    title: { absolute: tool.seoTitle },
+    description: desc,
+    keywords: buildFiveMetaKeywords(
+      tool,
+      getPrimaryKeywordPhrase(tool),
+      getSeoSecondaryList(tool).slice(0, 8),
+    ),
+    authors: [{ name: "ToolSpotAI", url: SITE_URL }],
+    creator: "ToolSpotAI",
+    publisher: "ToolSpotAI",
+    openGraph: {
+      title: ogT,
+      description: desc,
+      url: canonicalUrl,
+      siteName: "ToolSpotAI",
+      locale: "en_US",
+      type: "website",
+      images: defaultOgImageObjects(tool.title),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: opts.twitterTitle?.trim() ?? ogT,
+      description: desc,
+      creator: "@toolspotai",
+      images: [new URL(DEFAULT_OG_IMAGE_PATH, SITE_URL).toString()],
+    },
+    alternates: { canonical: canonicalUrl },
+    robots: noIndex
+      ? { index: false, follow: true }
+      : {
+          index: true,
+          follow: true,
+          googleBot: {
+            index: true,
+            follow: true,
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+          },
+        },
+  };
+}
+
 export function generateFAQSchema(
   faqs: { question: string; answer: string }[],
 ) {

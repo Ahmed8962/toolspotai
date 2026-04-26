@@ -37,6 +37,12 @@ export default function Footer() {
                 Contact
               </Link>
               <Link
+                href="/blog"
+                className="text-sm text-slate-400 transition hover:text-white"
+              >
+                Blog
+              </Link>
+              <Link
                 href="/disclaimer"
                 className="text-sm text-slate-400 transition hover:text-white"
               >

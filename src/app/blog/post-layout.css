@@ -1,0 +1,66 @@
+/**
+ * Blog post (slug) only — co-located so layout + ToC rules always ship with the route.
+ * Do not remove: hero gradient + 2-col grid for main | sticky ToC.
+ */
+
+.blog-post-hero {
+  color: #fff;
+  background-color: #0b2a5a;
+  background-image: linear-gradient(135deg, #0b2a5a 0%, #0d4088 100%);
+}
+
+.blog-post-layout--with-toc {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (min-width: 768px) {
+  .blog-post-layout--with-toc {
+    grid-template-columns: minmax(0, 1fr) 17.5rem;
+    gap: 1.5rem 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .blog-post-layout--with-toc {
+    grid-template-columns: minmax(0, 1fr) 19rem;
+    column-gap: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .blog-post-toc {
+    position: sticky;
+    top: 6rem;
+    align-self: start;
+    min-height: 0; /* let grid not block inner overflow */
+  }
+}
+
+/* Scrollbar skin; main height/overflow also set inline on the node (flex min-height fix). */
+.blog-post-toc__scroll {
+  padding-right: 6px;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f1f5f9;
+  /* Redundant safety if inline styles are absent in a fork */
+  min-height: 0;
+  max-height: min(320px, 50vh);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.blog-post-toc__scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.blog-post-toc__scroll::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 9999px;
+}
+
+.blog-post-toc__scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}

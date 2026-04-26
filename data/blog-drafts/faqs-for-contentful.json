@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "question": "What is the best AI tool in 2026?",
+      "answer": "There is no single best tool—it depends on your use case. For writing, Claude and ChatGPT lead for many. For design, Midjourney and Canva AI are common picks. For coding, GitHub Copilot and Cursor top many lists."
+    },
+    {
+      "question": "Are AI tools free to use?",
+      "answer": "Many top AI tools offer free plans, including Claude, ChatGPT, Canva AI, and GitHub Copilot for individuals. Premium plans usually raise usage limits and add advanced features."
+    },
+    {
+      "question": "Which AI tool is best for small businesses?",
+      "answer": "Notion AI, Jasper, and Zapier with AI are strong options for small businesses that need content, operations, and automation without a huge stack."
+    },
+    {
+      "question": "Is AI replacing jobs in 2026?",
+      "answer": "Most often AI augments work rather than replacing it outright. Professionals who use AI tools well tend to be more productive and competitive."
+    },
+    {
+      "question": "What are the best AI tools for beginners?",
+      "answer": "Canva AI, ChatGPT, and Otter.ai are among the most beginner-friendly: powerful, easy to use, and free to start in many cases."
+    }
+  ]
+}

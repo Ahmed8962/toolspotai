@@ -225,11 +225,17 @@ export default function Home() {
             {categories.map((c) => {
               const colors = CAT_COLORS[c.id] ?? CAT_COLORS.finance;
               const catTools = getToolsByCategory(c.id as Parameters<typeof getToolsByCategory>[0]);
+              const hubPath = CATEGORY_HUBS[c.id as keyof typeof CATEGORY_HUBS].path;
               return (
                 <div
                   key={c.id}
-                  className={`category-card group rounded-2xl border border-slate-100/80 bg-gradient-to-br ${colors.gradient} p-6 ${colors.border}`}
+                  className={`category-card group relative rounded-2xl border border-slate-100/80 bg-gradient-to-br ${colors.gradient} p-6 ${colors.border}`}
                 >
+                  <Link
+                    href={hubPath}
+                    className="absolute inset-0 z-10 rounded-2xl focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2"
+                    aria-label={`View ${c.label} hub`}
+                  />
                   <div className="flex items-start justify-between">
                     <div
                       className={`flex h-12 w-12 items-center justify-center rounded-xl ${colors.iconBg} text-2xl shadow-sm`}
@@ -246,24 +252,21 @@ export default function Home() {
                   <p className="mt-1.5 text-sm leading-relaxed text-text-secondary">
                     {c.description}
                   </p>
-                  <Link
-                    href={CATEGORY_HUBS[c.id as keyof typeof CATEGORY_HUBS].path}
-                    className="mt-3 inline-flex text-sm font-semibold text-brand-700 hover:underline"
-                  >
+                  <span className="mt-3 inline-flex text-sm font-semibold text-brand-700 group-hover:underline">
                     {`${c.label.replace(/ Tools$/, "")} hub`} →
-                  </Link>
+                  </span>
                   <div className="mt-4 flex flex-wrap gap-1.5">
                     {catTools.slice(0, 3).map((t) => (
                       <Link
                         key={t.slug}
                         href={`/tools/${t.slug}`}
-                        className="rounded-lg bg-white/70 px-2.5 py-1 text-xs font-medium text-text-secondary shadow-sm transition hover:bg-white hover:text-brand-700 hover:shadow"
+                        className="relative z-20 rounded-lg bg-white/70 px-2.5 py-1 text-xs font-medium text-text-secondary shadow-sm transition hover:bg-white hover:text-brand-700 hover:shadow"
                       >
                         {t.shortTitle}
                       </Link>
                     ))}
                     {catTools.length > 3 && (
-                      <span className="rounded-lg bg-white/50 px-2.5 py-1 text-xs text-text-muted">
+                      <span className="pointer-events-none rounded-lg bg-white/50 px-2.5 py-1 text-xs text-text-muted">
                         +{catTools.length - 3} more
                       </span>
                     )}

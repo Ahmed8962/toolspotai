@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "generate:seo-map": "npx tsx scripts/generate-seo-keyword-map.ts"
+    "generate:seo-map": "npx tsx scripts/generate-seo-keyword-map.ts",
+    "contentful:seed-tools": "npx tsx scripts/contentful-seed-tool-pages.ts",
+    "contentful:seed-blog": "npx tsx scripts/contentful-seed-blog-model.ts",
+    "contentful:seed-blog-post": "npx tsx scripts/contentful-seed-seo-blog-post.ts"
   },
   "dependencies": {
     "next": "16.2.2",

@@ -162,6 +162,9 @@ export default function NavbarClient({
           <Link className="text-sm font-medium text-text-secondary transition hover:text-text-primary" href="/about">
             About
           </Link>
+          <Link className="text-sm font-medium text-text-secondary transition hover:text-text-primary" href="/blog">
+            Blog
+          </Link>
           <Link className="text-sm font-medium text-text-secondary transition hover:text-text-primary" href="/contact">
             Contact
           </Link>
@@ -214,6 +217,9 @@ export default function NavbarClient({
           <div className="mt-4 flex gap-4 border-t border-border pt-3">
             <Link className="text-sm text-text-secondary hover:text-text-primary" href="/about" onClick={() => setMobileOpen(false)}>
               About
+            </Link>
+            <Link className="text-sm text-text-secondary hover:text-text-primary" href="/blog" onClick={() => setMobileOpen(false)}>
+              Blog
             </Link>
             <Link
               className="text-sm text-text-secondary hover:text-text-primary"
