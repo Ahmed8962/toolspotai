@@ -202,7 +202,16 @@ export default async function BlogPage({
 
         {filtered.length === 0 && (
           <div className="rounded-2xl border border-dashed border-slate-300 bg-white px-6 py-12 text-center text-slate-600">
-            No blog posts matched your filters yet.
+            {posts.length === 0 ? (
+              <p>
+                No blog posts to show. Posts are served from Contentful; if you expect content
+                here, confirm the Delivery API environment variables on your production host
+                match local <span className="whitespace-nowrap">(.env.local)</span> and trigger a
+                new deployment.
+              </p>
+            ) : (
+              <p>No blog posts matched your filters yet.</p>
+            )}
           </div>
         )}
       </section>
