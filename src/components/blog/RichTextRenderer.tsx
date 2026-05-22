@@ -46,6 +46,7 @@ function renderNode(
   key: string,
   headingIdQueue: string[] | undefined,
   counter: { n: number },
+  isFirstTopLevel?: boolean,
 ): ReactNode {
   if (node.nodeType === "text") {
     return (
@@ -70,6 +71,19 @@ function renderNode(
         </p>
       );
     case "heading-2": {
+      // Guard: if this is the very first block in the document, render as a
+      // paragraph so plain text accidentally set as H2 in the CMS doesn't
+      // create a heading immediately after the page's H1.
+      if (isFirstTopLevel) {
+        return (
+          <p
+            key={key}
+            className="mt-3 text-[1.02rem] leading-7 text-slate-700 first:mt-0"
+          >
+            {children}
+          </p>
+        );
+      }
       const id = nextHeadingId(headingIdQueue, counter);
       return (
         <h2
@@ -175,7 +189,7 @@ export default function RichTextRenderer({
   return (
     <div className="prose-headings:scroll-mt-24">
       {document.content.map((node, index) =>
-        renderNode(node, `root-${index}`, headingIdQueue, counter),
+        renderNode(node, `root-${index}`, headingIdQueue, counter, index === 0),
       )}
     </div>
   );

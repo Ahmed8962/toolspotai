@@ -117,9 +117,9 @@ export default function Home() {
 
           {/* Headline */}
           <h1 className="mt-8 text-balance text-4xl font-bold tracking-tight text-text-primary sm:text-5xl md:text-6xl lg:text-7xl">
-            Every tool you need,{" "}
+            Free Online Calculators and Tools{" "}
             <span className="bg-gradient-to-r from-brand-600 via-blue-500 to-violet-600 bg-clip-text text-transparent">
-              one spot
+              — No Signup Required
             </span>
           </h1>
 
