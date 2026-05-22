@@ -202,7 +202,9 @@ function mapPost(
     coverImage: coverId ? assets.get(coverId) : undefined,
     seoTitle: f.seoTitle,
     seoDescription: f.seoDescription,
-    canonicalUrl: f.canonicalUrl,
+    canonicalUrl: f.canonicalUrl
+      ? f.canonicalUrl.replace(/^http:\/\//, "https://")
+      : undefined,
     seoNoIndex: Boolean(f.seoNoIndex),
     focusKeyword: f.focusKeyword,
     secondaryKeywords: f.secondaryKeywords ?? [],

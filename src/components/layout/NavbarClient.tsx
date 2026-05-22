@@ -28,26 +28,39 @@ export default function NavbarClient({
   const [mobileOpen, setMobileOpen] = useState(false);
   const [megaOpen, setMegaOpen] = useState(false);
   const megaRef = useRef<HTMLDivElement>(null);
-  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const openMega = useCallback(() => {
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    setMegaOpen(true);
-  }, []);
-
-  const closeMega = useCallback(() => {
-    timeoutRef.current = setTimeout(() => setMegaOpen(false), 200);
+  const closeMegaNow = useCallback(() => {
+    setMegaOpen(false);
   }, []);
 
   useEffect(() => {
-    return () => {
-      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    if (!megaOpen) return;
+    const onDocPointer = (e: PointerEvent) => {
+      if (megaRef.current && !megaRef.current.contains(e.target as Node)) {
+        closeMegaNow();
+      }
     };
-  }, []);
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") closeMegaNow();
+    };
+    document.addEventListener("pointerdown", onDocPointer, true);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("pointerdown", onDocPointer, true);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [megaOpen, closeMegaNow]);
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/80 bg-white/95 backdrop-blur-sm">
-      <div className="mx-auto flex h-14 max-w-6xl items-center gap-3 px-4 md:h-[60px] md:gap-4">
+      {megaOpen ? (
+        <div
+          className="fixed bottom-0 left-0 right-0 top-14 z-40 hidden bg-slate-900/20 md:top-[60px] md:block"
+          aria-hidden
+          onClick={closeMegaNow}
+        />
+      ) : null}
+      <div className="relative z-50 mx-auto flex h-14 max-w-6xl items-center gap-3 px-4 md:h-[60px] md:gap-4">
         <div className="flex min-w-0 flex-1 items-center gap-3 md:gap-4">
           <Logo />
           <HeaderSearch className="hidden min-w-0 flex-1 md:block md:max-w-md lg:max-w-lg" />
@@ -57,12 +70,7 @@ export default function NavbarClient({
           <Link className="text-sm font-medium text-text-secondary transition hover:text-text-primary" href="/">
             Home
           </Link>
-          <div
-            ref={megaRef}
-            className="relative"
-            onMouseEnter={openMega}
-            onMouseLeave={closeMega}
-          >
+          <div ref={megaRef} className="relative">
             <button
               type="button"
               onClick={() => setMegaOpen((v) => !v)}
@@ -88,17 +96,28 @@ export default function NavbarClient({
 
             <div
               className={cn(
-                "fixed left-0 right-0 top-[60px] z-50 border-b border-border/60 bg-white shadow-xl transition-all duration-200",
-                megaOpen ? "visible translate-y-0 opacity-100" : "invisible -translate-y-2 opacity-0",
+                "fixed left-0 right-0 top-14 z-50 flex justify-center px-4 transition-[visibility,opacity] duration-200 md:top-[60px]",
+                megaOpen
+                  ? "pointer-events-auto visible opacity-100"
+                  : "pointer-events-none invisible opacity-0",
               )}
-              onMouseEnter={openMega}
-              onMouseLeave={closeMega}
+              onClick={(e) => {
+                if (e.target === e.currentTarget) closeMegaNow();
+              }}
             >
-              <div className="relative mx-auto max-w-6xl py-6 pl-6 pr-14">
+              <div
+                className={cn(
+                  "w-full max-w-6xl max-h-[min(80dvh,42rem)] overflow-x-hidden overflow-y-auto rounded-b-2xl border border-t-0 border-border/60 bg-white shadow-xl",
+                  "transition-transform duration-200",
+                  megaOpen ? "translate-y-0" : "-translate-y-2",
+                )}
+                onClick={(e) => e.stopPropagation()}
+              >
+                <div className="relative px-5 pb-6 pt-5 sm:px-7 sm:pb-7 sm:pt-6 sm:pr-16">
                 <button
                   type="button"
-                  onClick={() => setMegaOpen(false)}
-                  className="absolute right-3 top-5 z-10 flex h-8 w-8 items-center justify-center rounded-lg text-text-muted transition hover:bg-slate-100 hover:text-text-primary"
+                  onClick={closeMegaNow}
+                  className="absolute right-4 top-4 z-10 flex h-8 w-8 items-center justify-center rounded-lg text-text-muted transition hover:bg-slate-100 hover:text-text-primary"
                   aria-label="Close menu"
                 >
                   <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -110,7 +129,7 @@ export default function NavbarClient({
                     <div key={cat.id}>
                       <Link
                         href={cat.hubPath}
-                        onClick={() => setMegaOpen(false)}
+                        onClick={closeMegaNow}
                         className="flex items-center gap-1.5 border-b border-border/60 pb-2 transition hover:border-brand-200"
                       >
                         <span className="text-base">{cat.icon}</span>
@@ -126,7 +145,7 @@ export default function NavbarClient({
                           <li key={t.slug}>
                             <Link
                               href={`/tools/${t.slug}`}
-                              onClick={() => setMegaOpen(false)}
+                              onClick={closeMegaNow}
                               className="group flex items-center gap-2 rounded-lg px-2 py-1.5 text-[13px] text-text-secondary transition-colors hover:bg-brand-50/60 hover:text-brand-700"
                             >
                               <span className="w-4 text-center text-sm transition-transform duration-150 group-hover:scale-110">
@@ -147,7 +166,7 @@ export default function NavbarClient({
                   </p>
                   <Link
                     href="/#all-tools"
-                    onClick={() => setMegaOpen(false)}
+                    onClick={closeMegaNow}
                     className="inline-flex items-center gap-1 rounded-lg bg-brand-50 px-3 py-1.5 text-xs font-semibold text-brand-700 transition hover:bg-brand-100"
                   >
                     View all tools
@@ -155,6 +174,7 @@ export default function NavbarClient({
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                     </svg>
                   </Link>
+                </div>
                 </div>
               </div>
             </div>

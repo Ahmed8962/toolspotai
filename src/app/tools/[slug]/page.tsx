@@ -22,7 +22,6 @@ import {
 import { SITE_URL } from "@/lib/site";
 import {
   buildToolMetaDescription,
-  buildToolPageOnPageSeo,
   getPrimaryKeywordPhrase,
   getSeoSecondaryList,
   toolCanonicalUrl,

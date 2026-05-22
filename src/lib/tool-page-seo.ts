@@ -53,18 +53,141 @@ export function getSeoSecondaryList(tool: Tool): string[] {
   return dedupeLower(merged);
 }
 
-/** Title case for visible H1 while keeping words like “US”, “UK”, “401k” readable */
+/** Lowercase tokens that render in ALL CAPS in on-page titles (finance / tech / health). */
+const H1_ACRONYMS = new Set([
+  "ai",
+  "aes",
+  "api",
+  "ascii",
+  "base64",
+  "bmi",
+  "bmr",
+  "bp",
+  "cc",
+  "cpu",
+  "css",
+  "csv",
+  "dns",
+  "dti",
+  "emi",
+  "faq",
+  "ftp",
+  "gif",
+  "gpa",
+  "gps",
+  "gpu",
+  "hmac",
+  "html",
+  "http",
+  "https",
+  "imf",
+  "ira",
+  "irs",
+  "iso",
+  "jpeg",
+  "jpg",
+  "json",
+  "jwt",
+  "md5",
+  "ocr",
+  "pdf",
+  "png",
+  "pmi",
+  "qr",
+  "ram",
+  "rgb",
+  "roi",
+  "rsa",
+  "rss",
+  "sdk",
+  "seo",
+  "sha",
+  "sha1",
+  "sha256",
+  "sip",
+  "sms",
+  "smtp",
+  "sql",
+  "ssh",
+  "ssl",
+  "svg",
+  "tcp",
+  "tdee",
+  "tls",
+  "uae",
+  "uk",
+  "url",
+  "us",
+  "usd",
+  "utc",
+  "utf",
+  "utf8",
+  "uuid",
+  "vat",
+  "vpn",
+  "wan",
+  "xml",
+  "yaml",
+  "zlib",
+]);
+
+/** Break primary phrase into lowercased word-like tokens (“vat/sales” → vat, sales). */
+function primaryPhraseTokens(primaryLower: string): string[] {
+  return primaryLower
+    .replace(/\//g, " ")
+    .trim()
+    .split(/\s+/)
+    .map((segment) =>
+      segment
+        .replace(/^[^a-z0-9]+/i, "")
+        .replace(/[^a-z0-9]+$/i, ""),
+    )
+    .filter(Boolean)
+    .map((s) => s.toLowerCase());
+}
+
+function formatH1Segment(plainIn: string, notFirstPhraseToken: boolean, small: Set<string>): string {
+  const plain = plainIn.trim().toLowerCase();
+  if (!plain) return "";
+  if (/^\d/.test(plain)) return plain.toUpperCase();
+  const parts = plain.split("-").map((p) => p.trim()).filter(Boolean);
+  if (parts.length > 1) {
+    return parts
+      .map((part, idx) =>
+        formatH1Segment(part.trim().toLowerCase(), notFirstPhraseToken || idx > 0, small),
+      )
+      .join("-");
+  }
+  if (notFirstPhraseToken && small.has(plain)) return plain;
+  if (/^(eu|uk|us|uae)$/i.test(plain)) return plain.toUpperCase();
+  if (H1_ACRONYMS.has(plain)) return plain.toUpperCase();
+  return `${plain.slice(0, 1).toUpperCase()}${plain.slice(1)}`;
+}
+
+/** Title case for visible H1; common acronyms stay uppercase (“BMI”, “AI”). */
 export function formatPrimaryForH1(primaryLower: string): string {
   const small = new Set(["and", "or", "for", "to", "of", "in", "per", "vs"]);
-  return primaryLower
-    .split(/\s+/)
-    .map((w, i) => {
-      if (/^\d/.test(w)) return w.toUpperCase();
-      if (i > 0 && small.has(w)) return w;
-      if (/^(us|uk|eu|uae)$/i.test(w)) return w.toUpperCase();
-      return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase();
-    })
-    .join(" ");
+  const tokens = primaryPhraseTokens(primaryLower);
+  return tokens.map((plain, i) => formatH1Segment(plain, i > 0, small)).join(" ");
+}
+
+/** Single “Free …” headline for tool pages (on-page title). */
+export function prependFreeH1(formattedPhrase: string): string {
+  const core = formattedPhrase.trim();
+  return core.length > 0 ? `Free ${core}` : "Free Tool";
+}
+
+/** Canonical H1 for a tool row (SEO primary → title case → free prefix). */
+export function buildToolPageH1FromTool(tool: Tool): string {
+  return prependFreeH1(formatPrimaryForH1(getPrimaryKeywordPhrase(tool)));
+}
+
+/** Normalize CMS-entered H1 to match capitalization + “Free …” naming. */
+export function normalizeToolPageH1(raw: string | undefined, tool: Tool): string {
+  const t = raw?.trim();
+  if (!t) return buildToolPageH1FromTool(tool);
+  const withoutFree = t.replace(/^\s*free\s+/i, "").trim();
+  return prependFreeH1(formatPrimaryForH1(withoutFree.toLowerCase()));
 }
 
 function pickActionVerb(tool: Tool): string {
@@ -201,7 +324,7 @@ export function buildToolPageOnPageSeo(tool: Tool): ToolPageOnPageSeo {
   const secondary = getSeoSecondaryList(tool).slice(0, 8);
   return {
     primaryLower,
-    h1Text: formatPrimaryForH1(primaryLower),
+    h1Text: buildToolPageH1FromTool(tool),
     introHtml: buildToolIntroParagraph(tool, primaryLower, secondary),
     howToUseSteps: buildHowToUseSteps(tool),
   };

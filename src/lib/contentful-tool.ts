@@ -2,7 +2,7 @@ import { getToolBySlug } from "@/data/tools";
 import type { Tool } from "@/data/tool-model";
 import { contentfulFetchOptions } from "@/lib/contentful-revalidate";
 import { SITE_URL } from "@/lib/site";
-import { buildToolPageOnPageSeo } from "@/lib/tool-page-seo";
+import { buildToolPageOnPageSeo, normalizeToolPageH1 } from "@/lib/tool-page-seo";
 
 const SPACE_ID = process.env.CONTENTFUL_SPACE_ID;
 const ENVIRONMENT = process.env.CONTENTFUL_ENVIRONMENT ?? "master";
@@ -350,7 +350,7 @@ export function getPageSeoForTool(
   if (cms) {
     const p = cms.payload;
     return {
-      h1Text: p.h1Text,
+      h1Text: normalizeToolPageH1(p.h1Text, tool),
       intro: p.intro,
       howToUseSteps: p.howToUseSteps,
     };
@@ -371,7 +371,8 @@ export function contentfulToolCanonical(
     const c = p.canonicalUrl.trim();
     if (c.startsWith("http")) {
       try {
-        return { canonical: c, path: new URL(c).pathname };
+        const normalized = c.replace(/^http:\/\//, "https://");
+        return { canonical: normalized, path: new URL(normalized).pathname };
       } catch {
         /* invalid absolute URL in CMS; fall back to /tools urlSlug */
       }
