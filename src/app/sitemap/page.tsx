@@ -28,6 +28,7 @@ export default function SitemapPage() {
         <ul className="mt-3 grid gap-1.5 sm:grid-cols-2 lg:grid-cols-3">
           {[
             { href: "/", label: "Home" },
+            { href: "/tools", label: "All tools" },
             { href: "/about", label: "About" },
             { href: "/contact", label: "Contact" },
             { href: "/privacy", label: "Privacy Policy" },

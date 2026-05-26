@@ -37,6 +37,12 @@ export default function CategoryHubPage({ categoryId }: { categoryId: HubCategor
             </Link>
           </li>
           <li aria-hidden>/</li>
+          <li>
+            <Link href="/tools" className="hover:text-brand-600">
+              All tools
+            </Link>
+          </li>
+          <li aria-hidden>/</li>
           <li className="text-text-secondary">{hub.h1}</li>
         </ol>
       </nav>
