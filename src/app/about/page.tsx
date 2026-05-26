@@ -1,12 +1,13 @@
+import { staticPageMetadata } from "@/lib/seo";
 import { AUTHOR_LINKEDIN_URL, AUTHOR_NAME } from "@/lib/site";
 import Link from "next/link";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = staticPageMetadata("/about", {
   title: "About ToolSpotAI — Who we are & why this site exists",
   description:
     "ToolSpotAI builds free, fast calculators and utilities for real-life decisions—money, health, school, and work—without locking you into an account.",
-};
+});
 
 export default function AboutPage() {
   return (

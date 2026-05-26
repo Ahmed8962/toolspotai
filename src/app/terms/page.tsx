@@ -1,9 +1,10 @@
+import { staticPageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = staticPageMetadata("/terms", {
   title: "Terms of Service",
   description: "Terms of Service for using ToolSpotAI free online tools and utilities.",
-};
+});
 
 export default function TermsPage() {
   return (

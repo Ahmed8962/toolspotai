@@ -9,6 +9,31 @@ export function defaultOgImageObjects(alt: string) {
   const url = new URL(DEFAULT_OG_IMAGE_PATH, SITE_URL).toString();
   return [{ url, alt, type: "image/svg+xml" }];
 }
+
+/** Full canonical URL for a site path (e.g. `/about` → https://toolspotai.com/about). */
+export function siteCanonicalUrl(pathname: string): string {
+  const base = SITE_URL.replace(/\/$/, "");
+  if (!pathname || pathname === "/") return base;
+  const path = pathname.startsWith("/") ? pathname : `/${pathname}`;
+  return `${base}${path}`;
+}
+
+/** Metadata for static pages — sets self-referencing canonical and Open Graph URL. */
+export function staticPageMetadata(
+  pathname: string,
+  metadata: Metadata,
+): Metadata {
+  const canonical = siteCanonicalUrl(pathname);
+  const og = metadata.openGraph;
+  return {
+    ...metadata,
+    alternates: { ...metadata.alternates, canonical },
+    openGraph:
+      og && typeof og === "object"
+        ? { ...og, url: canonical }
+        : { url: canonical },
+  };
+}
 import {
   buildFiveMetaKeywords,
   buildToolMetaDescription,

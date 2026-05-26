@@ -1,11 +1,12 @@
+import { staticPageMetadata } from "@/lib/seo";
 import { SITE_EMAIL } from "@/lib/site";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = staticPageMetadata("/privacy", {
   title: "Privacy Policy — Cookies & Google AdSense | ToolSpotAI",
   description:
     "How ToolSpotAI handles data, cookies, third-party ads (including Google AdSense), and your choices.",
-};
+});
 
 export default function PrivacyPage() {
   return (

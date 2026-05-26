@@ -1,12 +1,13 @@
 import ContactForm from "@/components/contact/ContactForm";
+import { staticPageMetadata } from "@/lib/seo";
 import { SITE_EMAIL } from "@/lib/site";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = staticPageMetadata("/contact", {
   title: "Contact",
   description:
     "Contact ToolSpotAI — questions, feedback, or suggestions for new online AI tools and utilities.",
-};
+});
 
 export default function ContactPage() {
   return (

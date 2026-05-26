@@ -1,9 +1,10 @@
+import { staticPageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = staticPageMetadata("/disclaimer", {
   title: "Disclaimer",
   description: "Disclaimer for ToolSpotAI online tools, calculators, and utilities.",
-};
+});
 
 export default function DisclaimerPage() {
   return (
