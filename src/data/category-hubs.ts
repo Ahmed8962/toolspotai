@@ -115,18 +115,12 @@ export const CATEGORY_HUBS: Record<HubCategoryId, CategoryHubMeta> = {
     description:
       "Free education calculators including GPA tools and scientific calculator—built for students who need correct math and clear results during busy semesters.",
     intro: [
-      "School stress is not just about knowing the material—it is about knowing where you stand. GPA calculators help you see what is mathematically possible before finals. A good scientific calculator page saves you from digging through app store junk when you are already on a laptop writing a lab report.",
-      "We keep explanations readable because parents and teachers land on these pages too. If a tool is meant for learning, gatekeeping it behind jargon defeats the point.",
+      "Free online education calculators for students at every level. Whether you need to calculate your GPA on the US 4.0 scale, work through scientific equations, or plan your academic goals, these tools give you instant answers in your browser — no signup, no downloads.",
+      "From high school grade tracking to college cumulative averages, our education tools are built for accuracy and simplicity. Bookmark this page and come back whenever you need a quick calculation during the school year.",
     ],
-    whyCluster: [
-      "Education searches are seasonal and competitive. A dedicated hub helps connect related intents—STEM coursework, grading policies, study habits—without scattering thin pages across the site.",
-    ],
-    whoItsFor: [
-      "High school and college students tracking GPA and course loads",
-      "Anyone brushing up on math for exams or certifications",
-    ],
-    closing:
-      "Use these tools to double-check your work; course policies and grading schemes always beat an online calculator when they disagree.",
+    whyCluster: [],
+    whoItsFor: [],
+    closing: "",
   },
   writing: {
     id: "writing",
@@ -136,19 +130,12 @@ export const CATEGORY_HUBS: Record<HubCategoryId, CategoryHubMeta> = {
     description:
       "Free writing utilities: word and character counts, case conversion, local text similarity and readability analysis, and more—for bloggers, students, and editors who live in deadlines.",
     intro: [
-      "Writing for the web is half craft and half logistics. You need the right character count for a meta description, a readable title case for a headline, and sometimes a sanity check that your draft is not accidentally repeating itself. These tools handle the logistics so you can focus on the sentences.",
-      "Nothing here replaces a human editor. What it does replace is the mental load of doing repetitive checks by hand when you are on draft six at midnight.",
+      "Free online writing tools for writers, bloggers, students, and SEO professionals. Count words and characters, check reading time, convert text case, and analyse readability — all instantly in your browser with no signup required.",
+      "Whether you are hitting a word count target, formatting text for a platform, or checking the quality and originality of your writing, these tools handle the mechanics so you can focus on the content.",
     ],
-    whyCluster: [
-      "Writers rarely need just one feature—they chain word count with case fixes with a quick similarity pass. A hub page makes that workflow obvious to readers and to search engines evaluating topical depth.",
-    ],
-    whoItsFor: [
-      "SEO writers and content marketers working to spec",
-      "Students meeting page or word limits",
-      "Newsletter authors and social managers tweaking copy length",
-    ],
-    closing:
-      "Open the tool you need, paste your text, and keep writing—your draft stays in your browser unless a tool explicitly says otherwise.",
+    whyCluster: [],
+    whoItsFor: [],
+    closing: "",
   },
   legal: {
     id: "legal",
@@ -158,18 +145,11 @@ export const CATEGORY_HUBS: Record<HubCategoryId, CategoryHubMeta> = {
     description:
       "Free educational calculators for rough settlement ranges, asset splits, and accident compensation estimates. Not legal advice; for discussion with a qualified attorney only.",
     intro: [
-      "Let us be direct: nothing on this website is legal advice. Laws change by state and country, insurance carriers negotiate aggressively, and your story always has details a form cannot see. What these tools can do is help you organize numbers before you pay for an hour with a lawyer—or understand what questions to ask when you get there.",
-      "People still search for settlement ranges and split scenarios because they need a starting point, not because they think a website replaces counsel. We write in that spirit: transparent assumptions, clear limits, and a hard push toward licensed professionals for anything that affects your rights or safety.",
+      "Free online legal calculators for estimating settlements, asset splits, and compensation claims. These tools give you a rough starting point before consulting a lawyer — helping you understand the numbers involved in personal injury cases, divorce proceedings, and car accident claims.",
+      "All results are estimates only and do not constitute legal advice. Always consult a qualified legal professional before making decisions based on any calculation.",
     ],
-    whyCluster: [
-      "Legal-adjacent topics are sensitive for advertisers and search quality. We pair every legal-themed tool with visible disclaimers and educational framing. That is better for users and better for long-term trust than pretending a calculator can predict a courtroom outcome.",
-    ],
-    whoItsFor: [
-      "Individuals exploring options after an injury or accident (with medical and legal follow-up)",
-      "People navigating divorce finances who need a neutral math baseline",
-      "Anyone trying to translate a messy situation into line items before a consultation",
-    ],
-    closing:
-      "If you are hurt, unsafe, or facing a deadline from a court or insurer, speak to a qualified attorney in your jurisdiction. Use these pages to prepare—not to decide.",
+    whyCluster: [],
+    whoItsFor: [],
+    closing: "",
   },
 };

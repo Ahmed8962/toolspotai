@@ -50,32 +50,39 @@ export default function CategoryHubPage({ categoryId }: { categoryId: HubCategor
       <h1 className="mt-4 text-3xl font-semibold tracking-tight text-text-primary md:text-4xl">
         {hub.h1}
       </h1>
-      <p className="mt-3 text-lg text-text-secondary">{hub.description}</p>
 
-      <div className="mt-10 max-w-none text-text-secondary">
+      <div className="mt-6 max-w-none text-text-secondary">
         {hub.intro.map((p, i) => (
           <p key={i} className="mb-4 leading-relaxed">
             {p}
           </p>
         ))}
 
-        <h2 className="mt-10 text-xl font-semibold text-text-primary">
-          Why we grouped these tools together
-        </h2>
-        {hub.whyCluster.map((p, i) => (
-          <p key={i} className="mb-4 leading-relaxed">
-            {p}
-          </p>
-        ))}
+        {hub.whyCluster.length > 0 && (
+          <>
+            <h2 className="mt-10 text-xl font-semibold text-text-primary">
+              Why we grouped these tools together
+            </h2>
+            {hub.whyCluster.map((p, i) => (
+              <p key={i} className="mb-4 leading-relaxed">
+                {p}
+              </p>
+            ))}
+          </>
+        )}
 
-        <h2 className="mt-10 text-xl font-semibold text-text-primary">Who these are for</h2>
-        <ul className="mb-6 list-disc space-y-2 pl-5">
-          {hub.whoItsFor.map((item) => (
-            <li key={item}>{item}</li>
-          ))}
-        </ul>
+        {hub.whoItsFor.length > 0 && (
+          <>
+            <h2 className="mt-10 text-xl font-semibold text-text-primary">Who these are for</h2>
+            <ul className="mb-6 list-disc space-y-2 pl-5">
+              {hub.whoItsFor.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </>
+        )}
 
-        <p className="leading-relaxed">{hub.closing}</p>
+        {hub.closing ? <p className="leading-relaxed">{hub.closing}</p> : null}
       </div>
 
       <h2 className="mb-4 mt-14 text-xl font-semibold text-text-primary">
