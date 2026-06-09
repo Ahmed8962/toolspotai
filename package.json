@@ -11,7 +11,11 @@
     "contentful:seed-tools": "npx tsx scripts/contentful-seed-tool-pages.ts",
     "contentful:update-tool-seo": "npx tsx scripts/contentful-update-tool-seo.ts",
     "contentful:seed-blog": "npx tsx scripts/contentful-seed-blog-model.ts",
-    "contentful:seed-blog-post": "npx tsx scripts/contentful-seed-seo-blog-post.ts"
+    "contentful:seed-blog-post": "npx tsx scripts/contentful-seed-seo-blog-post.ts",
+    "contentful:fix-blog-headings": "npx tsx scripts/contentful-fix-blog-headings.ts",
+    "contentful:publish-blog-16-20": "npx tsx scripts/contentful-publish-blog-posts-16-20.ts",
+    "contentful:unpublish-blog": "npx tsx scripts/contentful-unpublish-blog-post.ts",
+    "contentful:publish-due-blog": "npx tsx scripts/contentful-publish-due-blog-posts.ts"
   },
   "dependencies": {
     "next": "16.2.2",
