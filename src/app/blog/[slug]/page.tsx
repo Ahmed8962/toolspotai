@@ -5,6 +5,7 @@ import RichTextRenderer from "@/components/blog/RichTextRenderer";
 import {
   blogPostUrl,
   getAllBlogPosts,
+  getAllBlogPostsForBuild,
   getBlogPostBySlug,
 } from "@/lib/contentful-blog";
 import { buildTocFromRichText } from "@/lib/blog-toc";
@@ -24,7 +25,7 @@ function formatDate(iso: string) {
 }
 
 export async function generateStaticParams() {
-  const posts = await getAllBlogPosts();
+  const posts = await getAllBlogPostsForBuild();
   return posts.map((post) => ({ slug: post.slug }));
 }
 

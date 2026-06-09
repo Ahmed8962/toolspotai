@@ -1,5 +1,6 @@
 import { contentfulFetchOptions } from "@/lib/contentful-revalidate";
 import { SITE_URL } from "@/lib/site";
+import { connection } from "next/server";
 
 type ContentfulEntry<TFields> = {
   sys: { id: string };
@@ -239,9 +240,23 @@ async function fetchContentfulEntries(
   return (await res.json()) as ContentfulEntriesResponse<BlogPostFields>;
 }
 
-export async function getAllBlogPosts(): Promise<BlogPost[]> {
+/** True when `publishedAt` has passed (post is allowed on the public site). */
+export function isBlogPostLive(publishedAt: string, now = new Date()): boolean {
+  const at = new Date(publishedAt);
+  if (Number.isNaN(at.getTime())) return false;
+  return at.getTime() <= now.getTime();
+}
+
+function sortPostsNewestFirst(posts: BlogPost[]): BlogPost[] {
+  return [...posts].sort((a, b) => (a.publishedAt < b.publishedAt ? 1 : -1));
+}
+
+function onlyLivePosts(posts: BlogPost[], now = new Date()): BlogPost[] {
+  return posts.filter((post) => isBlogPostLive(post.publishedAt, now));
+}
+
+async function fetchAllBlogPostsFromCda(): Promise<BlogPost[]> {
   if (!SPACE_ID || !DELIVERY_TOKEN) return [];
-  // No `order` in the CDA request. Sort by `publishedAt` in memory.
   let data: ContentfulEntriesResponse<BlogPostFields>;
   try {
     data = await fetchContentfulEntries(
@@ -255,23 +270,34 @@ export async function getAllBlogPosts(): Promise<BlogPost[]> {
     return [];
   }
   const assets = buildAssetMap(data.includes?.Asset);
-  const posts = data.items
+  return data.items
     .map((item) => mapPost(item, assets))
     .filter((post): post is BlogPost => Boolean(post));
-  posts.sort((a, b) => (a.publishedAt < b.publishedAt ? 1 : -1));
-  return posts;
+}
+
+/** Build-time helper for `generateStaticParams` (no request context). */
+export async function getAllBlogPostsForBuild(): Promise<BlogPost[]> {
+  return sortPostsNewestFirst(onlyLivePosts(await fetchAllBlogPostsFromCda()));
+}
+
+export async function getAllBlogPosts(): Promise<BlogPost[]> {
+  await connection();
+  return sortPostsNewestFirst(onlyLivePosts(await fetchAllBlogPostsFromCda()));
 }
 
 export async function getBlogPostBySlug(
   slug: string,
 ): Promise<BlogPost | null> {
+  await connection();
   const data = await fetchContentfulEntries(
     `content_type=blogPost&fields.slug=${encodeURIComponent(
       slug,
     )}&include=1&limit=1&locale=${encodeURIComponent(DELIVERY_LOCALE)}`,
   );
   const assets = buildAssetMap(data.includes?.Asset);
-  return mapPost(data.items[0], assets);
+  const post = mapPost(data.items[0], assets);
+  if (!post || !isBlogPostLive(post.publishedAt)) return null;
+  return post;
 }
 
 export function blogPostUrl(slug: string): string {

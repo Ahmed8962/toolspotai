@@ -181,7 +181,7 @@ export default async function BlogPage({
               </Link>
               <div className="mt-4 flex flex-wrap items-center gap-2 text-xs text-slate-500">
                 <span>{formatDate(post.publishedAt)}</span>
-                {post.readingMinutes ? <span>{post.readingMinutes} min</span> : null}
+                {post.readingMinutes ? <span>{post.readingMinutes} min read</span> : null}
               </div>
               {post.tags.length > 0 && (
                 <div className="mt-3 flex flex-wrap gap-1.5">
