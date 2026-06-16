@@ -1,0 +1,128 @@
+Use our free Macro Calculator and Calorie and TDEE Calculator — no signup needed.
+
+## How to Calculate Macros for Weight Loss (Step by Step)
+
+Calorie counting tells you how much to eat. Macro counting tells you what to eat — specifically the ratio of protein, carbohydrates, and fat in your diet. For weight loss, getting macros right makes the difference between losing mostly fat while keeping muscle, versus losing a less favourable mix of both.
+
+This guide walks through the complete process of calculating your macros from scratch — starting with your calorie target and working down to specific gram targets for each macronutrient.
+
+## What are macros?
+
+Macros is short for macronutrients — the three main categories of nutrients that provide calories:
+
+Protein: 4 calories per gram. The building block of muscle tissue. Essential for preserving muscle during a calorie deficit and for recovery from exercise.
+
+Carbohydrates: 4 calories per gram. The body's preferred energy source. Includes starches, sugars, and fibre.
+
+Fat: 9 calories per gram. Essential for hormone production, vitamin absorption, and cell function. More than twice as calorie-dense as protein or carbohydrates.
+
+## Step 1 — Calculate your TDEE
+
+Your Total Daily Energy Expenditure is the total calories your body burns in a day including all activity. This is your starting point for any nutrition calculation.
+
+Use ToolSpotAI's free Calorie and TDEE Calculator to find your number. You will need your age, sex, height, weight, and activity level.
+
+For example: a 30-year-old woman, 65kg, 165cm, moderately active has a TDEE of approximately 2,124 calories per day.
+
+## Step 2 — Set your calorie target for weight loss
+
+For weight loss you need to eat less than your TDEE — creating a calorie deficit. Each 500 calorie daily deficit produces approximately 0.5kg (1 pound) of weight loss per week.
+
+Recommended deficit ranges:
+
+Conservative (slow, sustainable): TDEE minus 300 to 400 calories
+Moderate (standard): TDEE minus 500 calories
+Aggressive (faster, harder to sustain): TDEE minus 750 calories
+
+For our example: TDEE 2,124 minus 500 = calorie target of 1,624 calories per day.
+
+Never go below your BMR — the calories your body needs at complete rest. For most people BMR is 1,200 to 1,800 calories depending on size.
+
+## Step 3 — Set your protein target
+
+Protein is the most important macro to get right during weight loss. Adequate protein preserves muscle mass during a deficit, keeps you fuller for longer, and has the highest thermic effect.
+
+Recommended protein intake for weight loss:
+
+Sedentary to lightly active: 1.6 to 2.0 grams per kg of body weight
+Moderately active with resistance training: 2.0 to 2.4 grams per kg of body weight
+Very active or experienced lifter: 2.2 to 2.6 grams per kg of body weight
+
+For our example at 65kg, moderately active: 2.0 x 65 = 130 grams of protein per day
+Calories from protein: 130 x 4 = 520 calories
+
+## Step 4 — Set your fat target
+
+Fat is essential and should not be eliminated. Going too low on fat disrupts hormone production and fat-soluble vitamin absorption.
+
+Recommended minimum fat intake: 0.8 to 1.0 grams per kg of body weight
+Many nutrition guidelines suggest 20% to 35% of total calories from fat
+
+For our example: 25% of 1,624 calories = 406 calories from fat
+Fat grams: 406 / 9 = 45 grams of fat per day
+
+## Step 5 — Fill remaining calories with carbohydrates
+
+Carbohydrates fill whatever calorie budget remains after protein and fat are accounted for.
+
+Remaining calories: 1,624 minus 520 (protein) minus 406 (fat) = 698 calories from carbohydrates
+Carbohydrate grams: 698 / 4 = 174 grams of carbohydrates per day
+
+## Summary for our example
+
+Daily calorie target: 1,624 calories
+Protein: 130 grams (520 calories, 32% of total)
+Fat: 45 grams (406 calories, 25% of total)
+Carbohydrates: 174 grams (698 calories, 43% of total)
+
+## How to adjust macros based on your goal
+
+Higher protein, lower carb approach — preferred by many people doing resistance training. Maximises muscle retention during fat loss.
+
+Higher carb, moderate protein approach — preferred by endurance athletes and people who struggle with low-carb diets. Still effective for fat loss if calories are controlled.
+
+Higher fat, lower carb (ketogenic) approach — below 50g carbs per day triggers ketosis. Works for many people but is not superior to other approaches when calories and protein are matched.
+
+The most important variable by far is total calories and adequate protein. Carb and fat ratios within a sensible range have far less impact on outcomes than most nutrition content suggests.
+
+## Practical tips for hitting your macros
+
+Track everything for the first 2 to 4 weeks to build awareness of what is in common foods.
+
+Prioritise protein at every meal. If you hit your protein target it is very hard to significantly overeat.
+
+Meal prep high-protein staples in batches. Chicken breast, eggs, Greek yoghurt, cottage cheese, and legumes are the most calorie-efficient protein sources.
+
+Do not stress over hitting targets exactly. Being within 5 to 10 grams of each target consistently is excellent.
+
+Adjust every 2 to 4 weeks based on results. If weight loss stalls for two or more weeks reduce calories by 100 to 150 per day.
+
+## Try the free macro calculator
+
+Use ToolSpotAI's free Macro Calculator to get personalised protein, carbohydrate, and fat targets based on your goals. The Calorie and TDEE Calculator gives you the calorie foundation to build your macro targets from.
+
+No signup required. Everything runs in your browser.
+
+## Frequently asked questions
+
+What is the best macro ratio for weight loss?
+There is no single best ratio — the most important factors are total calorie deficit and adequate protein intake. A common starting point is 30% protein, 35% carbohydrates, and 35% fat, but this should be adjusted based on your activity level, food preferences, and how your body responds.
+
+How much protein do I need to not lose muscle while losing weight?
+Most research supports 1.6 to 2.2 grams of protein per kilogram of body weight as sufficient to preserve muscle during a calorie deficit. Active individuals and those doing resistance training benefit from the higher end of this range.
+
+Should I count calories or macros?
+Both. Macros sit within a calorie total — you cannot hit good macro targets while ignoring calories. Track both together. Total calories determine whether you lose, maintain, or gain weight. Macro ratios determine the quality of that change — specifically how much is fat versus muscle.
+
+How long does it take to see results from counting macros?
+Most people see measurable changes in body composition within 4 to 6 weeks of consistently hitting their targets. The scale may not move dramatically in the first 1 to 2 weeks due to water weight fluctuations. Track measurements and how clothes fit alongside weight for a more complete picture.
+
+Can I build muscle and lose fat at the same time?
+Body recomposition — simultaneous fat loss and muscle gain — is possible but happens slowly and works best for people who are new to resistance training or returning after a long break. For most experienced trainees, focusing on one goal at a time produces faster results. A slight calorie deficit with high protein is the best approach if you want to attempt recomposition.
+
+## Related tools on ToolSpotAI
+Macro Calculator
+Calorie and TDEE Calculator
+BMR Calculator
+Ideal Weight Calculator
+Body Fat Calculator

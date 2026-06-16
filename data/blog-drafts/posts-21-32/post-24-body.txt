@@ -1,0 +1,113 @@
+Use our free Currency Converter for live exchange rates  -  no signup needed.
+
+## How to Calculate Exchange Rates  -  Currency Conversion Guide
+
+Exchange rates affect everything from international travel costs to import prices to the returns on foreign investments. Most people use a currency converter without understanding what the numbers mean or why they change constantly.
+
+This guide explains how exchange rates work, how to calculate currency conversions manually, what the bid-ask spread is, and the key factors that cause exchange rates to move.
+
+## What is an exchange rate?
+
+An exchange rate is the price of one currency expressed in terms of another. It tells you how many units of one currency you need to buy one unit of another.
+
+If the USD/EUR exchange rate is 0.92, it means one US dollar buys 0.92 euros. Alternatively expressed as EUR/USD at 1.087, it means one euro buys 1.087 US dollars.
+
+Exchange rates are quoted as currency pairs. The first currency listed is the base currency (the one being bought). The second is the quote currency (the one being used to buy it).
+
+## How to calculate a currency conversion
+
+The formula is straightforward:
+
+Amount in quote currency = Amount in base currency x Exchange rate
+
+Example 1  -  converting USD to EUR:
+Exchange rate: 1 USD = 0.92 EUR
+Converting $500 USD to EUR:
+$500 x 0.92 = 460 euros
+
+Example 2  -  converting EUR to USD:
+Exchange rate: 1 EUR = 1.087 USD
+Converting 460 euros to USD:
+460 x 1.087 = $499.82 USD
+
+To convert in the opposite direction, divide by the exchange rate instead of multiplying:
+$500 / 1.087 = 460 euros (same result, different calculation path)
+
+## The bid-ask spread
+
+When you exchange currency at a bank, airport, or exchange bureau, you will notice they quote two prices  -  a buy rate and a sell rate. The difference between these is the bid-ask spread, and it is how the currency exchanger makes money.
+
+The buy rate (bid) is what they pay you for your foreign currency.
+The sell rate (ask) is what they charge you to buy foreign currency.
+
+The mid-market rate  -  the rate you see on Google or financial news  -  is the midpoint between bid and ask. Retail currency exchanges typically add a margin of 1% to 5% or more on top of this.
+
+For example if the mid-market USD/GBP rate is 0.79:
+A bank might sell GBP at 0.77 (they give you fewer pounds per dollar)
+A bank might buy GBP at 0.81 (they charge you more dollars per pound)
+
+This is why you always get a worse rate at an exchange counter than the rate you see online. The spread is the cost of the transaction.
+
+## Types of exchange rates
+
+Spot rate  -  the current rate for immediate exchange. This is what you get when you convert currency today.
+
+Forward rate  -  a rate agreed today for a currency exchange that will happen at a future date. Used by businesses to hedge against currency risk on future transactions.
+
+Fixed exchange rate  -  some countries peg their currency to another (often the US dollar). The central bank actively maintains the rate within a narrow band. Examples include the Hong Kong dollar and Saudi riyal.
+
+Floating exchange rate  -  most major currencies float freely, meaning their value is determined by supply and demand in the foreign exchange market. The USD, EUR, GBP, JPY, and AUD all float.
+
+## What causes exchange rates to move?
+
+Interest rates  -  central bank interest rate decisions are the single biggest driver of short-term exchange rate movements. Higher rates attract foreign capital seeking better returns, increasing demand for that currency and pushing its value up.
+
+Inflation  -  currencies of countries with lower inflation generally strengthen over time relative to higher-inflation countries. Purchasing power determines long-term value.
+
+Economic growth  -  strong GDP growth, low unemployment, and healthy trade balances signal a strong economy, which attracts investment and supports the currency.
+
+Political stability  -  uncertainty, elections, geopolitical tensions, and policy changes can cause significant currency volatility. The pound fell sharply around the Brexit referendum. Emerging market currencies are particularly sensitive to political risk.
+
+Trade balances  -  countries that export more than they import tend to have stronger currencies because foreign buyers need to purchase the local currency to pay for exports.
+
+Market sentiment  -  in times of global uncertainty investors often move into safe haven currencies like the US dollar, Swiss franc, and Japanese yen regardless of those countries' economic fundamentals.
+
+## Practical tips for currency exchange
+
+Use a multi-currency card or fintech app (such as Wise or Revolut) for travel  -  they typically offer rates close to the mid-market rate with low flat fees, far better than airport exchanges or hotel desks.
+
+Check the mid-market rate on Google before exchanging so you know the baseline.
+
+Avoid dynamic currency conversion when paying by card abroad  -  always choose to pay in the local currency. Merchants offering to charge you in your home currency apply their own unfavourable rate.
+
+For large transfers (property purchases, international salary payments) use a specialist FX provider rather than a bank  -  the rate difference on large sums can be thousands of dollars.
+
+## Try the free currency converter
+
+Use ToolSpotAI's free Currency Converter to convert between 150+ currencies using live exchange rates. Fast, free, and no signup required.
+
+No signup required. Everything runs in your browser.
+
+## Frequently asked questions
+
+What is the mid-market exchange rate?
+The mid-market rate is the midpoint between the buy and sell prices for a currency pair in the wholesale foreign exchange market. It is the rate quoted by financial data providers and shown on Google. It is the fairest benchmark for a currency conversion but is not typically available to retail customers  -  banks and exchange services add a margin on top of it.
+
+Why do exchange rates change constantly?
+Currency markets trade 24 hours a day five days a week with trillions of dollars exchanged daily. Rates change continuously as buyers and sellers respond to economic data releases, central bank announcements, political developments, and shifts in market sentiment. Even small news items can move rates by fractions of a percent, while major events like interest rate decisions can move rates by several percent in minutes.
+
+Is it better to exchange currency before or after travelling?
+Generally exchanging before you travel at your home bank or a specialist FX provider gives better rates than airport or hotel exchanges. Using a multi-currency travel card (Wise, Revolut) abroad often provides the best rates overall as they typically pass through the mid-market rate with a small transparent fee. Avoid exchanging large amounts at airports where margins are highest.
+
+What is a strong currency vs a weak currency?
+A strong currency buys more of other currencies. A weak currency buys less. Whether a strong or weak currency is better depends on perspective  -  a strong currency is good for importers and travellers but makes exports more expensive and can hurt domestic manufacturers. Most economists prefer stable currencies to either extreme.
+
+How do I calculate the percentage change in an exchange rate?
+Use the standard percentage change formula: (New rate minus Old rate) / Old rate x 100. If the USD/EUR rate moved from 0.90 to 0.92, the change is (0.92 minus 0.90) / 0.90 x 100 = 2.22%  -  the dollar strengthened by 2.22% against the euro.
+
+## Related tools on ToolSpotAI
+Currency Converter
+Percentage Calculator
+Inflation Calculator
+VAT and Sales Tax Calculator
+Tip Calculator

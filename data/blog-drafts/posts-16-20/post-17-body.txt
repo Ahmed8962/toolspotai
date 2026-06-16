@@ -1,0 +1,98 @@
+Use our free Compound Interest Calculator and SIP Calculator to model your investment returns — no signup needed.
+
+## What Is Dollar Cost Averaging and Does It Work?
+
+Dollar cost averaging is one of those investing terms that gets recommended constantly but rarely explained well. Financial advisors suggest it. Index fund advocates swear by it. Yet most people who use it could not tell you exactly what it does mathematically or why it tends to work better than trying to time the market.
+
+This guide explains dollar cost averaging clearly — what it is, how it works with real numbers, what it does and does not protect you from, and when it makes sense to use it.
+
+## What is dollar cost averaging?
+
+Dollar cost averaging (DCA) is an investment strategy where you invest a fixed amount of money at regular intervals — weekly, monthly, or quarterly — regardless of what the market is doing at the time.
+
+Instead of investing a lump sum all at once, you spread your purchases over time. Some purchases happen when prices are high. Some happen when prices are low. Over time the average cost per unit of what you own tends to be lower than the average price over that same period.
+
+The name comes from the effect: by investing a fixed dollar amount regularly, you automatically buy more units when prices are low and fewer units when prices are high. Your average cost per unit is mathematically pulled down compared to the average market price.
+
+## How dollar cost averaging works — with numbers
+
+Suppose you invest $500 per month into an index fund for 4 months. The price per unit fluctuates each month.
+
+Month 1: Price $50 per unit. $500 buys 10 units.
+Month 2: Price $40 per unit. $500 buys 12.5 units.
+Month 3: Price $25 per unit. $500 buys 20 units.
+Month 4: Price $50 per unit. $500 buys 10 units.
+
+Total invested: $2,000
+Total units purchased: 52.5 units
+Average cost per unit: $2,000 / 52.5 = $38.10
+
+Average price over the 4 months: ($50 + $40 + $25 + $50) / 4 = $41.25
+
+Your average cost per unit ($38.10) is lower than the average market price ($41.25) over the same period. This is the mathematical effect of DCA — buying more units when prices drop pulls your average cost below the average price.
+
+## Dollar cost averaging vs lump sum investing
+
+The honest comparison: lump sum investing outperforms dollar cost averaging roughly two thirds of the time when markets trend upward over the long term.
+
+If you have $24,000 to invest and markets generally rise over the next two years, investing all $24,000 today will statistically produce better returns than investing $1,000 per month for 24 months. The money that goes in first has more time in the market growing.
+
+So why do most advisors still recommend dollar cost averaging? Three reasons:
+
+Most investors do not have a lump sum. The majority of people invest from regular income — a monthly salary with a fixed amount set aside. DCA is not a choice for them, it is the natural structure of investing from earnings.
+
+Lump sum investing requires timing confidence most people do not have. Investing $24,000 on a single day is psychologically difficult. If markets drop 20% the week after, most investors panic sell — locking in the loss. DCA reduces the psychological impact of short-term volatility.
+
+DCA protects against investing at a peak. The one scenario where lump sum investing significantly underperforms is investing a large amount right before a major market downturn. DCA smooths this risk — your later purchases happen at lower prices, improving your average cost.
+
+## What dollar cost averaging does not do
+
+DCA does not guarantee profits. If markets decline consistently over your investment period your portfolio will still lose value — you will just have lost less than if you had invested a lump sum at the start.
+
+DCA does not eliminate risk. Market risk, company-specific risk, and inflation risk all still apply regardless of how you structure your purchases.
+
+DCA does not work well for assets that trend consistently downward. The strategy benefits from volatility around an upward trend. For assets in long-term decline, buying more at lower prices just means buying more of something losing value.
+
+## When dollar cost averaging makes the most sense
+
+You are investing from regular income rather than a windfall or inheritance
+You are investing in broad market index funds with a long time horizon of 10 or more years
+You are prone to emotional decision-making and want to remove market timing from the equation
+You are new to investing and want to build the habit of consistent contributions
+You are approaching a major purchase or retirement and want to reduce the risk of a poorly timed lump sum investment
+
+## The SIP connection
+
+In India and other markets, dollar cost averaging through mutual funds is formalised as a Systematic Investment Plan or SIP. You set a fixed monthly amount and it automatically purchases units in the fund of your choice on a set date each month. The mathematics are identical to DCA — fixed amount, regular interval, automatic purchase regardless of price.
+
+Use ToolSpotAI's free SIP Calculator to model your expected returns from regular monthly investments over any time period.
+
+## Try the free calculators
+
+Use ToolSpotAI's free Compound Interest Calculator to see how regular contributions grow over time with compound returns. The SIP Calculator models monthly investment plans specifically.
+
+No signup required. Everything runs in your browser.
+
+## Frequently asked questions
+
+Is dollar cost averaging better than lump sum investing?
+Statistically, lump sum investing outperforms dollar cost averaging about two thirds of the time in rising markets because more money spends more time invested. However DCA reduces the risk of poorly timed large investments, is the natural structure for investors contributing from regular income, and tends to produce better outcomes for investors who would otherwise panic sell during volatility.
+
+How often should you invest with dollar cost averaging?
+Monthly is the most practical frequency for most investors — it aligns with salary payment cycles and keeps transaction costs manageable. Weekly DCA produces marginally more smoothing of price volatility but the difference in outcomes is minimal for most long-term investors. The most important factor is consistency, not frequency.
+
+Does dollar cost averaging work in a bear market?
+Yes and this is where DCA shows its greatest advantage. In a bear market your fixed monthly investment buys more units at lower prices. When the market recovers those cheaper units appreciate significantly. Investors who continued DCA through the 2008 to 2009 and 2020 downturns generally saw strong returns in the recovery years that followed.
+
+What is the difference between DCA and SIP?
+They are the same strategy with different names. Dollar cost averaging is the general term used primarily in Western markets. SIP is the formalised product structure used in Indian mutual fund markets that implements DCA automatically. The mathematics and principles are identical.
+
+Can you dollar cost average into individual stocks?
+Yes, but the strategy works best for broadly diversified assets like index funds and ETFs. With individual stocks, DCA into a company that declines significantly means buying more of a potentially deteriorating business. The risk-reduction benefits of DCA are strongest when applied to diversified vehicles where long-term upward trends are more reliable.
+
+## Related tools on ToolSpotAI
+Compound Interest Calculator
+SIP Calculator
+ROI Calculator
+Retirement Calculator
+Inflation Calculator

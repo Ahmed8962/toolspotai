@@ -1,0 +1,122 @@
+Use our free Loan Calculator and Credit Card Payoff Calculator to model borrowing costs  -  no signup needed.
+
+## What Is APR and How Is It Calculated?
+
+When you apply for a mortgage, car loan, personal loan, or credit card, you will see two rates quoted: the interest rate and the APR. Most people focus on the interest rate and overlook the APR  -  which is a mistake, because the APR is the more complete and honest measure of what borrowing actually costs you.
+
+This guide explains what APR is, what it includes that the interest rate does not, how it is calculated, and how to use it to compare loan offers properly.
+
+## What is APR?
+
+APR stands for Annual Percentage Rate. It is the annual cost of borrowing expressed as a percentage, designed to include not just the interest rate but also most of the fees and costs associated with the loan.
+
+The goal of APR is to give borrowers a standardised way to compare the true cost of different loan products that might have different combinations of rates and fees.
+
+A loan with a 5.5% interest rate and $3,000 in origination fees is more expensive than a loan with a 5.75% interest rate and no fees  -  but looking at just the interest rate would make the first loan appear cheaper. APR captures this difference.
+
+## What does APR include?
+
+APR typically includes:
+
+The base interest rate
+Origination fees
+Discount points (on mortgages)
+Mortgage broker fees
+Certain closing costs
+Underwriting fees
+
+APR typically does not include:
+
+Title insurance and title search fees
+Appraisal fees
+Credit report fees
+Home inspection costs
+Prepaid interest and escrow items
+Optional add-ons like credit insurance
+
+This is why two lenders can calculate different APRs for the same loan  -  there is some variation in which fees different lenders include. In the US the Truth in Lending Act (TILA) mandates APR disclosure but does not specify every fee that must be included, which allows for some inconsistency.
+
+## Interest rate vs APR  -  the key difference
+
+The interest rate is the cost of borrowing the principal amount, expressed as a percentage per year. It is used to calculate your monthly payment.
+
+The APR is the interest rate plus fees, annualised over the loan term. It represents the broader cost of the loan.
+
+For a loan with no fees, APR equals the interest rate.
+For a loan with fees, APR is always higher than the interest rate.
+
+The gap between the interest rate and APR tells you how significant the fees are. A large gap means the loan carries substantial fees. A small gap (or no gap) means fees are minimal.
+
+## How APR is calculated
+
+The calculation involves finding the interest rate that makes the present value of all payments equal to the amount received after fees.
+
+For a simplified example:
+
+Loan amount: $200,000
+Interest rate: 6.00% (30-year fixed)
+Origination fee: $4,000 (2% of loan)
+
+The borrower receives $196,000 after the fee is deducted but makes payments as if they borrowed $200,000. The APR is the rate that makes those payments equate to borrowing $196,000  -  approximately 6.22% in this example.
+
+The math involves iterative calculation (essentially solving for an internal rate of return) which is why calculators are used rather than doing it by hand.
+
+## APR for credit cards
+
+Credit card APR works differently from loan APR. For credit cards:
+
+APR is simply the annualised interest rate  -  there are typically no origination fees to include
+APR directly determines your monthly interest charge: divide APR by 12 for the monthly rate
+A 24% APR card charges 2% per month on the outstanding balance
+
+Credit cards often have multiple APRs:
+Purchase APR  -  for regular purchases
+Cash advance APR  -  higher rate for ATM withdrawals
+Penalty APR  -  triggered by late payments, often 29.99%
+Promotional APR  -  temporary 0% offers for new cardholders
+
+The stated APR on a credit card does not account for compounding within the year. The true annual cost when interest compounds monthly is called the Effective Annual Rate (EAR) or Annual Percentage Yield (APY)  -  slightly higher than the stated APR.
+
+## How to compare loans using APR
+
+When comparing two or more loan offers use APR, not just the interest rate. The loan with the lower APR is cheaper in total cost assuming you hold the loan to its full term.
+
+Important caveat: APR assumes you keep the loan for its full term. If you plan to sell the home or refinance within a few years, a loan with higher fees but a lower rate may actually cost less over your actual holding period than a loan with lower fees and a slightly higher rate. In that case compare total out-of-pocket costs over your expected holding period rather than relying solely on APR.
+
+## APR vs APY  -  what is the difference?
+
+APR (Annual Percentage Rate) is used for borrowing costs. It does not account for compounding within the year.
+
+APY (Annual Percentage Yield) is used for savings and investment returns. It does account for compounding, which is why savings accounts advertise APY  -  it makes the return look slightly higher than the simple interest rate.
+
+When borrowing, APR understates the true cost slightly because of within-year compounding. When saving, APY overstates the simple rate slightly for the same reason. Both are conventions that are standardised within their respective contexts.
+
+## Try the free loan calculator
+
+Use ToolSpotAI's free Loan Calculator to calculate monthly payments and total interest for any loan amount, rate, and term. The Credit Card Payoff Calculator models the true cost of carrying a credit card balance at different APRs.
+
+No signup required. Everything runs in your browser.
+
+## Frequently asked questions
+
+Is a lower APR always better?
+For the same loan term and if you plan to hold the loan to maturity, yes  -  lower APR means lower total cost. However if you plan to refinance or sell before the term ends, a loan with a slightly higher APR but lower monthly payment may cost less over your actual holding period. Always compare total costs over your expected timeline, not just APR.
+
+What is a good APR for a personal loan?
+Personal loan APRs vary widely based on credit score, loan amount, and lender. Borrowers with excellent credit (750+) typically qualify for rates of 6% to 12%. Fair credit borrowers may see 15% to 25%. Rates above 30% are generally considered predatory. For comparison, credit cards typically have APRs of 20% to 30%  -  a personal loan at lower APR than your credit card makes sense for consolidating that debt.
+
+Why is my mortgage APR higher than the interest rate?
+Mortgage APR includes origination fees, discount points, and other closing costs that the interest rate does not. These fees are effectively prepaid interest  -  you pay them upfront to access the loan. The APR spreads these costs over the loan term to give a truer annual cost. The larger the fees relative to the loan amount, the bigger the gap between interest rate and APR.
+
+Does APR affect my monthly payment?
+No. Your monthly payment is calculated from the interest rate and principal, not the APR. APR is a disclosure metric for comparing total loan costs  -  it does not change your payment. Two loans with the same interest rate but different APRs will have the same monthly payment but different total costs (the one with higher APR has higher fees paid upfront or built into the loan).
+
+What APR is considered good for a credit card?
+The average credit card APR in the US has been above 20% in recent years. Any rate below 20% is below average. Rates of 12% to 17% are considered good for standard cards. Secured cards and store cards often carry higher rates of 25% to 30%. If you pay your balance in full every month, the APR is irrelevant  -  you pay no interest regardless of the rate.
+
+## Related tools on ToolSpotAI
+Loan Calculator
+Credit Card Payoff Calculator
+Mortgage Calculator
+Compound Interest Calculator
+Debt-to-Income Ratio Calculator

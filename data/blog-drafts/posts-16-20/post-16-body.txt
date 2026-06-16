@@ -1,0 +1,137 @@
+Use our free Debt-to-Income Ratio Calculator and Loan Calculator to plan your finances — no signup needed.
+
+## What Is a Good Credit Score and How Do You Improve It?
+
+Your credit score is a three-digit number that follows you through almost every major financial decision you will ever make. It determines whether you get approved for a mortgage, what interest rate you pay on a car loan, whether a landlord accepts your rental application, and in some industries whether you get hired at all.
+
+Yet most people have only a vague sense of what their score actually means, how it is calculated, and what genuinely moves it. This guide covers all of it — the scoring ranges, what lenders actually care about, and the most effective strategies for improving your score based on how the calculation actually works.
+
+## What is a credit score?
+
+A credit score is a numerical summary of your creditworthiness — how likely you are to repay debt based on your past behaviour with credit. The most widely used scoring model is the FICO score, developed by the Fair Isaac Corporation. VantageScore is another common model used by many lenders and free credit monitoring services.
+
+Both models produce scores on a scale of 300 to 850. Higher is better. The two models use similar factors but weight them slightly differently and may produce different scores from the same credit file.
+
+When lenders say your credit score they almost always mean a FICO score — specifically one of the many FICO score versions pulled from one of the three major credit bureaus: Equifax, Experian, and TransUnion. You have three FICO scores — one from each bureau — and they can differ because not all lenders report to all three bureaus.
+
+## Credit score ranges
+
+FICO defines five score ranges:
+
+Exceptional: 800 to 850
+Very Good: 740 to 799
+Good: 670 to 739
+Fair: 580 to 669
+Poor: 300 to 579
+
+Most lenders consider 670 and above to be acceptable. The best loan terms — lowest interest rates, highest loan amounts, most favourable conditions — typically go to borrowers with scores of 740 and above. Above 800 you are in the top tier and will rarely be declined for credit.
+
+VantageScore uses slightly different labels but the same 300 to 850 scale:
+
+Excellent: 781 to 850
+Good: 661 to 780
+Fair: 601 to 660
+Poor: 500 to 600
+Very Poor: 300 to 499
+
+## What does your credit score actually affect?
+
+The impact of your credit score is most visible in the interest rates you are offered. On a $300,000 30-year mortgage, the difference between an exceptional score and a fair score can mean a rate difference of 1.5% to 2% or more. That translates to $80,000 to $120,000 in extra interest over the life of the loan.
+
+On a $35,000 car loan over 5 years, the difference between excellent and fair credit can mean paying $5,000 to $8,000 more in total interest.
+
+Beyond loans, your credit score affects:
+
+Insurance premiums — many insurers use credit-based insurance scores to set premiums. Poor credit can mean significantly higher auto and home insurance costs in most US states.
+
+Rental applications — most landlords check credit. A score below 620 can result in rejection or a requirement for a larger deposit.
+
+Security deposits on utilities — providers sometimes require deposits from applicants with low credit scores.
+
+Employment — some employers, particularly in financial services, government, and security roles, check credit as part of background screening.
+
+## How your FICO score is calculated
+
+FICO scores are calculated from five factors, each weighted differently:
+
+Payment history: 35%
+The single biggest factor. Whether you pay on time, every time. A single 30-day late payment can drop a good score by 50 to 100 points. Missed payments, collections, bankruptcies, and foreclosures all damage this category severely.
+
+Amounts owed (Credit utilisation): 30%
+How much of your available credit you are using. A credit limit of $10,000 with a $3,000 balance is 30% utilisation. Most experts recommend keeping utilisation below 30% — ideally below 10% for the highest scores.
+
+Length of credit history: 15%
+How long you have had credit accounts. This includes the age of your oldest account, your newest account, and the average age of all accounts. Longer history generally means a higher score.
+
+Credit mix: 10%
+Whether you have a variety of credit types — credit cards, instalment loans, mortgage, auto loan. Having different types of credit managed well shows lenders you can handle diverse obligations.
+
+New credit: 10%
+Recent applications for new credit. Each hard inquiry — when a lender checks your credit for a loan application — can temporarily lower your score by a few points. Multiple applications in a short period raise a flag. Rate shopping for a mortgage or auto loan within a 14 to 45 day window is typically counted as a single inquiry.
+
+## What actually moves your credit score
+
+Understanding the weights above tells you exactly where to focus. Payment history and utilisation together make up 65% of your score. These are where improvements show up fastest.
+
+Making every payment on time is the single most important thing you can do. Set up autopay for at least the minimum payment on every account so you never miss a due date accidentally.
+
+Reducing credit card balances has the fastest measurable impact on your score of any action you can take. If your utilisation is above 30% and you pay it down to below 10%, you can see score improvements of 20 to 50 points within one to two billing cycles.
+
+Becoming an authorised user on someone else's well-managed account adds their positive payment history and low utilisation to your credit file. This is one of the fastest ways to build credit with limited history.
+
+Requesting a credit limit increase on existing cards reduces your utilisation percentage without requiring you to pay down any balance. If your limit goes from $5,000 to $8,000 and your balance stays at $1,500, your utilisation drops from 30% to 18.75%.
+
+Not closing old accounts keeps your average account age higher and your total available credit larger. Closing a card you no longer use can hurt your score in two ways — it reduces available credit and it may lower your average account age.
+
+Disputing errors on your credit report removes inaccurate negative items. Around 1 in 5 credit reports contain errors significant enough to affect lending decisions. Check your reports at annualcreditreport.com and dispute anything that is incorrect directly with the bureaus.
+
+## How long negative items stay on your credit report
+
+Late payments: 7 years from the date of the missed payment
+Collections: 7 years from the original delinquency date
+Chapter 13 bankruptcy: 7 years
+Chapter 7 bankruptcy: 10 years
+Hard inquiries: 2 years (impact fades after 12 months)
+Positive accounts: 10 years after closing
+
+## How to build credit from scratch
+
+If you have no credit history the challenge is that lenders want to see history before extending credit — but you cannot build history without credit. These strategies break that cycle.
+
+Secured credit card — you deposit money as collateral which becomes your credit limit. Use it for small regular purchases and pay the full balance every month. Most secured cards report to all three bureaus and graduate to unsecured cards after 12 to 18 months of responsible use.
+
+Credit-builder loan — offered by many credit unions and community banks. The lender holds the loan amount in a savings account while you make monthly payments. When the loan is paid off you receive the money. Designed specifically to build credit history.
+
+Become an authorised user — being added to a family member or partner's established account can rapidly add positive history to your file.
+
+Student credit cards — designed for people with limited history. Lower limits and higher rates but report to bureaus and build history the same way as any other card.
+
+## Try the free financial calculators
+
+Use ToolSpotAI's free Loan Calculator to see how your credit score affects your loan payments at different interest rates. The Debt-to-Income Ratio Calculator helps you understand what lenders see when they review your application alongside your credit score.
+
+No signup required. Everything runs in your browser.
+
+## Frequently asked questions
+
+What credit score do you need to buy a house?
+Most conventional mortgage lenders require a minimum credit score of 620. FHA loans allow scores as low as 580 with a 3.5% down payment, or 500 with a 10% down payment. For the best mortgage rates you typically need a score of 740 or above. The higher your score, the lower your rate and the less you pay over the life of the loan.
+
+How long does it take to improve your credit score?
+It depends on what is dragging it down. Reducing high credit card utilisation can show results within one to two billing cycles — as little as 30 to 60 days. Building a longer payment history takes months to years. Recovering from a bankruptcy or foreclosure takes several years of consistent positive behaviour, though scores typically begin improving within 12 to 24 months of the event as the impact fades.
+
+Does checking your own credit score hurt it?
+No. Checking your own score is a soft inquiry and has no effect on your score. Only hard inquiries — when a lender checks your credit as part of a loan application — affect your score, and only slightly and temporarily. You can check your own credit as often as you like.
+
+What is the difference between FICO and VantageScore?
+Both use the same 300 to 850 scale but are calculated differently. FICO is the dominant model used by most mortgage lenders and major banks. VantageScore is commonly used by free credit monitoring services and some lenders. A good score on one model generally corresponds to a good score on the other, though the exact numbers may differ.
+
+Can you have a good income and a bad credit score?
+Yes. Income is not a factor in your credit score calculation at all. FICO and VantageScore only look at your credit behaviour — payment history, utilisation, account age, credit mix, and new credit. Someone with a high income who misses payments and carries high balances will have a poor score. Someone with a modest income who pays on time and maintains low balances will have an excellent score.
+
+## Related tools on ToolSpotAI
+Loan Calculator
+Debt-to-Income Ratio Calculator
+Mortgage Calculator
+Auto Loan Calculator
+Credit Card Payoff Calculator

@@ -14,6 +14,7 @@
     "contentful:seed-blog-post": "npx tsx scripts/contentful-seed-seo-blog-post.ts",
     "contentful:fix-blog-headings": "npx tsx scripts/contentful-fix-blog-headings.ts",
     "contentful:publish-blog-16-20": "npx tsx scripts/contentful-publish-blog-posts-16-20.ts",
+    "contentful:publish-blog-21-32": "npx tsx scripts/contentful-publish-blog-posts-21-32.ts",
     "contentful:unpublish-blog": "npx tsx scripts/contentful-unpublish-blog-post.ts",
     "contentful:publish-due-blog": "npx tsx scripts/contentful-publish-due-blog-posts.ts"
   },

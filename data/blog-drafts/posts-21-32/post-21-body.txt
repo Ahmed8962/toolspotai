@@ -1,0 +1,150 @@
+Use our free ROI Calculator and Loan Calculator to plan your finances  -  no signup needed.
+
+## How to Calculate Your Net Worth  -  Step by Step Guide
+
+Net worth is the clearest single number you can use to measure your overall financial health. Unlike income, which shows how much money flows in, or savings, which shows one slice of what you have, net worth captures the complete picture  -  everything you own minus everything you owe.
+
+Most people either never calculate it or only do it vaguely in their heads. This guide shows you exactly how to do it properly, what to include, what to leave out, and how to use the number to make better financial decisions.
+
+## What is net worth?
+
+Net worth is simply the difference between your total assets and your total liabilities.
+
+Net worth = Total assets minus Total liabilities
+
+A positive net worth means you own more than you owe. A negative net worth  -  common early in life especially with student loans or a new mortgage  -  means you owe more than you own. Both are useful data points. The goal over time is to grow the number consistently.
+
+## What counts as an asset?
+
+Assets are everything you own that has financial value.
+
+Cash and cash equivalents:
+Checking accounts
+Savings accounts
+Money market accounts
+Cash on hand
+Certificates of deposit
+
+Investment accounts:
+Brokerage accounts (stocks, ETFs, mutual funds, bonds)
+Retirement accounts (401k, IRA, Roth IRA, 403b, pension value)
+Cryptocurrency holdings (at current market value)
+
+Real estate:
+Primary home (current market value, not purchase price)
+Rental properties (current market value)
+Land
+
+Personal property of significant value:
+Vehicles (current resale value, not what you paid)
+Jewellery, art, collectibles (realistic resale value)
+Business ownership interest (estimated value)
+
+Do not include everyday personal items  -  furniture, clothing, electronics  -  unless they have genuine resale value. Overestimating asset values inflates your net worth in a way that misleads you.
+
+## What counts as a liability?
+
+Liabilities are everything you owe.
+
+Secured debt:
+Mortgage balance (remaining principal, not original loan)
+Home equity loan or line of credit balance
+Auto loan balance
+
+Unsecured debt:
+Credit card balances
+Personal loan balances
+Student loan balances
+Medical debt
+
+Other obligations:
+Business loans
+Tax liabilities (if you owe back taxes)
+Money owed to family or friends (if it is a real debt)
+
+## Worked example
+
+Assets:
+Checking account: $4,200
+Savings account: $18,500
+401k balance: $67,000
+Brokerage account: $23,000
+Home value: $380,000
+Car value: $14,000
+Total assets: $506,700
+
+Liabilities:
+Mortgage balance: $298,000
+Auto loan balance: $8,500
+Student loans: $22,000
+Credit card balance: $3,200
+Total liabilities: $331,700
+
+Net worth = $506,700 minus $331,700 = $175,000
+
+## What is a good net worth?
+
+There is no universal answer  -  net worth depends heavily on age, income, cost of living, and life stage. A more useful question is whether your net worth is growing over time.
+
+A commonly referenced benchmark is the formula popularised by The Millionaire Next Door:
+
+Expected net worth = Age x Annual pre-tax income / 10
+
+So a 35-year-old earning $80,000 might target a net worth of around $280,000. This is a rough guide, not a rule  -  it does not account for student loans, cost of living differences, or career stage.
+
+More practically, comparing your net worth at the same point each year tells you whether you are moving in the right direction.
+
+## How often should you calculate net worth?
+
+Once or twice a year is sufficient for most people. More frequent calculations can be distorted by short-term market movements  -  a volatile week in the stock market can swing your net worth significantly without reflecting any real change in your financial behaviour.
+
+Many personal finance advocates do a net worth review every January 1 and July 1. This gives a clear year-over-year comparison and a mid-year check-in.
+
+## How to grow your net worth
+
+There are only two ways to grow net worth: increase assets or decrease liabilities. Every financial action you take does one or both of these.
+
+Actions that increase assets:
+Saving and investing consistently
+Employer 401k matching (free money that goes straight to assets)
+Real estate appreciation over time
+Business growth
+
+Actions that decrease liabilities:
+Paying down debt (especially high-interest debt)
+Avoiding new debt for depreciating items
+Refinancing at lower interest rates
+
+Actions that do both simultaneously:
+Paying extra on your mortgage (reduces liability, increases equity which is an asset)
+Investing instead of spending a bonus (increases assets instead of letting cash disappear)
+
+## Try the free financial calculators
+
+Use ToolSpotAI's free ROI Calculator to evaluate investment decisions that grow your assets. The Loan Calculator helps you model debt payoff timelines that reduce your liabilities.
+
+No signup required. Everything runs in your browser.
+
+## Frequently asked questions
+
+Should I include my home in my net worth calculation?
+Yes. Your home is typically one of your largest assets and should be included at its current market value  -  not the price you paid for it. Subtract the remaining mortgage balance to get your home equity, which is the actual contribution to your net worth. Use online property tools or recent comparable sales to estimate current value.
+
+Is a negative net worth bad?
+Not necessarily, especially early in life. Many people in their twenties and early thirties have negative net worth due to student loans and mortgages on recently purchased homes. What matters is the trajectory  -  if your net worth is improving each year you are on the right track. A negative net worth that is shrinking is a better sign than a positive net worth that is stagnant or declining.
+
+Should I include my car in net worth?
+Yes, at its current resale value  -  not what you paid for it or what you owe on it. Vehicles depreciate quickly so their contribution to net worth is usually modest and decreasing over time. If you have an auto loan, list the vehicle value as an asset and the loan balance as a liability. The net contribution is the equity you have in the vehicle.
+
+How is net worth different from income?
+Income is a flow  -  money coming in each month or year. Net worth is a stock  -  what you have accumulated at a point in time. A high income does not guarantee a high net worth if spending is also high. A modest income combined with consistent saving and investing can produce a strong net worth over time. Net worth is a better measure of financial health than income alone.
+
+What is the fastest way to increase net worth?
+The highest-impact actions are paying off high-interest debt (which immediately reduces liabilities), maximising employer retirement matching (free return on contributions), and avoiding lifestyle inflation as income grows. Investing consistently in low-cost index funds over a long time horizon is the most reliable path to significant net worth growth for most people.
+
+## Related tools on ToolSpotAI
+ROI Calculator
+Compound Interest Calculator
+Loan Calculator
+Retirement Calculator
+Inflation Calculator

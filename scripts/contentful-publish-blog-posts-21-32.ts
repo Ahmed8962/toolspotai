@@ -1,6 +1,7 @@
 /**
- * Publishes blog posts 16-20 to Contentful (toolspotai.com).
- * Run: npm run contentful:publish-blog-16-20
+ * Publishes blog posts 21-32 to Contentful (toolspotai.com).
+ * Future-dated posts are saved as drafts until their publishedAt date.
+ * Run: npm run contentful:publish-blog-21-32
  */
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
@@ -15,7 +16,7 @@ loadEnvLocal();
 const SPACE_ID = process.env.CONTENTFUL_SPACE_ID;
 const ENV = process.env.CONTENTFUL_ENVIRONMENT ?? "master";
 const CMA = process.env.CONTENTFUL_MANAGEMENT_TOKEN;
-const DRAFTS_DIR = join(process.cwd(), "data/blog-drafts/posts-16-20");
+const DRAFTS_DIR = join(process.cwd(), "data/blog-drafts/posts-21-32");
 
 async function main() {
   if (!CMA?.trim()) {
@@ -42,7 +43,11 @@ async function main() {
     await publishPost(post, DRAFTS_DIR);
   }
 
-  console.log("\nAll posts published successfully.");
+  console.log("\nAll posts processed successfully.");
+  console.log("\nScheduled slugs:");
+  for (const post of manifest) {
+    console.log(`  ${post.slug} -> ${post.publishedAt}`);
+  }
 }
 
 main().catch((e) => {

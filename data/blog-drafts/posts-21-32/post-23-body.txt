@@ -1,0 +1,123 @@
+Use our free Salary Calculator and Paycheck Calculator to estimate your take-home pay  -  no signup needed.
+
+## Gross vs Net Income  -  What Is the Difference?
+
+Gross and net income are two of the most commonly used terms in personal finance and business accounting. They appear on pay stubs, tax returns, loan applications, and profit and loss statements. Yet they are frequently confused or used interchangeably  -  which leads to real mistakes when budgeting, applying for loans, or evaluating a business.
+
+This guide explains both terms clearly for individuals and businesses, why the distinction matters, and how to calculate each one.
+
+## Gross income for individuals
+
+For an individual, gross income is your total earnings before any deductions are taken out. It includes all sources of income:
+
+Salary or wages from employment
+Freelance or self-employment income
+Rental income
+Investment income (dividends, interest, capital gains)
+Business income
+Alimony received
+Any other taxable income source
+
+On a pay stub, gross income is the top-line figure  -  what you earned before tax, National Insurance, retirement contributions, health insurance, or any other deduction is removed.
+
+If you earn a $70,000 annual salary paid bi-weekly, your gross income per pay period is $2,692.31 regardless of what is withheld.
+
+## Net income for individuals
+
+Net income for an individual is what you actually receive after all deductions. It is commonly called take-home pay.
+
+Deductions that reduce gross to net income typically include:
+
+Federal income tax withholding
+State and local income tax
+Social Security tax (6.2%)
+Medicare tax (1.45%)
+Health insurance premiums (if pre-tax)
+401k or retirement contributions (if pre-tax)
+Other pre-tax benefit deductions
+
+On the same $70,000 salary, after all typical deductions a person might take home approximately $50,000 to $55,000 annually  -  71% to 79% of gross income depending on their state, filing status, and benefit elections.
+
+Net income is what you actually have available for rent, food, savings, and spending. Budgeting from gross income rather than net income is one of the most common financial planning mistakes.
+
+## Gross income vs adjusted gross income (AGI)
+
+For US tax purposes there is an important intermediate figure between gross and net: Adjusted Gross Income (AGI).
+
+AGI = Gross income minus above-the-line deductions
+
+Above-the-line deductions include student loan interest, educator expenses, contributions to traditional IRAs, and self-employment tax deductions among others. AGI is the figure used to calculate your actual tax liability and determines eligibility for various tax credits and deductions.
+
+Your AGI appears on line 11 of Form 1040.
+
+## Gross income for businesses
+
+For a business, gross income (also called gross profit) is revenue minus the direct cost of producing goods or services sold.
+
+Gross profit = Revenue minus Cost of Goods Sold (COGS)
+
+COGS includes raw materials, direct labour, and manufacturing costs directly tied to production. It does not include operating expenses like rent, salaries of non-production staff, marketing, or administrative costs.
+
+Example:
+A manufacturer generates $2,000,000 in revenue
+Raw materials and direct production costs: $800,000
+Gross profit = $2,000,000 minus $800,000 = $1,200,000
+Gross profit margin = $1,200,000 / $2,000,000 = 60%
+
+## Net income for businesses
+
+For a business, net income (also called net profit or the bottom line) is what remains after all expenses are deducted from revenue.
+
+Net income = Revenue minus All expenses (COGS, operating expenses, interest, taxes, depreciation)
+
+Using the same example:
+Gross profit: $1,200,000
+Operating expenses (rent, salaries, marketing, admin): $600,000
+Interest expense: $50,000
+Taxes: $130,000
+Net income = $1,200,000 minus $780,000 = $420,000
+Net profit margin = $420,000 / $2,000,000 = 21%
+
+Net income is what owners can distribute as dividends, retain in the business, or use to repay debt. It is the definitive measure of business profitability.
+
+## Why the distinction matters in practice
+
+Loan applications  -  lenders use gross income to calculate debt-to-income ratio for mortgages and personal loans. This is why DTI ratios can look manageable on paper but feel tight in practice  -  you are repaying debt from net income, not gross.
+
+Budgeting  -  always budget from net income. Many people calculate what they can afford based on their salary (gross) and then wonder why money runs out before the end of the month.
+
+Business valuation  -  investors and buyers look at both gross and net margins. A business with high gross profit but thin net profit has a cost structure problem. A business with strong net margins has efficient operations.
+
+Salary negotiations  -  when discussing compensation, employers quote gross salary. Always mentally convert to approximate net take-home pay before assessing an offer.
+
+Tax planning  -  understanding the difference between gross income, AGI, and taxable income helps you identify legal deductions that reduce your tax liability.
+
+## Try the free calculators
+
+Use ToolSpotAI's free Salary Calculator to convert any annual salary to monthly, bi-weekly, and hourly gross figures. The Paycheck Calculator estimates your net take-home pay after all federal and state deductions.
+
+No signup required. Everything runs in your browser.
+
+## Frequently asked questions
+
+Is gross or net income used for mortgage applications?
+Lenders use gross income (before tax) to calculate your debt-to-income ratio for mortgage qualification. However your actual repayments come from your net income, so it is important to calculate affordability based on what you actually take home  -  not your pre-tax salary.
+
+What is the difference between net income and cash flow?
+Net income is an accounting figure that includes non-cash items like depreciation and accrued expenses. Cash flow measures actual money moving in and out of a business. A business can have positive net income but negative cash flow if it has significant accounts receivable not yet collected, or vice versa. For assessing a business's liquidity, cash flow is more relevant than net income alone.
+
+Does gross income include overtime?
+Yes. Gross income includes all earnings  -  regular wages, overtime pay, bonuses, commissions, and tips  -  before any deductions. Overtime pay is typically calculated at 1.5 times your regular hourly rate and is fully included in gross income.
+
+Why is net income called the bottom line?
+The term comes from accounting. On an income statement (profit and loss statement), revenue appears at the top and expenses are listed below it. Net income  -  what remains after all expenses  -  appears at the very bottom of the statement. Bottom line became a shorthand for final profitability.
+
+How do I calculate my annual net income from my pay stub?
+Multiply your net pay per pay period by the number of pay periods in a year. If you are paid bi-weekly multiply by 26. If you are paid twice a month multiply by 24. If you are paid monthly multiply by 12. This gives your approximate annual net income  -  it may vary slightly if your withholding changes during the year.
+
+## Related tools on ToolSpotAI
+Salary Calculator
+Paycheck Calculator
+Income Tax Calculator
+Profit Margin Calculator
+Debt-to-Income Ratio Calculator

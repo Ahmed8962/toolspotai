@@ -1,0 +1,118 @@
+Use our free Pregnancy Due Date Calculator to find your estimated due date instantly  -  no signup needed.
+
+## How to Calculate Your Pregnancy Due Date  -  Methods Explained
+
+Your estimated due date (EDD) is one of the first numbers your healthcare provider establishes after confirming a pregnancy. It shapes every subsequent appointment, screening, and milestone in your prenatal care. Yet most people have no idea how it is calculated or what assumptions underlie it.
+
+This guide explains the standard methods for calculating a due date, what the 40-week pregnancy timeline means, how ultrasound dating works, and what to expect when your dates conflict.
+
+## The standard method  -  Naegele's rule
+
+The most widely used method for calculating a due date is Naegele's rule, developed by German obstetrician Franz Karl Naegele in the 19th century. Despite its age it remains the standard starting point for due date calculation.
+
+The formula:
+
+Estimated Due Date = First day of last menstrual period + 280 days (40 weeks)
+
+Or equivalently:
+
+EDD = Last menstrual period + 9 months + 7 days
+
+Example:
+Last menstrual period (LMP): January 10
+Add 9 months: October 10
+Add 7 days: October 17
+Estimated due date: October 17
+
+The 280-day figure assumes a 28-day menstrual cycle with ovulation occurring on day 14. For women with shorter or longer cycles the calculation may need adjustment.
+
+## Why 40 weeks  -  and what that timeline means
+
+Pregnancy is counted from the first day of the last menstrual period  -  not from conception. This is because ovulation and fertilisation are difficult to date precisely, while the first day of the last period is a known and easily reported date.
+
+The result is that weeks 1 and 2 of a pregnancy are actually the two weeks before conception. Fertilisation typically occurs around week 2. Implantation occurs around week 3 to 4.
+
+The 40-week pregnancy is divided into three trimesters:
+
+First trimester: Weeks 1 to 12
+All major organs and body structures form during this period. The highest risk of miscarriage is in the first trimester.
+
+Second trimester: Weeks 13 to 27
+The fetus grows rapidly. Most people find this the most comfortable trimester. Anatomy scans typically occur around weeks 18 to 20.
+
+Third trimester: Weeks 28 to 40+
+Rapid weight gain and final organ maturation. The baby descends into the pelvis in preparation for birth.
+
+## How ultrasound dating works
+
+Ultrasound provides a more accurate due date than calendar calculation  -  particularly for women with irregular cycles. Ultrasound measures the size of the fetus and compares it to standard growth charts to estimate gestational age.
+
+First trimester ultrasound (ideally between weeks 8 and 13) is the most accurate for dating. The crown-rump length (CRL)  -  measurement from the top of the head to the bottom of the spine  -  is compared to reference values to estimate gestational age within plus or minus 5 to 7 days.
+
+Second trimester ultrasound is less accurate for dating (plus or minus 10 to 14 days) because natural variation in fetal size increases as pregnancy progresses.
+
+If ultrasound dating differs from the LMP-based date by more than a certain threshold, healthcare providers typically revise the due date to match the ultrasound:
+
+Before 9 weeks: revise if difference is more than 5 days
+9 to 15 weeks: revise if difference is more than 7 days
+16 to 21 weeks: revise if difference is more than 10 days
+After 21 weeks: ultrasound is generally not used to change a previously established due date
+
+## How accurate is the due date?
+
+Not very  -  but it is still useful as a reference point.
+
+Only about 4% to 5% of babies are born on their exact due date. Around 80% are born within two weeks of the due date (between weeks 38 and 42). Gestational age at birth follows a relatively wide normal distribution.
+
+The due date is better understood as the midpoint of a normal delivery window rather than a target. Full-term pregnancy is defined as 39 to 40 weeks, but deliveries between 37 and 42 weeks are considered normal range.
+
+Pregnancies that extend beyond 42 weeks are considered post-term and typically result in induction of labour due to increased risks to both mother and baby.
+
+## Other dating methods
+
+IVF transfer date  -  for pregnancies achieved through in vitro fertilisation the due date is calculated precisely from the transfer date. A day 5 embryo transfer gives a due date of 261 days (37 weeks) from transfer.
+
+Known ovulation date  -  if ovulation was tracked precisely (via ovulation predictor kits or basal body temperature) the due date can be calculated as 266 days (38 weeks) from ovulation, which is generally more accurate than LMP-based calculation.
+
+## Key milestones in the pregnancy timeline
+
+Week 8: First prenatal appointment, early ultrasound to confirm viability and date the pregnancy
+Week 10 to 13: First trimester screening (nuchal translucency ultrasound, blood tests for chromosomal abnormalities)
+Week 12: End of first trimester, risk of miscarriage drops significantly
+Week 16 to 20: Quickening  -  first fetal movements typically felt
+Week 18 to 20: Anatomy scan ultrasound checking all fetal structures
+Week 24: Viability threshold  -  premature babies born from this point have increasing survival rates
+Week 28: Third trimester begins, more frequent prenatal appointments
+Week 36 to 37: Group B Streptococcus (GBS) testing, discussion of birth plan
+Week 39 to 40: Full term, baby could arrive any time
+Week 41 to 42: Post-term monitoring, induction may be recommended
+
+## Try the free pregnancy calculator
+
+Use ToolSpotAI's free Pregnancy Due Date Calculator to calculate your estimated due date from your last menstrual period. The calculator also shows your current gestational week and key upcoming milestones.
+
+No signup required. Everything runs in your browser.
+
+## Frequently asked questions
+
+How accurate is the due date calculated from my last period?
+The LMP-based due date assumes a 28-day cycle with ovulation on day 14  -  assumptions that do not hold for everyone. It is accurate to within about plus or minus 2 weeks for most people. A first trimester ultrasound is significantly more accurate (plus or minus 5 to 7 days) and is the gold standard for due date confirmation. Most healthcare providers use ultrasound dating to confirm or revise the LMP-based estimate.
+
+What if I do not know the date of my last period?
+A first trimester ultrasound is used to establish the due date. The crown-rump length measurement gives a reliable gestational age estimate even without a known last menstrual period date.
+
+Can my due date change after it is set?
+Yes, particularly early in pregnancy. If a first trimester ultrasound shows the fetus is significantly larger or smaller than expected for the LMP-based date, the provider may revise the due date to match the ultrasound finding. After the second trimester due dates are rarely changed because fetal size variation makes ultrasound dating less reliable.
+
+What does it mean if I go past my due date?
+Going past your due date is very common  -  about 30% of pregnancies continue past 40 weeks. Most providers begin closer monitoring around 41 weeks and may recommend induction between 41 and 42 weeks depending on your individual circumstances and local guidelines. A baby born between 37 and 42 weeks is considered full term.
+
+Is there a difference between gestational age and fetal age?
+Yes. Gestational age (the 40-week count) is measured from the last menstrual period. Fetal age (also called embryonic age) is measured from conception and is approximately 2 weeks less than gestational age. Healthcare providers use gestational age as the standard for all prenatal dating and milestones.
+
+## Related tools on ToolSpotAI
+Pregnancy Due Date Calculator
+Ovulation Calculator
+Period Calculator
+BMI Calculator
+Calorie and TDEE Calculator

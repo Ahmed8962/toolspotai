@@ -1,0 +1,135 @@
+Use our free Paycheck Calculator and Salary Calculator to estimate your take-home pay — no signup needed.
+
+## How to Read a Pay Stub — Every Line Item Explained
+
+Most employees look at one number on their pay stub — the net pay deposited into their account — and ignore everything else. That is understandable. Pay stubs are dense with abbreviations and line items that nobody explains when you start a job.
+
+But your pay stub contains important information. It shows whether your employer is withholding the right amount of tax. It confirms your retirement contributions are being made. It records your year-to-date earnings for loan applications, rental applications, and tax filing. Understanding it properly takes about ten minutes and is worth doing at least once.
+
+## The two most important numbers
+
+Gross pay is your total earnings before any deductions. This is the number your salary or hourly rate produces before anything is taken out. On a $60,000 annual salary paid bi-weekly, your gross pay per period is $2,307.69.
+
+Net pay is what actually lands in your bank account after all deductions. The difference between gross and net can be substantial — often 25% to 40% of gross pay for a typical salaried employee.
+
+Everything between those two numbers is a deduction.
+
+## Federal income tax withholding
+
+The largest deduction for most employees. Your employer withholds federal income tax from each paycheck based on your W-4 form — specifically how you filled out your filing status and any additional withholding you requested.
+
+The amount withheld is not your actual tax liability. It is an estimate. The final reconciliation happens when you file your tax return. If too much was withheld you get a refund. If too little was withheld you owe the difference.
+
+Common W-4 related reasons your withholding might be wrong: life changes like marriage, divorce, or having children that you did not update on your W-4; multiple jobs where combined income pushes you into a higher bracket; significant side income not subject to withholding.
+
+## State and local income tax
+
+Most US states collect income tax and your employer withholds it alongside federal tax. The amount varies dramatically by state — from zero in states with no income tax (Florida, Texas, Nevada, Washington, and others) to over 10% in California and New York at higher income levels.
+
+Some cities and counties also levy local income taxes — New York City, Philadelphia, and many Ohio cities being common examples.
+
+## FICA taxes — Social Security and Medicare
+
+These two deductions are mandatory for almost all employees and fund the federal social insurance programs.
+
+Social Security: 6.2% of gross wages up to the annual wage base limit. Your employer matches this 6.2%.
+
+Medicare: 1.45% of all gross wages with no cap. Your employer matches this 1.45%. Employees earning above $200,000 pay an additional 0.9% Additional Medicare Tax with no employer match.
+
+Together these are called FICA taxes and total 7.65% of your gross pay up to the Social Security wage base.
+
+## Pre-tax deductions
+
+These are deductions taken from your gross pay before taxes are calculated. They reduce your taxable income.
+
+401k or 403b contributions — retirement account contributions up to the annual limit. Every dollar you contribute pre-tax reduces your taxable income by a dollar.
+
+Health insurance premiums — if your employer offers health insurance through a Section 125 cafeteria plan, your premium contributions come out pre-tax.
+
+HSA contributions — contributions to a Health Savings Account are pre-tax and reduce taxable income.
+
+FSA contributions — Flexible Spending Account contributions for healthcare or dependent care are pre-tax.
+
+Dental and vision insurance premiums — typically pre-tax if offered through an employer plan.
+
+## Post-tax deductions
+
+These come out after taxes are calculated and do not reduce your taxable income.
+
+Roth 401k contributions — unlike traditional 401k, Roth contributions are made with after-tax money. You pay tax now and withdrawals in retirement are tax-free.
+
+Life insurance premiums above certain thresholds — employer-provided life insurance above $50,000 in coverage has the premium cost included in taxable wages.
+
+Wage garnishments — court-ordered deductions for child support, alimony, or debt collection come out post-tax.
+
+Union dues — typically post-tax.
+
+## Employer contributions
+
+Many pay stubs also show employer contributions that do not affect your net pay but are part of your total compensation.
+
+Employer 401k match — if your employer matches your retirement contributions, this is often shown on the pay stub even though it goes directly to your retirement account.
+
+Employer health insurance contribution — employers typically cover a significant portion of health insurance premiums. This is part of your total compensation even though it does not show up in your net pay.
+
+## Year-to-date figures
+
+Most pay stubs show a YTD (year-to-date) column alongside the current period amounts. These running totals are useful for:
+
+Verifying your Social Security tax stops being withheld once you reach the wage base limit
+Confirming total retirement contributions for the year against the annual limit
+Providing proof of income for loan or rental applications
+Cross-checking against your W-2 at tax time
+
+## Common pay stub abbreviations
+
+FED TAX or FWT — Federal Withholding Tax
+ST TAX or SWT — State Withholding Tax
+SS or OASDI — Social Security tax
+MED — Medicare tax
+401K — retirement contribution
+HSA — Health Savings Account
+FSA — Flexible Spending Account
+YTD — Year to Date
+PTO — Paid Time Off balance
+GTL — Group Term Life insurance
+
+## What to do if something looks wrong
+
+Compare your gross pay to your salary or hourly rate and hours worked. If gross pay is incorrect everything downstream is wrong.
+
+Check your federal withholding against a withholding calculator if your refund or tax bill is consistently larger than expected.
+
+Verify your 401k contributions are actually being deposited by checking your retirement account statement against your YTD contributions on your pay stub.
+
+If deductions appear that you did not authorise, contact your HR or payroll department immediately.
+
+## Try the free paycheck calculators
+
+Use ToolSpotAI's free Paycheck Calculator to see an estimated breakdown of your gross to net pay including federal tax, state tax, and FICA deductions. The Salary Calculator shows annual, monthly, and hourly equivalents for any salary figure.
+
+No signup required. Everything runs in your browser.
+
+## Frequently asked questions
+
+Why is my net pay so much less than my salary?
+The gap between gross and net pay includes federal income tax withholding, state income tax, Social Security (6.2%), Medicare (1.45%), and any pre-tax benefit deductions like health insurance and 401k contributions. Combined these typically reduce take-home pay to 60% to 75% of gross pay for most middle-income earners.
+
+What is the difference between a W-2 and a pay stub?
+A pay stub shows your earnings and deductions for a single pay period and year-to-date totals. A W-2 is an annual summary issued by your employer after the year ends showing your total wages and total taxes withheld for the entire year. Your W-2 figures should match the final year-to-date figures on your last pay stub of the year.
+
+Can I change how much tax is withheld from my paycheck?
+Yes. Submit a new W-4 form to your employer to adjust federal withholding. You can request additional withholding if you owe tax each year, or claim exemptions to reduce withholding if you consistently receive large refunds. State withholding is adjusted through a separate state equivalent form.
+
+What does it mean if my pay stub shows negative net pay?
+Negative net pay means deductions exceeded gross pay. This can happen if a large benefit deduction or garnishment was processed in a period with lower than usual gross pay. Your employer should address this — you cannot legally be required to pay your employer rather than receiving payment for work performed.
+
+How long should I keep my pay stubs?
+Keep pay stubs until you receive and verify your W-2 at tax time. After verifying, most financial advisors suggest keeping pay stubs for one year. Keep any pay stubs relevant to major loan applications or legal matters longer. Year-end pay stubs showing YTD figures are the most important to retain.
+
+## Related tools on ToolSpotAI
+Paycheck Calculator
+Salary Calculator
+Income Tax Calculator
+Debt-to-Income Ratio Calculator
+Retirement Calculator

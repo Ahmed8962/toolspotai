@@ -1,0 +1,93 @@
+Use our free Mortgage Calculator to model your payment with and without PMI  -  no signup needed.
+
+## What Is PMI and How Do You Avoid Paying It?
+
+If your down payment on a home is less than 20% of the purchase price, your lender will almost certainly require you to pay private mortgage insurance  -  PMI. It adds a significant cost to your monthly payment for no direct benefit to you. It protects the lender, not you.
+
+Understanding exactly what PMI is, how much it costs, when it goes away on its own, and how to eliminate it faster can save you tens of thousands of dollars over the life of a loan.
+
+## What is PMI?
+
+Private mortgage insurance is a policy your lender requires you to purchase when your down payment is below 20% of the home's purchase price. If you default on the loan, PMI pays the lender the difference between what you owe and what the lender recovers by selling the home.
+
+PMI protects the lender against the higher risk of lending when there is limited equity in the property. A borrower who has put down less than 20% has less financial stake in the home and is statistically more likely to default than a borrower with a larger down payment.
+
+You pay the premiums. The lender receives the benefit. This is why eliminating PMI as quickly as possible is in your interest.
+
+## How much does PMI cost?
+
+PMI typically costs between 0.5% and 1.5% of the original loan amount per year, though it can be higher for borrowers with lower credit scores or very small down payments.
+
+On a $350,000 loan at 1% PMI:
+Annual PMI cost: $3,500
+Monthly PMI cost: approximately $292
+
+On a $500,000 loan at 0.75% PMI:
+Annual PMI cost: $3,750
+Monthly PMI cost: approximately $313
+
+The exact rate depends on your loan amount, down payment percentage, credit score, and loan type. PMI rates are lower for borrowers with higher credit scores and larger down payments within the under-20% range.
+
+## When does PMI go away automatically?
+
+Under the federal Homeowners Protection Act (HPA), lenders must automatically cancel PMI when your loan balance reaches 78% of the original purchase price  -  meaning you have built 22% equity based on your original value and payment schedule.
+
+Additionally you have the right to request PMI cancellation when your balance reaches 80% of the original purchase price (20% equity). Your lender is required to honour this request if you are current on payments and can demonstrate the property value has not declined.
+
+The key word is original purchase price. If your home has appreciated significantly, your actual equity may be well above 20% while PMI continues because the lender uses the original value for automatic cancellation, not the current market value.
+
+## How to eliminate PMI faster
+
+Pay extra principal to reach 80% LTV sooner. Every extra dollar you pay toward principal brings the PMI cancellation date closer. Even an extra $200 per month on a 30-year mortgage significantly accelerates equity building.
+
+Request cancellation based on increased home value. If your home has appreciated and you believe you now have 20% or more equity based on current market value, you can request a new appraisal and ask your lender to cancel PMI. The lender will typically require a formal appraisal at your expense (usually $300 to $600) but if the appraisal confirms sufficient equity, PMI can be cancelled well ahead of the automatic schedule.
+
+Refinance once you have sufficient equity. If interest rates have also dropped since you bought, refinancing when you have 20% equity eliminates PMI and may reduce your rate simultaneously. Be sure to factor in closing costs to confirm the refinance makes financial sense.
+
+## How to avoid PMI entirely
+
+Put down 20% or more. The most straightforward approach. On a $400,000 home this requires $80,000 upfront  -  a significant barrier for many buyers.
+
+Piggyback loan (80-10-10). Take a first mortgage for 80% of the purchase price, a second mortgage (home equity loan or HELOC) for 10%, and put down 10% yourself. The first mortgage has no PMI because the LTV is exactly 80%. The second mortgage carries a higher interest rate but the combined cost is often less than PMI. This strategy requires qualifying for two loans simultaneously.
+
+Lender-paid PMI (LPMI). Some lenders offer to cover the PMI cost in exchange for a slightly higher interest rate. You pay no explicit PMI premium but your rate is higher for the life of the loan  -  unlike standard PMI which eventually goes away. LPMI makes sense if you plan to sell or refinance before you would have eliminated PMI anyway.
+
+VA loans. If you qualify for a VA loan (available to eligible US military service members, veterans, and surviving spouses), no PMI is required regardless of down payment. VA loans do charge a funding fee but it is typically less than PMI over time.
+
+USDA loans. Properties in eligible rural areas may qualify for USDA loans with no down payment required and no PMI, though an upfront guarantee fee and annual fee apply.
+
+## PMI vs MIP  -  what is the difference?
+
+PMI applies to conventional loans (not government-backed).
+
+MIP (Mortgage Insurance Premium) applies to FHA loans. Unlike PMI, MIP often lasts for the life of an FHA loan if your down payment is below 10%  -  even if you eventually build significant equity. This is one reason why refinancing out of an FHA loan into a conventional loan once you have 20% equity makes sense for many borrowers.
+
+## Try the free mortgage calculator
+
+Use ToolSpotAI's free Mortgage Calculator to model your monthly payment with and without PMI, see how extra payments accelerate your equity building, and calculate exactly when you will hit the 80% LTV threshold.
+
+No signup required. Everything runs in your browser.
+
+## Frequently asked questions
+
+Is PMI tax deductible?
+PMI deductibility has varied under US tax law and has lapsed and been renewed multiple times. As of recent tax years it has not been deductible for most taxpayers. Always check the current IRS guidance or consult a tax advisor for the most up to date information on PMI deductibility.
+
+Does PMI protect me if I cannot make my payments?
+No. PMI protects the lender, not you. If you default, the insurance pays the lender any shortfall after foreclosure. It provides no benefit to you as the borrower. This is why eliminating PMI as quickly as possible is in your interest.
+
+Can I avoid PMI without a 20% down payment?
+Yes, through several strategies: a piggyback loan structure (80-10-10), lender-paid PMI with a higher interest rate, VA loans for eligible veterans, or USDA loans for eligible rural properties. Each has tradeoffs  -  compare the total cost of each option for your specific situation.
+
+How do I know when I can request PMI cancellation?
+Track your loan balance against the original purchase price. When your balance reaches 80% of the original value (not current market value) you have the right to request cancellation. Contact your lender in writing, confirm you are current on payments, and request PMI removal. If your home has appreciated you can also request a new appraisal to demonstrate current equity exceeds 20%.
+
+Does PMI affect my credit score?
+PMI itself does not appear on your credit report and does not directly affect your credit score. It is simply an additional cost included in your monthly mortgage payment. Missing your mortgage payment  -  which includes the PMI component  -  does affect your credit score like any other missed payment.
+
+## Related tools on ToolSpotAI
+Mortgage Calculator
+Loan Calculator
+Debt-to-Income Ratio Calculator
+Affordability Calculator
+Auto Loan Calculator

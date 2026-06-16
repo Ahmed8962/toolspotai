@@ -1,0 +1,126 @@
+Use our free Inflation Calculator to see how inflation affects purchasing power over time  -  no signup needed.
+
+## How to Calculate Inflation Rate  -  Formula and Examples
+
+Inflation is one of the most discussed economic concepts and one of the least understood in practical terms. Most people know it means prices are going up  -  but fewer understand how the rate is actually measured, how to calculate it themselves, or what it means for the real value of their money over time.
+
+This guide explains the inflation rate formula, walks through worked examples, explains the Consumer Price Index that underlies official inflation figures, and shows how to use inflation calculations to make better financial decisions.
+
+## What is inflation?
+
+Inflation is the rate at which the general level of prices for goods and services rises over time. As prices rise the purchasing power of money falls  -  each dollar buys less than it did before.
+
+A 5% annual inflation rate means that a basket of goods costing $100 today will cost $105 in a year. It also means that $100 kept in cash for a year will only buy what $95.24 worth of goods bought a year earlier.
+
+Deflation is the opposite  -  a general decline in prices. While it sounds appealing, deflation typically signals economic weakness and can trigger recessive cycles as consumers delay purchases expecting further price falls.
+
+## The inflation rate formula
+
+The basic inflation rate formula compares a price or price index at two points in time:
+
+Inflation rate = ((Price in later period minus Price in earlier period) / Price in earlier period) x 100
+
+Example 1  -  single item:
+A grocery basket costs $150 in January 2023 and $162 in January 2024.
+Inflation rate = ((162 minus 150) / 150) x 100
+Inflation rate = (12 / 150) x 100
+Inflation rate = 8%
+
+The price of that basket rose by 8% over the year.
+
+Example 2  -  using a price index:
+CPI in January 2023: 296.8
+CPI in January 2024: 308.4
+Inflation rate = ((308.4 minus 296.8) / 296.8) x 100
+Inflation rate = (11.6 / 296.8) x 100
+Inflation rate = 3.91%
+
+## What is the Consumer Price Index (CPI)?
+
+Official government inflation figures are based on the Consumer Price Index  -  a measure of the average change in prices paid by urban consumers for a representative basket of goods and services.
+
+The CPI basket in the US is compiled by the Bureau of Labor Statistics (BLS) and covers:
+
+Food and beverages (approximately 15% of the basket)
+Housing including rent and owners' equivalent rent (approximately 34%)
+Apparel (approximately 2.5%)
+Transportation including fuel and vehicles (approximately 15%)
+Medical care (approximately 8%)
+Recreation (approximately 6%)
+Education and communication (approximately 6%)
+Other goods and services (approximately 3.5%)
+
+The weights reflect how the average urban consumer actually spends money. Housing is the largest component which is why rent and housing costs have an outsized effect on measured inflation.
+
+## CPI vs PCE  -  which matters more?
+
+The Federal Reserve uses the Personal Consumption Expenditures (PCE) price index as its preferred inflation measure, not CPI. PCE differs from CPI in two key ways:
+
+PCE uses a broader basket that adjusts weights as consumer behaviour changes. If beef becomes expensive and consumers switch to chicken, PCE captures this substitution. CPI uses fixed weights that change less frequently.
+
+PCE generally produces a slightly lower inflation reading than CPI for the same period, which is partly why the Fed uses it for its 2% inflation target.
+
+For everyday reference CPI is the more widely reported figure. For understanding Fed policy PCE is the relevant measure.
+
+## Core inflation vs headline inflation
+
+Headline inflation includes all items in the CPI basket including food and energy.
+
+Core inflation excludes food and energy prices. Food and energy prices are highly volatile and can swing dramatically due to weather, geopolitical events, and commodity markets  -  swings that do not necessarily reflect underlying economic inflation trends.
+
+Central banks and economists typically focus on core inflation when making monetary policy decisions because it better reflects persistent inflation trends. Headline inflation is more relevant for understanding the actual cost of living impact on consumers.
+
+## How inflation affects your money
+
+Purchasing power erosion  -  at 3% annual inflation, $100,000 today has the purchasing power of approximately $74,000 in ten years. At 5% inflation it drops to approximately $61,000.
+
+Savings account returns  -  if your savings account earns 4% interest and inflation is 3%, your real return is approximately 1%. If inflation exceeds your savings rate you are losing purchasing power in real terms even while your nominal balance grows.
+
+Investment returns  -  equity investments are often considered an inflation hedge over long periods because company revenues and earnings typically rise with inflation over time. Fixed income like bonds suffers in high inflation environments because fixed payments become worth less in real terms.
+
+Debt  -  inflation benefits borrowers because you repay loans with money that is worth less than when you borrowed it. A $300,000 mortgage taken out during low inflation becomes easier to repay in real terms if inflation subsequently rises significantly.
+
+Wages  -  real wage growth is wage growth minus inflation. If wages rise 4% but inflation is 5%, real wages fell by 1% despite the nominal increase.
+
+## The rule of 70 for inflation
+
+A quick way to estimate how long it takes for prices to double at a given inflation rate:
+
+Years to double = 70 / inflation rate
+
+At 2% inflation: prices double in 35 years
+At 4% inflation: prices double in 17.5 years
+At 7% inflation: prices double in 10 years
+At 10% inflation: prices double in 7 years
+
+This is why moderate but persistent inflation has a more significant long-term impact than most people intuitively appreciate.
+
+## Try the free inflation calculator
+
+Use ToolSpotAI's free Inflation Calculator to see how inflation erodes purchasing power over any time period, calculate the real value of a past amount in today's money, or project future prices at a given inflation rate.
+
+No signup required. Everything runs in your browser.
+
+## Frequently asked questions
+
+What is a normal inflation rate?
+Most central banks target 2% annual inflation as an ideal rate  -  high enough to provide a buffer against deflation and support economic growth, but low enough to preserve purchasing power. US inflation averaged approximately 2% to 3% annually for most of the 2010s before rising sharply in 2021 to 2022 and gradually returning toward target levels.
+
+Why does the government want some inflation?
+Moderate inflation is considered healthy for several reasons. It gives central banks room to cut interest rates during downturns (harder to do near zero). It encourages spending and investment rather than hoarding cash. It makes debt easier to service over time. Deflation  -  falling prices  -  can be more economically damaging as it creates incentives to delay spending and can trigger a deflationary spiral.
+
+How does inflation affect interest rates?
+Central banks raise interest rates to combat high inflation. Higher rates make borrowing more expensive, reduce spending and investment, and slow economic activity  -  which reduces upward pressure on prices. When inflation is low or falling, central banks cut rates to stimulate economic activity. The relationship between inflation and interest rates is the primary lever of monetary policy.
+
+What is hyperinflation?
+Hyperinflation is an extremely rapid inflation rate  -  conventionally defined as above 50% per month. It typically results from a government printing money to fund spending without adequate economic output to back the currency. Historical examples include Germany in 1923, Zimbabwe in the 2000s, and Venezuela in recent years. Hyperinflation destroys the value of savings and creates economic chaos.
+
+Is inflation good or bad for homeowners?
+Generally good in the long term. Home values tend to rise with inflation, increasing the nominal value of the property. The mortgage  -  a fixed nominal debt  -  becomes cheaper to repay in real terms as inflation rises. Homeowners also benefit from locked-in mortgage payments while rents (and their equivalent housing costs for renters) rise with inflation. This is one reason homeownership is often cited as an inflation hedge.
+
+## Related tools on ToolSpotAI
+Inflation Calculator
+Compound Interest Calculator
+Retirement Calculator
+Salary Calculator
+ROI Calculator
