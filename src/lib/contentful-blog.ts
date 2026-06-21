@@ -203,9 +203,7 @@ function mapPost(
     coverImage: coverId ? assets.get(coverId) : undefined,
     seoTitle: f.seoTitle,
     seoDescription: f.seoDescription,
-    canonicalUrl: f.canonicalUrl
-      ? f.canonicalUrl.replace(/^http:\/\//, "https://")
-      : undefined,
+    canonicalUrl: blogPostCanonical(f.slug, f.canonicalUrl),
     seoNoIndex: Boolean(f.seoNoIndex),
     focusKeyword: f.focusKeyword,
     secondaryKeywords: f.secondaryKeywords ?? [],
@@ -302,4 +300,21 @@ export async function getBlogPostBySlug(
 
 export function blogPostUrl(slug: string): string {
   return `${SITE_URL}/blog/${slug}`;
+}
+
+/** Prefer slug-derived URL; ignore CMS canonical when it does not match this post. */
+export function blogPostCanonical(slug: string, cmsCanonical?: string): string {
+  const expected = blogPostUrl(slug);
+  const raw = cmsCanonical?.trim();
+  if (!raw) return expected;
+
+  const normalized = raw.replace(/^http:\/\//, "https://");
+  try {
+    const path = new URL(normalized).pathname.replace(/\/$/, "") || "/";
+    const expectedPath = `/blog/${slug}`;
+    if (path === expectedPath) return expected;
+  } catch {
+    /* invalid URL in CMS */
+  }
+  return expected;
 }

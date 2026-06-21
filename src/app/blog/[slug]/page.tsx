@@ -3,7 +3,7 @@ import BlogPostCta from "@/components/blog/BlogPostCta";
 import BlogTableOfContents from "@/components/blog/BlogTableOfContents";
 import RichTextRenderer from "@/components/blog/RichTextRenderer";
 import {
-  blogPostUrl,
+  blogPostCanonical,
   getAllBlogPosts,
   getAllBlogPostsForBuild,
   getBlogPostBySlug,
@@ -24,6 +24,8 @@ function formatDate(iso: string) {
   });
 }
 
+export const dynamic = "force-dynamic";
+
 export async function generateStaticParams() {
   const posts = await getAllBlogPostsForBuild();
   return posts.map((post) => ({ slug: post.slug }));
@@ -43,7 +45,7 @@ export async function generateMetadata({
     };
   }
 
-  const canonical = post.canonicalUrl || blogPostUrl(post.slug);
+  const canonical = blogPostCanonical(post.slug, post.canonicalUrl);
   const title = post.seoTitle || post.title;
   const description = post.seoDescription || post.excerpt;
   const ogImage = post.ogImage || post.coverImage;
@@ -98,7 +100,7 @@ export default async function BlogPostPage({
     .filter((p) => p.tags.some((tag) => post.tags.includes(tag)))
     .slice(0, 3);
 
-  const canonical = post.canonicalUrl || blogPostUrl(post.slug);
+  const canonical = blogPostCanonical(post.slug, post.canonicalUrl);
   const schema = {
     "@context": "https://schema.org",
     "@type": post.schemaType || "BlogPosting",
