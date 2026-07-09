@@ -7,6 +7,14 @@ import type { MetadataRoute } from "next";
 const BASE = SITE_URL;
 const NOW = new Date().toISOString();
 
+/** Google requires W3C datetime — Contentful sometimes omits the timezone suffix. */
+function toSitemapLastMod(value: string | Date | undefined): string {
+  if (!value) return NOW;
+  const d = value instanceof Date ? value : new Date(value);
+  if (Number.isNaN(d.getTime())) return NOW;
+  return d.toISOString();
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const hubPages: MetadataRoute.Sitemap = [
     { url: `${BASE}/tools/finance-calculators`, lastModified: NOW, changeFrequency: "weekly", priority: 0.85 },
@@ -50,7 +58,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const posts = await getAllBlogPosts();
     blogRoutes = posts.map((post) => ({
       url: `${BASE}/blog/${post.slug}`,
-      lastModified: post.updatedAt || post.publishedAt || NOW,
+      lastModified: toSitemapLastMod(post.updatedAt || post.publishedAt),
       changeFrequency: "weekly" as const,
       priority: 0.74,
     }));
