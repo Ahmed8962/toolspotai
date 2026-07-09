@@ -10,12 +10,12 @@ export const dynamic = "force-dynamic";
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "ToolSpotAI blog with practical guides for calculators, productivity tools, SEO workflows, and growth tactics.",
+    "Free guides and explainers for everyday calculators — finance, health, math and more. Clear answers, no jargon.",
   alternates: { canonical: `${SITE_URL}/blog` },
   openGraph: {
-    title: "ToolSpotAI Blog",
+    title: "ToolSpotAI Blog — Free Calculator Guides and Explainers",
     description:
-      "Actionable guides for tools, SEO, and productivity with step-by-step walkthroughs.",
+      "Free guides and explainers for everyday calculators — finance, health, math and more. Clear answers, no jargon.",
     url: `${SITE_URL}/blog`,
     type: "website",
     images: defaultOgImageObjects("ToolSpotAI blog"),
