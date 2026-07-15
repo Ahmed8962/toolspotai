@@ -103,6 +103,11 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://api.frankfurter.app" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3125175620140273"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className="flex min-h-full flex-col font-sans antialiased">
         {gaMeasurementId ? (
