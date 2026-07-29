@@ -1,5 +1,1 @@
-# AdSense / ads.txt — add your publisher ID after Google approves the site.
-# Instructions: https://support.google.com/adsense/answer/7532444
-#
-# Uncomment and replace pub-XXXXXXXXXXXXXXXX with your real ID from AdSense:
-# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+google.com, pub-3125175620140273, DIRECT, f08c47fec0942fa0
