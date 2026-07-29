@@ -1,6 +1,7 @@
 import { staticPageMetadata } from "@/lib/seo";
 import { SITE_EMAIL } from "@/lib/site";
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = staticPageMetadata("/privacy", {
   title: "Privacy Policy — Cookies & Google AdSense | ToolSpotAI",
@@ -12,7 +13,7 @@ export default function PrivacyPage() {
   return (
     <div className="mx-auto max-w-2xl px-4 py-14">
       <h1 className="text-3xl font-semibold text-text-primary">Privacy Policy</h1>
-      <p className="mt-2 text-sm text-text-muted">Last updated: April 10, 2026</p>
+      <p className="mt-2 text-sm text-text-muted">Last updated: July 29, 2026</p>
 
       <h2 className="mt-10 text-lg font-semibold text-text-primary">Summary</h2>
       <p className="mt-2 text-text-secondary leading-relaxed">
@@ -63,10 +64,15 @@ export default function PrivacyPage() {
 
       <h2 className="mt-8 text-lg font-semibold text-text-primary">Contact</h2>
       <p className="mt-2 text-text-secondary">
-        Questions about this policy:{" "}
+        Questions about this policy: use our{" "}
+        <Link className="text-brand-600 hover:underline" href="/contact">
+          contact page
+        </Link>{" "}
+        or email{" "}
         <a className="text-brand-600 hover:underline" href={`mailto:${SITE_EMAIL}`}>
           {SITE_EMAIL}
         </a>
+        .
       </p>
     </div>
   );

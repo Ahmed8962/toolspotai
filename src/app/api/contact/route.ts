@@ -4,6 +4,10 @@ import { NextResponse } from "next/server";
 
 const MAX_MESSAGE_LEN = 8000;
 
+/** Inbox for form submissions — private env so Gmail never appears on the public site. */
+const DELIVERY_EMAIL =
+  process.env.CONTACT_DELIVERY_EMAIL?.trim() || SITE_EMAIL;
+
 /** Resend test sender — works without a custom domain; add your domain in Resend for production branding. */
 const FROM = "ToolSpotAI <onboarding@resend.dev>";
 
@@ -76,7 +80,7 @@ export async function POST(req: Request) {
     const resend = new Resend(apiKey);
     const { data, error } = await resend.emails.send({
       from: FROM,
-      to: [SITE_EMAIL],
+      to: [DELIVERY_EMAIL],
       replyTo: visitorEmail,
       subject,
       text,
