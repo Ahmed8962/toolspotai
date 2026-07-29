@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "question": "How much should I have in savings by age?",
+      "answer": "Common benchmarks vary but a widely cited guide from Fidelity suggests having 1x your annual salary saved by age 30, 3x by 40, 6x by 50, and 8x by 60. These figures refer primarily to retirement savings. For liquid emergency savings, the target is 3 to 6 months of living expenses regardless of age. These are guides not rules  -  your specific goals and circumstances should drive your actual targets."
+    },
+    {
+      "question": "What is a realistic savings rate?",
+      "answer": "A savings rate of 10% to 20% of net income is considered realistic for most people. Personal finance guidelines often cite 20% as the ideal (popularised by the 50/30/20 budget rule). People pursuing early retirement or aggressive financial goals may save 30% to 50% or more. Starting at any positive rate and gradually increasing it is more effective than waiting until you can save a larger percentage."
+    },
+    {
+      "question": "Should I save or pay off debt first?",
+      "answer": "The answer depends on the interest rate of the debt. High-interest debt above 7% to 8% should generally be paid down before investing, because the guaranteed return from eliminating the debt beats the expected investment return after risk. Low-interest debt below 4% to 5% is often fine to carry while saving and investing simultaneously. Always build a small emergency fund of $1,000 to $2,000 before aggressively paying debt  -  without it you will return to debt the moment an unexpected expense occurs."
+    },
+    {
+      "question": "How do I account for inflation in a long-term savings goal?",
+      "answer": "For goals more than 5 years away, the purchasing power of your target amount will change over time. To account for inflation, increase your goal amount by the expected inflation rate annually. For a $50,000 goal in 10 years at 3% inflation, the real cost in today's dollars is approximately $67,000  -  so you should target the higher number. Use our Inflation Calculator to see exactly how inflation erodes purchasing power over your specific timeline."
+    },
+    {
+      "question": "What is the best account to save in for a short-term goal?",
+      "answer": "For goals within 1 to 3 years, capital preservation matters more than returns. High-yield savings accounts, money market accounts, and short-term certificates of deposit are appropriate. Avoid investing short-term savings in equities  -  markets can fall 30% or more in a year, and a goal with a 2-year timeline cannot afford to wait for a market recovery. For goals 5 years or more away, a diversified investment account is appropriate and compound returns significantly reduce the required monthly contribution."
+    }
+  ]
+}

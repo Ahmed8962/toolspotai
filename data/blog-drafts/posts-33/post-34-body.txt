@@ -1,0 +1,141 @@
+Use our free Retirement Calculator and Compound Interest Calculator to model your savings goals  -  no signup needed.
+
+## How to Calculate Your Savings Goal  -  Monthly Target Formula
+
+Most people have a vague sense of what they want to save for but no concrete number for how much to put away each month. The result is either saving too little and falling short of the goal, or saving without a target and having no way to measure progress.
+
+This guide shows you exactly how to calculate a monthly savings target for any financial goal  -  short-term, medium-term, or long-term  -  with worked examples for the most common scenarios.
+
+## The basic savings goal formula
+
+For goals without investment returns (cash savings in a low-interest account):
+
+Monthly savings needed = Goal amount / Number of months until deadline
+
+This is the simplest version  -  divide what you need by how long you have to save it.
+
+Example:
+Goal: $6,000 holiday fund
+Timeline: 18 months
+Monthly savings needed = $6,000 / 18 = $333.33 per month
+
+## The savings goal formula with interest
+
+For longer-term goals where savings will earn interest or investment returns, the formula accounts for compound growth:
+
+PMT = FV x r / ((1 + r)^n - 1)
+
+Where:
+PMT = monthly payment (what you need to save each month)
+FV = future value (your goal amount)
+r = monthly interest rate (annual rate divided by 12)
+n = number of months
+
+This formula calculates the monthly contribution needed to reach a target amount given a specific return rate and time horizon.
+
+Example:
+Goal: $20,000 house deposit
+Timeline: 4 years (48 months)
+Expected return: 4.5% annually (high-yield savings account)
+Monthly rate r = 4.5% / 12 = 0.375% = 0.00375
+
+PMT = 20,000 x 0.00375 / ((1.00375)^48 - 1)
+PMT = 75 / (1.1964 - 1)
+PMT = 75 / 0.1964
+PMT = approximately $382 per month
+
+Without any interest, you would need $20,000 / 48 = $416.67 per month. The 4.5% return saves you approximately $35 per month over 4 years.
+
+## Worked examples for common savings goals
+
+Emergency fund:
+Target: 3 months of expenses at $3,500 per month = $10,500
+Timeline: 12 months
+No investment return assumed (keep in cash for accessibility)
+Monthly savings = $10,500 / 12 = $875 per month
+
+House deposit:
+Target: $50,000 (10% on a $500,000 property)
+Timeline: 5 years (60 months)
+Return: 4% annually in high-yield savings
+Monthly rate = 0.333%
+PMT = 50,000 x 0.00333 / ((1.00333)^60 - 1) = approximately $754 per month
+
+Car purchase (avoiding finance):
+Target: $25,000
+Timeline: 3 years (36 months)
+Return: 3% annually
+Monthly rate = 0.25%
+PMT = 25,000 x 0.0025 / ((1.0025)^36 - 1) = approximately $668 per month
+
+University fund (starting from birth):
+Target: $80,000 in 18 years (216 months)
+Return: 6% annually (investment account)
+Monthly rate = 0.5%
+PMT = 80,000 x 0.005 / ((1.005)^216 - 1) = approximately $218 per month
+
+The university fund example shows the power of time  -  $218 per month invested over 18 years at 6% reaches $80,000, whereas saving the same amount in cash would require $370 per month.
+
+## How to set a realistic savings target
+
+Start with your goal amount and deadline. Be specific  -  vague goals like save more money produce vague results. Define the exact amount and the exact date.
+
+Work out what you can actually afford to save. Take your monthly net income and subtract all fixed expenses (rent, utilities, loan payments, subscriptions) and variable essentials (food, transport, healthcare). What remains is your discretionary income  -  the pool from which savings come.
+
+If the required monthly savings exceeds your discretionary income you have three options:
+Extend the timeline  -  more months reduces the monthly requirement
+Reduce the goal  -  a smaller target requires less per month
+Increase income  -  a side income or overtime specifically directed to the goal
+
+Automate the savings. Set up an automatic transfer on pay day so the savings happen before you have a chance to spend the money. People who automate savings consistently outperform those who try to save what is left at the end of the month.
+
+## What to do when you have multiple savings goals simultaneously
+
+Prioritise in this order:
+
+Emergency fund first (3 to 6 months of expenses in accessible cash)  -  this is non-negotiable before directing money to other goals
+Employer retirement match  -  capturing the full employer match is an immediate guaranteed return that no other goal can beat
+High-interest debt elimination  -  paying off credit card debt at 20% is a guaranteed 20% return
+Specific financial goals  -  house deposit, car, education, travel, in order of personal priority
+Additional retirement savings beyond the match  -  important but comes after emergency fund and high-interest debt
+
+Never skip the emergency fund to chase a more exciting goal. Without a cash buffer any unexpected expense derails every other financial plan simultaneously.
+
+## The savings rate benchmark
+
+A useful overall benchmark is to aim for a savings rate of 20% of net income across all goals combined  -  emergency fund, retirement, and specific goals included.
+
+On a $5,000 monthly net income:
+20% savings rate = $1,000 per month total across all goals
+
+If this is not achievable immediately, start with whatever is possible and increase by 1% each time income rises or a fixed expense drops. Gradual increases are sustainable in a way that dramatic cuts rarely are.
+
+## Try the free calculators
+
+Use ToolSpotAI's free Retirement Calculator to model long-term savings goals with compound returns. The Compound Interest Calculator shows how any lump sum or regular contribution grows over time at different return rates.
+
+No signup required. Everything runs in your browser.
+
+## Frequently asked questions
+
+How much should I have in savings by age?
+Common benchmarks vary but a widely cited guide from Fidelity suggests having 1x your annual salary saved by age 30, 3x by 40, 6x by 50, and 8x by 60. These figures refer primarily to retirement savings. For liquid emergency savings, the target is 3 to 6 months of living expenses regardless of age. These are guides not rules  -  your specific goals and circumstances should drive your actual targets.
+
+What is a realistic savings rate?
+A savings rate of 10% to 20% of net income is considered realistic for most people. Personal finance guidelines often cite 20% as the ideal (popularised by the 50/30/20 budget rule). People pursuing early retirement or aggressive financial goals may save 30% to 50% or more. Starting at any positive rate and gradually increasing it is more effective than waiting until you can save a larger percentage.
+
+Should I save or pay off debt first?
+The answer depends on the interest rate of the debt. High-interest debt above 7% to 8% should generally be paid down before investing, because the guaranteed return from eliminating the debt beats the expected investment return after risk. Low-interest debt below 4% to 5% is often fine to carry while saving and investing simultaneously. Always build a small emergency fund of $1,000 to $2,000 before aggressively paying debt  -  without it you will return to debt the moment an unexpected expense occurs.
+
+How do I account for inflation in a long-term savings goal?
+For goals more than 5 years away, the purchasing power of your target amount will change over time. To account for inflation, increase your goal amount by the expected inflation rate annually. For a $50,000 goal in 10 years at 3% inflation, the real cost in today's dollars is approximately $67,000  -  so you should target the higher number. Use our Inflation Calculator to see exactly how inflation erodes purchasing power over your specific timeline.
+
+What is the best account to save in for a short-term goal?
+For goals within 1 to 3 years, capital preservation matters more than returns. High-yield savings accounts, money market accounts, and short-term certificates of deposit are appropriate. Avoid investing short-term savings in equities  -  markets can fall 30% or more in a year, and a goal with a 2-year timeline cannot afford to wait for a market recovery. For goals 5 years or more away, a diversified investment account is appropriate and compound returns significantly reduce the required monthly contribution.
+
+## Related tools on ToolSpotAI
+Retirement Calculator
+Compound Interest Calculator
+Inflation Calculator
+SIP Calculator
+Loan Calculator

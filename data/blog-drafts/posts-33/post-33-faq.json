@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "question": "Is simple interest always better for borrowers?",
+      "answer": "Generally yes, because interest only accumulates on the original principal and does not compound. However the stated rate still matters  -  a simple interest loan at 25% is far more expensive than a compound interest loan at 6%. Always compare the total cost of the loan in dollar terms rather than just the interest type."
+    },
+    {
+      "question": "Which banks use simple interest vs compound interest?",
+      "answer": "Savings accounts and deposit products almost always use compound interest  -  daily or monthly compounding is standard. Loans vary: many personal loans and auto loans use simple daily interest on the declining balance. Credit cards use compound daily interest. Mortgages use a hybrid amortisation structure that functions similarly to simple interest per period on the remaining balance."
+    },
+    {
+      "question": "What is the Rule of 72 for simple interest?",
+      "answer": "The Rule of 72 is specifically designed for compound interest  -  it estimates how long it takes money to double at a given compound rate by dividing 72 by the rate. For simple interest, doubling time is calculated differently: simply divide 100 by the annual interest rate. At 5% simple interest it takes 20 years to double your principal. At 5% compound interest the Rule of 72 gives 14.4 years."
+    },
+    {
+      "question": "Can compound interest make you lose money?",
+      "answer": "In investment accounts, compound interest or compound returns can produce negative compounding if returns are consistently negative  -  losses compound just as gains do. In debt, compound interest always costs you money. It is only in savings and investment contexts with positive returns that compound interest builds wealth."
+    },
+    {
+      "question": "What is effective annual rate (EAR)?",
+      "answer": "The effective annual rate converts any compounding frequency to its annual equivalent for easy comparison. A 6% rate compounded monthly has an EAR of approximately 6.17%  -  slightly higher than the stated rate because of within-year compounding. EAR is useful for comparing accounts or loans that compound at different frequencies. It is also called annual percentage yield (APY) when applied to savings products."
+    }
+  ]
+}

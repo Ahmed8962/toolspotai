@@ -1,0 +1,53 @@
+[
+  {
+    "postNumber": 33,
+    "title": "What Is Simple Interest and How Is It Different From Compound Interest?",
+    "slug": "simple-interest-vs-compound-interest",
+    "seoTitle": "Simple Interest vs Compound Interest — What Is the Difference?",
+    "metaDescription": "Learn what simple interest is, how to calculate it, and how it differs from compound interest. Includes worked examples and a free compound interest calculator.",
+    "excerpt": "Simple interest and compound interest are the two fundamental ways interest is calculated on loans and savings. Understanding the difference can save you thousands of dollars in borrowing costs and significantly change your savings outcomes.",
+    "tags": [
+      "Finance",
+      "Interest",
+      "Calculators"
+    ],
+    "unsplashUrl": "https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?auto=format&fit=crop&w=1600&q=80",
+    "imageAlt": "Coins growing over time representing simple interest versus compound interest calculation",
+    "publishedAt": "2026-07-17T12:00:00.000Z",
+    "focusKeyword": "simple interest vs compound interest",
+    "secondaryKeywords": [
+      "simple interest",
+      "compound interest",
+      "simple interest formula",
+      "difference between simple and compound interest"
+    ],
+    "bodyFile": "post-33-body.txt",
+    "faqFile": "post-33-faq.json"
+  },
+  {
+    "postNumber": 34,
+    "title": "How to Calculate Savings Goal: How Much Do You Need to Save Per Month?",
+    "slug": "how-to-calculate-savings-goal",
+    "seoTitle": "How to Calculate Your Savings Goal — Monthly Target Formula",
+    "metaDescription": "Learn how to calculate exactly how much you need to save per month to reach any financial goal. Includes the formula, worked examples, and a free savings calculator.",
+    "excerpt": "Whether you are saving for a house deposit, emergency fund, holiday, or retirement, the same formula tells you exactly how much to set aside each month. Here is how to calculate your monthly savings target for any goal.",
+    "tags": [
+      "Finance",
+      "Savings",
+      "Personal Finance",
+      "Calculators"
+    ],
+    "unsplashUrl": "https://images.unsplash.com/photo-1579621970795-87facc2f976d?auto=format&fit=crop&w=1600&q=80",
+    "imageAlt": "Person putting coins into a savings jar representing monthly savings goal calculation",
+    "publishedAt": "2026-07-30T12:00:00.000Z",
+    "focusKeyword": "how to calculate savings goal",
+    "secondaryKeywords": [
+      "monthly savings target",
+      "savings goal formula",
+      "how much to save per month",
+      "emergency fund calculator"
+    ],
+    "bodyFile": "post-34-body.txt",
+    "faqFile": "post-34-faq.json"
+  }
+]

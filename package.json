@@ -15,6 +15,8 @@
     "contentful:fix-blog-headings": "npx tsx scripts/contentful-fix-blog-headings.ts",
     "contentful:publish-blog-16-20": "npx tsx scripts/contentful-publish-blog-posts-16-20.ts",
     "contentful:publish-blog-21-32": "npx tsx scripts/contentful-publish-blog-posts-21-32.ts",
+    "contentful:publish-blog-33": "npx tsx scripts/contentful-publish-blog-post-33.ts",
+    "contentful:publish-blog-34": "npx tsx scripts/contentful-publish-blog-post-34.ts",
     "contentful:unpublish-blog": "npx tsx scripts/contentful-unpublish-blog-post.ts",
     "contentful:fix-blog-canonicals": "npx tsx scripts/contentful-fix-blog-canonicals.ts",
     "contentful:publish-due-blog": "npx tsx scripts/contentful-publish-due-blog-posts.ts"
