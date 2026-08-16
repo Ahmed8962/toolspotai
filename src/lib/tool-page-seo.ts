@@ -13,8 +13,9 @@ const SEO_MAP = seoToolsKeywordMap as Record<string, SeoKeywordPack>;
 
 /** Optional: force primary phrase when it must differ from the SEO map’s first primary */
 const PRIMARY_PHRASE_OVERRIDE: Partial<Record<string, string>> = {
-  "ai-writing-style-checker": "ai content detector",
+  "ai-writing-style-checker": "ai writing style checker",
   "image-prompt-builder": "ai image prompt generator",
+  "plagiarism-checker": "text similarity analyzer",
 };
 
 function getSeoPack(slug: string): SeoKeywordPack | undefined {
@@ -274,12 +275,17 @@ export function buildFiveMetaKeywords(tool: Tool, primary: string, secondary: st
   return out.slice(0, 5);
 }
 
-export function buildToolIntroParagraph(tool: Tool, primary: string, secondary: string[]): string {
-  const sec = secondary[0] ?? tool.keywords[1] ?? "clear takeaways";
-  const p1 = `Use this free ${primary} on ${BRAND} to explore ${tool.shortTitle.toLowerCase()} scenarios with ${sec} in mind.`;
-  const p2 = tool.description.endsWith(".") ? tool.description : `${tool.description}.`;
-  const p3 = "Runs in your browser—no account required.";
-  return `${p1} ${p2} ${p3}`;
+/** True when CMS/code intro is the old keyword-stuffed template. */
+export function isKeywordStuffedToolIntro(intro: string): boolean {
+  return /use this free .+ on toolspotai to explore .+ scenarios with .+ in mind/i.test(
+    intro.trim(),
+  );
+}
+
+export function buildToolIntroParagraph(tool: Tool, _primary: string, _secondary: string[]): string {
+  const desc = tool.description.trim();
+  const sentence = desc.endsWith(".") ? desc : `${desc}.`;
+  return `${sentence} This tool runs in your browser—no account required.`;
 }
 
 function splitHowItWorksIntoSteps(

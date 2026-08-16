@@ -20,7 +20,7 @@ export default function Footer() {
           <div>
             <Logo footer />
             <p className="mt-3 text-sm leading-relaxed text-slate-400">
-              Every AI Tool, One Spot. Free online calculators, developer tools,
+              Free online calculators, developer tools,
               and utilities — fast, accurate, no signup.
             </p>
             <div className="mt-6 flex gap-4">

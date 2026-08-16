@@ -17,7 +17,6 @@ import {
 
 const B = (s: string) => rText(s, [{ type: "bold" }]);
 const I = (s: string) => rText(s, [{ type: "italic" }]);
-const C = (s: string) => rText(s, [{ type: "code" }]);
 
 export function buildBestAiTools2026Body(): object {
   return rDoc(
@@ -55,28 +54,6 @@ export function buildBestAiTools2026Body(): object {
       rText("The challenge? There are "),
       B("thousands of AI tools"),
       rText(" on the market. Knowing which ones are worth your time and budget is the hard part—this guide is here to help."),
-    ),
-    rHr(),
-
-    rH2("Primary keywords covered in this guide"),
-    rP(
-      C("best AI tools 2026"),
-      rText(" · "),
-      C("AI productivity tools"),
-      rText(" · "),
-      C("top AI tools for business"),
-      rText(" · "),
-      C("free AI tools 2026"),
-      rText(" · "),
-      C("AI writing tools"),
-      rText(" · "),
-      C("AI design tools"),
-      rText(" · "),
-      C("AI coding assistant"),
-      rText(" · "),
-      C("AI tools list 2026"),
-      rText(" · "),
-      C("best AI software 2026"),
     ),
     rHr(),
 

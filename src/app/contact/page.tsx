@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = staticPageMetadata("/contact", {
   title: "Contact",
   description:
-    "Contact ToolSpotAI — questions, feedback, or suggestions for new online AI tools and utilities.",
+    "Contact ToolSpotAI — questions, feedback, or suggestions for new calculators and utilities.",
 });
 
 export default function ContactPage() {

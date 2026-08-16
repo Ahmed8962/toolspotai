@@ -1896,7 +1896,7 @@ Minimum-only comparison: would take 60+ months and cost thousands more in intere
     seoTitle: 'Text Similarity & Readability Analyzer — Local Text Check | ToolSpotAI',
     seoDescription: 'Free browser-based text analysis: readability scores, vocabulary diversity, repetition, and side-by-side similarity between two texts. Does not query the internet or plagiarism databases.',
     ogDescription: 'Readability, uniqueness-style scoring, and two-text similarity—in your browser. Not a web plagiarism database.',
-    keywords: ['plagiarism checker', 'plagiarism detector', 'text similarity checker', 'readability checker', 'flesch reading ease', 'text analysis tool', 'duplicate content checker', 'content uniqueness'],
+    keywords: ['text similarity checker', 'readability checker', 'flesch reading ease', 'text analysis tool', 'duplicate content checker', 'content uniqueness'],
     faqs: [
       { question: 'Does this check the internet for plagiarism?', answer: 'No. Everything runs in your browser. It scores readability and internal repetition in one text, and compares two pasted texts with n-gram overlap. It does not search the web or proprietary paper databases. For database-backed plagiarism review, use your institution’s tool or a paid service.' },
       { question: 'What is the Flesch Reading Ease score?', answer: 'The Flesch Reading Ease score ranges from 0-100. Higher = easier to read. 60-70 is standard (8th-9th grade). 80+ is very easy. Below 30 is very difficult (college graduate level). It is based on average sentence length and syllables per word. Aim for 60+ for general audiences.' },
@@ -2513,7 +2513,7 @@ Wealth multiplier: 4.16x your investment`,
     icon: '🖼️',
     description: 'Compress and resize images in your browser. Supports JPEG, PNG, and WebP with adjustable quality.',
     seoTitle: 'Image Compressor - Free Online Image Compression Tool | ToolSpotAI',
-    seoDescription: 'Free image compressor online. Compress JPEG, PNG, and WebP images in your browser. No upload to server — 100% private. Adjustable quality and resize.',
+    seoDescription: 'Free image compressor online. Compress JPEG, PNG, and WebP images in your browser. No upload to a server. Adjustable quality and resize.',
     ogDescription: 'Free image compressor. Reduce image file size in your browser with no server upload. Private and instant.',
     keywords: ['image compressor', 'compress image online', 'image compression tool', 'reduce image size', 'compress jpeg', 'compress png', 'image optimizer'],
     faqs: [

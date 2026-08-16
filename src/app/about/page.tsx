@@ -28,10 +28,14 @@ export default function AboutPage() {
       <h2 className="mt-12 text-xl font-semibold text-text-primary">What we actually do</h2>
       <p className="mt-3 text-text-secondary leading-relaxed">
         We ship browser-based tools: finance and tax estimates, health and fitness calculators,
-        developer utilities, writing helpers, and more. Where possible, processing stays on your
-        device so your drafts and numbers aren&apos;t part of our business model. We add long-form
-        explanations under each tool—not because an algorithm demanded a word count, but because
-        someone landing from Google at 11 p.m. deserves context, not just a widget.
+        developer utilities, writing helpers, and more. Calculator inputs stay on your device
+        whenever the tool can run in the browser. Like most websites, we may use analytics and
+        advertising partners as described in our{" "}
+        <Link href="/privacy" className="font-medium text-brand-600 hover:underline">
+          privacy policy
+        </Link>
+        . We add long-form explanations under each tool because someone landing from Google at
+        11 p.m. deserves context, not just a widget.
       </p>
 
       <h2 className="mt-12 text-xl font-semibold text-text-primary">Editorial standards</h2>

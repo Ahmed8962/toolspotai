@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const homeFaqs = [
   {
     q: "What is ToolSpotAI?",
-    a: "ToolSpotAI is a free online platform for AI-powered and classic utility tools—calculators, writing helpers, finance tools, and more. Everything lives in one place. No account is required.",
+    a: "ToolSpotAI is a free site for calculators and utility tools—finance, health, writing helpers, developer utilities, and more. No account is required.",
   },
   {
     q: 'What does "Every AI Tool, One Spot" mean?',
@@ -42,7 +42,7 @@ const homeFaqs = [
   },
   {
     q: "Will you add more than calculators?",
-    a: "Yes. We plan to expand into more AI and productivity tools—file utilities, converters, developer helpers, and others—while keeping the same fast, simple experience.",
+    a: "Yes. We add useful utilities over time—converters, developer helpers, writing tools, and more—while keeping the same free, no-signup experience.",
   },
   {
     q: "Can I use this on mobile?",
@@ -52,7 +52,7 @@ const homeFaqs = [
 
 const TRUST_ITEMS = [
   { icon: "⚡", label: "Instant results", desc: "No loading, no waiting" },
-  { icon: "🔒", label: "100% private", desc: "Everything runs locally" },
+  { icon: "🖥️", label: "Runs in your browser", desc: "Inputs stay on your device" },
   { icon: "🌍", label: "Works everywhere", desc: "Desktop, tablet, mobile" },
   { icon: "🎯", label: "Precise formulas", desc: "Industry-standard math" },
 ];
@@ -125,7 +125,7 @@ export default function Home() {
 
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-text-secondary sm:text-xl">
             Free calculators, developer tools, writing helpers, and finance
-            utilities. Fast, private, and beautifully designed.
+            utilities. Fast to load and designed to be easy to use.
           </p>
 
           {/* CTA row */}
@@ -304,8 +304,8 @@ export default function Home() {
               Ready to get things done?
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-lg text-white/80">
-              Pick any tool above and start instantly. No account, no downloads,
-              no tracking. Just results.
+              Pick any tool above and start instantly. No account and no downloads.
+              Calculator inputs stay on your device.
             </p>
             <Link
               href="#popular"

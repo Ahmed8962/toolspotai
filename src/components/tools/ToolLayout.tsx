@@ -1,6 +1,5 @@
 import type { Tool } from "@/data/tools";
 import { getCategoryHubPath, getCategoryLabel } from "@/lib/seo";
-import AdSlot from "@/components/tools/AdSlot";
 import FAQAccordion from "@/components/shared/FAQAccordion";
 import RelatedTools from "@/components/tools/RelatedTools";
 import SEOContentBlock from "@/components/shared/SEOContentBlock";
@@ -64,10 +63,6 @@ export default function ToolLayout({
           </ol>
         </section>
       ) : null}
-
-      <div className="mt-10">
-        <AdSlot size="leaderboard" />
-      </div>
 
       <SEOContentBlock tool={tool} />
 

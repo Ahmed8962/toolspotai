@@ -19,7 +19,8 @@
     "contentful:publish-blog-34": "npx tsx scripts/contentful-publish-blog-post-34.ts",
     "contentful:unpublish-blog": "npx tsx scripts/contentful-unpublish-blog-post.ts",
     "contentful:fix-blog-canonicals": "npx tsx scripts/contentful-fix-blog-canonicals.ts",
-    "contentful:publish-due-blog": "npx tsx scripts/contentful-publish-due-blog-posts.ts"
+    "contentful:publish-due-blog": "npx tsx scripts/contentful-publish-due-blog-posts.ts",
+    "contentful:fix-adsense-copy": "npx tsx scripts/contentful-fix-adsense-copy.ts"
   },
   "dependencies": {
     "next": "16.2.2",
