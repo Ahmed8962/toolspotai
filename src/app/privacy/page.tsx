@@ -13,7 +13,7 @@ export default function PrivacyPage() {
   return (
     <div className="mx-auto max-w-2xl px-4 py-14">
       <h1 className="text-3xl font-semibold text-text-primary">Privacy Policy</h1>
-      <p className="mt-2 text-sm text-text-muted">Last updated: July 29, 2026</p>
+      <p className="mt-2 text-sm text-text-muted">Last updated: August 20, 2026</p>
 
       <h2 className="mt-10 text-lg font-semibold text-text-primary">Summary</h2>
       <p className="mt-2 text-text-secondary leading-relaxed">
@@ -29,6 +29,23 @@ export default function PrivacyPage() {
         We may still receive standard server logs (such as IP address, browser type, and pages
         requested) so we can operate, debug, and protect the service. If you email us through the
         contact page, we receive whatever you choose to send.
+      </p>
+
+      <h2 className="mt-8 text-lg font-semibold text-text-primary">Google Analytics</h2>
+      <p className="mt-2 text-text-secondary leading-relaxed">
+        We use Google Analytics (GA4) to understand how visitors use the site—pages viewed,
+        general traffic patterns, and similar aggregate metrics. Google may set cookies or use
+        similar technologies for this purpose. You can opt out of Google Analytics by installing
+        the{" "}
+        <a
+          className="text-brand-600 hover:underline"
+          href="https://tools.google.com/dlpage/gaoptout"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Google Analytics Opt-out Browser Add-on
+        </a>
+        , or by adjusting your browser cookie settings.
       </p>
 
       <h2 className="mt-8 text-lg font-semibold text-text-primary">Cookies & similar technologies</h2>

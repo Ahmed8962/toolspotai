@@ -2,7 +2,7 @@ import { getToolBySlug } from "@/data/tools";
 import type { Tool } from "@/data/tool-model";
 import { contentfulFetchOptions } from "@/lib/contentful-revalidate";
 import { SITE_URL } from "@/lib/site";
-import { buildToolPageOnPageSeo, isKeywordStuffedToolIntro, normalizeToolPageH1 } from "@/lib/tool-page-seo";
+import { buildToolPageOnPageSeo, isGenericHowToUseSteps, isKeywordStuffedToolIntro, resolveToolPageH1 } from "@/lib/tool-page-seo";
 
 const SPACE_ID = process.env.CONTENTFUL_SPACE_ID;
 const ENVIRONMENT = process.env.CONTENTFUL_ENVIRONMENT ?? "master";
@@ -354,9 +354,12 @@ export function getPageSeoForTool(
     const intro =
       cmsIntro && !isKeywordStuffedToolIntro(cmsIntro) ? cmsIntro : built.introHtml;
     return {
-      h1Text: normalizeToolPageH1(p.h1Text, tool),
+      h1Text: resolveToolPageH1(tool, p.h1Text),
       intro,
-      howToUseSteps: p.howToUseSteps.length ? p.howToUseSteps : built.howToUseSteps,
+      howToUseSteps:
+        p.howToUseSteps.length && !isGenericHowToUseSteps(p.howToUseSteps)
+          ? p.howToUseSteps
+          : built.howToUseSteps,
     };
   }
   return {

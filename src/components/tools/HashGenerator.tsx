@@ -302,7 +302,8 @@ export default function HashGenerator() {
           <p className="text-xs leading-relaxed text-text-muted">
             SHA-1, SHA-256, and SHA-512 use the browser&apos;s native Web Crypto
             API. MD5 uses a pure JavaScript implementation (RFC 1321). All
-            processing is done locally &mdash; your data never leaves the browser.
+            processing is done locally in your browser&mdash;your input is not uploaded to our
+            servers.
           </p>
         </div>
       )}

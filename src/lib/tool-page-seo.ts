@@ -18,6 +18,25 @@ const PRIMARY_PHRASE_OVERRIDE: Partial<Record<string, string>> = {
   "plagiarism-checker": "text similarity analyzer",
 };
 
+/** CMS H1 terms that misrepresent what the tool actually does */
+const MISLEADING_CMS_H1: Partial<Record<string, RegExp>> = {
+  "plagiarism-checker": /plagiarism/i,
+};
+
+const HOW_TO_STEPS_OVERRIDE: Partial<Record<string, string[]>> = {
+  "plagiarism-checker": [
+    "Choose Analyze mode to score readability and repetition in one text, or Compare mode for two texts.",
+    "Paste your text into the field(s) above and review the metrics instantly.",
+    "Use Flesch scores and vocabulary diversity to tune clarity for your audience.",
+    "In Compare mode, check similarity percentage and overlapping phrases between two drafts.",
+    "For database-backed plagiarism checks, use your institution's tool or a paid service.",
+  ],
+};
+
+export function hasPrimaryPhraseOverride(slug: string): boolean {
+  return slug in PRIMARY_PHRASE_OVERRIDE;
+}
+
 function getSeoPack(slug: string): SeoKeywordPack | undefined {
   return SEO_MAP[slug];
 }
@@ -191,6 +210,21 @@ export function normalizeToolPageH1(raw: string | undefined, tool: Tool): string
   return prependFreeH1(formatPrimaryForH1(withoutFree.toLowerCase()));
 }
 
+/** Prefer code-built H1 when CMS copy is missing, overridden, or misleading. */
+export function resolveToolPageH1(tool: Tool, cmsH1?: string): string {
+  const built = buildToolPageH1FromTool(tool);
+  const raw = cmsH1?.trim();
+  if (!raw) return built;
+  if (hasPrimaryPhraseOverride(tool.slug)) return built;
+  const misleading = MISLEADING_CMS_H1[tool.slug];
+  if (misleading?.test(raw)) return built;
+  return normalizeToolPageH1(raw, tool);
+}
+
+function isGenericHowToSteps(steps: string[]): boolean {
+  return steps.some((s) => /enter the fields that apply to your case/i.test(s));
+}
+
 function pickActionVerb(tool: Tool): string {
   const slug = tool.slug;
   if (slug.includes("calculator") || slug.includes("converter") || slug.includes("tax")) return "Calculate";
@@ -315,7 +349,14 @@ function splitHowItWorksIntoSteps(
 }
 
 export function buildHowToUseSteps(tool: Tool): string[] {
+  const override = HOW_TO_STEPS_OVERRIDE[tool.slug];
+  if (override) return override;
   return splitHowItWorksIntoSteps(tool, tool.content.howItWorks, 5);
+}
+
+/** True when CMS how-to steps are the generic fallback template. */
+export function isGenericHowToUseSteps(steps: string[]): boolean {
+  return steps.length === 0 || isGenericHowToSteps(steps);
 }
 
 export type ToolPageOnPageSeo = {

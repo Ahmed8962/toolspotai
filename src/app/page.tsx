@@ -29,8 +29,8 @@ const homeFaqs = [
     a: "ToolSpotAI is a free site for calculators and utility tools—finance, health, writing helpers, developer utilities, and more. No account is required.",
   },
   {
-    q: 'What does "Every AI Tool, One Spot" mean?',
-    a: "We are building a single destination where you can find helpful online tools without jumping between sites. Our library grows over time as we add new categories and utilities.",
+    q: "What kinds of tools does ToolSpotAI offer?",
+    a: "Calculators for finance, health, and daily planning, plus utilities for writers and developers—tax estimators, BMI, word counters, JSON formatters, and more. We add new tools over time in one place so you do not have to jump between sites.",
   },
   {
     q: "Do I need to sign up?",
