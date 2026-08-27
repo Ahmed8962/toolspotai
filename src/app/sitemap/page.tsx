@@ -29,6 +29,7 @@ export default function SitemapPage() {
           {[
             { href: "/", label: "Home" },
             { href: "/tools", label: "All tools" },
+            { href: "/blog", label: "Blog" },
             { href: "/about", label: "About" },
             { href: "/contact", label: "Contact" },
             { href: "/privacy", label: "Privacy Policy" },

@@ -1,5 +1,5 @@
-import { getAllBlogPosts } from "@/lib/contentful-blog";
-import { getAllContentfulToolUrlSlugs } from "@/lib/contentful-tool";
+import { getAllBlogPostsForBuild } from "@/lib/contentful-blog";
+import { getAllContentfulIndexableToolUrlSlugs } from "@/lib/contentful-tool";
 import { tools } from "@/data/tools";
 import { SITE_URL } from "@/lib/site";
 import type { MetadataRoute } from "next";
@@ -40,7 +40,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   let toolSlugs = tools.map((t) => t.slug);
   try {
-    const cf = await getAllContentfulToolUrlSlugs();
+    const cf = await getAllContentfulIndexableToolUrlSlugs();
     if (cf.length) toolSlugs = [...new Set([...toolSlugs, ...cf])];
   } catch {
     // keep code-only
@@ -55,7 +55,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   let blogRoutes: MetadataRoute.Sitemap = [];
   try {
-    const posts = await getAllBlogPosts();
+    const posts = (await getAllBlogPostsForBuild()).filter(
+      (post) => !post.seoNoIndex,
+    );
     blogRoutes = posts.map((post) => ({
       url: `${BASE}/blog/${post.slug}`,
       lastModified: toSitemapLastMod(post.updatedAt || post.publishedAt),

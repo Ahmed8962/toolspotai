@@ -13,7 +13,7 @@ export default function PrivacyPage() {
   return (
     <div className="mx-auto max-w-2xl px-4 py-14">
       <h1 className="text-3xl font-semibold text-text-primary">Privacy Policy</h1>
-      <p className="mt-2 text-sm text-text-muted">Last updated: August 20, 2026</p>
+      <p className="mt-2 text-sm text-text-muted">Last updated: August 27, 2026</p>
 
       <h2 className="mt-10 text-lg font-semibold text-text-primary">Summary</h2>
       <p className="mt-2 text-text-secondary leading-relaxed">
@@ -51,8 +51,10 @@ export default function PrivacyPage() {
       <h2 className="mt-8 text-lg font-semibold text-text-primary">Cookies & similar technologies</h2>
       <p className="mt-2 text-text-secondary leading-relaxed">
         We and our partners may set cookies or use local storage for preferences, analytics, or ad
-        delivery. You can block or delete cookies in your browser; blocking some cookies may limit
-        parts of the site.
+        delivery. On your first visit we show a cookie banner so you can accept or reject analytics
+        and advertising cookies. Your choice is stored in your browser (local storage). You can
+        clear site data in your browser to see the banner again, or block cookies in browser
+        settings; blocking some cookies may limit parts of the site.
       </p>
 
       <h2 className="mt-8 text-lg font-semibold text-text-primary">Google AdSense & advertising</h2>

@@ -315,6 +315,23 @@ export async function getAllContentfulToolUrlSlugs(): Promise<string[]> {
   return slugs;
 }
 
+/** Same as getAllContentfulToolUrlSlugs, excluding seoNoIndex tools (XML sitemap). */
+export async function getAllContentfulIndexableToolUrlSlugs(): Promise<string[]> {
+  const loc = getLocale();
+  const q = new URLSearchParams();
+  q.set("content_type", CONTENT_TYPE);
+  q.set("limit", "200");
+  q.set("include", "0");
+  q.set("locale", "en-US");
+  const data = await cda(q.toString());
+  const slugs: string[] = [];
+  for (const item of data.items) {
+    const p = mapEntry(item, loc);
+    if (p?.urlSlug && !p.payload.seoNoIndex) slugs.push(p.urlSlug);
+  }
+  return slugs;
+}
+
 /**
  * Merges static tool from code (category, icon, related, map key) with Contentful.
  */

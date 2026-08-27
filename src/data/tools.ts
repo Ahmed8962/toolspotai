@@ -1231,7 +1231,7 @@ Minimum-only comparison: would take 60+ months and cost thousands more in intere
     shortTitle: 'Hash Generator',
     category: 'developer',
     icon: '#️⃣',
-    description: 'Generate MD5, SHA-1, SHA-256, and SHA-512 hashes instantly in the browser. No data leaves your device.',
+    description: 'Generate MD5, SHA-1, SHA-256, and SHA-512 hashes instantly in the browser. Hashing runs locally; we may still use analytics and ads as described in our Privacy Policy.',
     seoTitle: 'Hash Generator - Free MD5, SHA256 Hash Generator Online | ToolSpotAI',
     seoDescription: 'Free online hash generator: compute MD5, SHA-1, SHA-256, and SHA-512 hashes instantly. All processing runs locally in your browser — no data is uploaded.',
     ogDescription: 'Generate MD5, SHA-1, SHA-256, SHA-512 hashes online. Client-side, no uploads.',
@@ -1240,7 +1240,7 @@ Minimum-only comparison: would take 60+ months and cost thousands more in intere
       { question: 'What is a hash?', answer: 'A cryptographic hash is a fixed-size string of characters generated from any input data. The same input always produces the same hash, but even a tiny change in input produces a completely different hash. Hashes are one-way — you cannot reverse-engineer the original data from a hash. They are used for data integrity verification, password storage, and digital signatures.' },
       { question: 'What is the difference between MD5, SHA-1, SHA-256, and SHA-512?', answer: 'They differ in output size and security. MD5 produces a 128-bit (32-character) hash and is fast but cryptographically broken. SHA-1 produces 160-bit (40-character) and is deprecated. SHA-256 (256-bit, 64-character) is the industry standard for security. SHA-512 (512-bit, 128-character) is the strongest but slightly slower.' },
       { question: 'Is MD5 still safe to use?', answer: 'MD5 is NOT safe for security purposes like password hashing or digital signatures — collision attacks have been demonstrated. However, MD5 is still useful for non-security purposes like file checksums, cache keys, and deduplication where you only need to detect accidental changes.' },
-      { question: 'Is my data safe?', answer: 'Yes. All hashing is performed entirely in your browser using the Web Crypto API (for SHA) and a pure JavaScript implementation (for MD5). No data is ever sent to our servers. You can verify this by disconnecting from the internet and testing — the tool works offline.' },
+      { question: 'Is my data safe?', answer: 'Hashing runs in your browser using the Web Crypto API (for SHA) and a JavaScript MD5 implementation, so your input is not uploaded to our servers. Like most websites, we may use analytics and show ads as described in our Privacy Policy.' },
       { question: 'Which hash algorithm should I use?', answer: 'For password hashing, use bcrypt or Argon2 (not raw SHA). For file integrity checks, SHA-256 is the standard. For git, SHA-1 is used (transitioning to SHA-256). For quick checksums where security is not critical, MD5 is fast and widely supported.' }
     ],
     content: {
@@ -2524,7 +2524,7 @@ Wealth multiplier: 4.16x your investment`,
       { question: 'How much can I reduce image file size?', answer: 'Typical compression results: JPEG photos can be reduced 50-80% with minimal visible quality loss. PNG images can be converted to WebP for 60-80% savings. The actual reduction depends on the original image content, dimensions, and chosen quality level.' }
     ],
     content: {
-      whatIs: `An image compressor reduces the file size of images while maintaining acceptable visual quality. Large image files slow down websites, consume bandwidth, and take up storage space. Our browser-based tool compresses images instantly using the HTML Canvas API — no server upload required, ensuring complete privacy.
+      whatIs: `An image compressor reduces the file size of images while maintaining acceptable visual quality. Large image files slow down websites, consume bandwidth, and take up storage space. Our browser-based tool compresses images instantly using the HTML Canvas API, without uploading your files to our servers. Analytics and ads may still apply as described in our Privacy Policy.
 
 Whether you are optimizing images for a website, reducing file size for email attachments, or saving storage space on your device, image compression is an essential tool. Modern compression algorithms can reduce file sizes by 50-80% with minimal visible quality loss, making pages load faster and improving SEO performance.`,
 

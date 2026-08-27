@@ -101,6 +101,12 @@ export async function publishDueBlogPosts(now = new Date()): Promise<PublishDueB
     const publishedAt = pickLocale(entry.fields.publishedAt);
     if (!slug || !publishedAt) continue;
 
+    // Copyright-circumvention topic — keep unpublished for AdSense.
+    if (slug === "how-to-remove-watermark-from-image") {
+      result.skipped++;
+      continue;
+    }
+
     const isPublished = Boolean(entry.sys.publishedVersion);
     const isDue = isBlogPostLive(publishedAt, now);
 

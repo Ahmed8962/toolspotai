@@ -1,4 +1,5 @@
 import GlobalAnalyticsEvents from "@/components/analytics/GlobalAnalyticsEvents";
+import CookieConsentBanner from "@/components/CookieConsentBanner";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import { DEFAULT_OG_IMAGE_PATH } from "@/lib/seo";
@@ -103,6 +104,35 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://api.frankfurter.app" />
+        {/* Consent Mode defaults must run before AdSense / GA tags. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              window.gtag = gtag;
+              try {
+                var c = localStorage.getItem('toolspotai_cookie_consent');
+                var s = c === 'accepted' ? 'granted' : 'denied';
+                gtag('consent', 'default', {
+                  ad_storage: s,
+                  ad_user_data: s,
+                  ad_personalization: s,
+                  analytics_storage: s,
+                  wait_for_update: 500
+                });
+              } catch (e) {
+                gtag('consent', 'default', {
+                  ad_storage: 'denied',
+                  ad_user_data: 'denied',
+                  ad_personalization: 'denied',
+                  analytics_storage: 'denied',
+                  wait_for_update: 500
+                });
+              }
+            `,
+          }}
+        />
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3125175620140273"
@@ -120,6 +150,7 @@ export default function RootLayout({
               {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
+                window.gtag = window.gtag || gtag;
                 gtag('js', new Date());
                 gtag('config', '${gaMeasurementId}');
               `}
@@ -130,6 +161,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <CookieConsentBanner />
       </body>
     </html>
   );
